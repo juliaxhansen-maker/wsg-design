@@ -570,3 +570,31 @@ table.asset-table td.dir{font-weight:600;white-space:nowrap}
 @media (max-width:640px){
   .featured-issue .fi-top{flex-direction:column;align-items:flex-start;gap:10px}
 }
+
+/* ============================================================
+   "FIND YOUR WAY AROUND" — bracket-cornered card grid (index.html)
+   Light background version, dash/number treatment borrowed from
+   the dark mock, corner brackets borrowed from the light mock.
+   ============================================================ */
+.way-divider{height:1px;background:var(--line-strong);margin-top:36px}
+
+.way-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:44px}
+@media (max-width:960px){.way-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.way-grid{grid-template-columns:1fr}}
+
+.way-card{position:relative;display:block;background:#fff;padding:34px 30px 30px;text-decoration:none}
+.way-card::before,.way-card::after{content:"";position:absolute;width:18px;height:18px;border:2px solid var(--brand)}
+.way-card::before{top:-1px;left:-1px;border-right:none;border-bottom:none}
+.way-card::after{bottom:-1px;right:-1px;border-left:none;border-top:none}
+
+.way-num{
+  display:flex;align-items:center;gap:10px;margin-bottom:18px;
+  font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;color:var(--gray);
+}
+.way-num::before{content:"";width:18px;height:1px;background:currentColor}
+
+.way-card h3{font-family:var(--serif);font-weight:600;color:var(--ink);font-size:19px;line-height:1.25;margin-bottom:12px}
+.way-card:hover h3{color:var(--brand)}
+.way-card p{font-size:14.5px;color:var(--gray);margin-bottom:22px}
+.way-link{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:var(--brand)}
+.way-card:hover .way-link{color:var(--brand-2)}
