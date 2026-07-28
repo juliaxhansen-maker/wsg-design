@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Issue No. 2: Bitcoin Is So Last Season. Meet HYPE — the Crypto Product Wall Street Can Finally Understand — Wall Street for the Girls</title>
+<meta name="description" content="HYPE ETFs pulled in $160 million in days while bitcoin ETFs bled assets. What a token buyback actually is, why Wall Street finally understands this one, and what it means for your money.">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500;1,6..72,600&family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#faf7f1; --ink:#22201d; --burgundy:#7d1f42; --muted:#5c574e;
+    --hint:#a39c8c; --line:#ddd7cb; --line-soft:#ece7dc; --body:#3a3733;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--cream); color:var(--ink); font-family:'Inter',sans-serif;}
+  a{color:inherit;}
+  .wrap{max-width:1200px; margin:0 auto; padding:0 24px;}
+
+  .folio-line{border-bottom:0.5px solid var(--line); font-size:11px; letter-spacing:0.03em; color:var(--hint);}
+  .folio-line .wrap{display:flex; justify-content:space-between; padding:10px 24px;}
+
+  .site-header{border-bottom:0.5px solid var(--line);}
+  .nav{display:flex; justify-content:space-between; align-items:center; padding:16px 24px;}
+  .nav-brand{display:flex; align-items:center; gap:8px; text-decoration:none; color:var(--ink); font-family:'Newsreader',serif; font-weight:600; font-size:16px;}
+  .nav-brand img{height:28px; width:28px; border-radius:50%;}
+  .nav-brand em{font-style:italic; color:var(--burgundy);}
+  .nav-links{list-style:none; display:flex; gap:24px; margin:0; padding:0; align-items:center;}
+  .nav-links a{text-decoration:none; color:var(--muted); font-size:12px; letter-spacing:0.04em;}
+  .nav-links a.active{color:var(--burgundy); border-bottom:1.5px solid var(--burgundy); padding-bottom:2px;}
+  .nav-links a.nav-cta{background:var(--ink); color:var(--cream); padding:9px 18px; border-radius:2px;}
+
+  .issue-page{padding:48px 0 80px;}
+  .issue-layout{display:grid; grid-template-columns:minmax(0,640px) minmax(0,320px); gap:32px; align-items:start; justify-content:center;}
+
+  .issue-dateline{font-size:11.5px; letter-spacing:0.03em; color:var(--burgundy); margin:0 0 10px;}
+  .issue-main h1{font-family:'Newsreader',serif; font-weight:600; font-size:30px; line-height:1.3; margin:0 0 20px; max-width:620px;}
+  .issue-main p{font-size:14px; line-height:1.75; color:var(--body); margin:0 0 16px; text-align:justify; hyphens:auto;}
+
+  .eb{font-size:10.5px; letter-spacing:0.08em; color:var(--burgundy); text-transform:uppercase; margin:28px 0 8px;}
+  .rail-title{font-weight:700; font-size:12px;}
+  .section-label{font-family:'Newsreader',serif; font-size:17px; font-weight:600; margin:30px 0 12px; color:var(--burgundy);}
+  .term-link{color:var(--burgundy); text-decoration:none; border-bottom:1.5px dotted var(--burgundy);}
+
+  .issue-copy{max-width:620px;}
+  .signal-noise{display:grid; grid-template-columns:1fr 1fr; gap:0; margin:28px 0 16px; padding-top:24px; border-top:0.5px solid var(--line);}
+  .signal-noise .eb{margin-top:0;}
+  .signal-noise p:last-child{margin-bottom:0;}
+  .signal-noise > div:first-child{padding-right:28px;}
+  .signal-noise > div:last-child{padding-left:28px; border-left:0.5px solid var(--line);}
+
+  .key-question{margin:32px 0 0; padding-top:18px; border-top:1px solid var(--ink);}
+  .key-question .key-question-text{font-family:'Newsreader',serif; font-style:italic; font-weight:700; font-size:20px; color:#7d1f42; line-height:1.6; margin:0 0 14px; text-align:center;}
+
+  p.connects-chain{margin:26px 0; padding:20px 24px; border-top:1px solid var(--ink); border-bottom:1px solid var(--ink); font-family:'Newsreader',serif; font-style:italic; font-size:15px; line-height:1.85; color:var(--body); text-align:center;}
+
+  .references-section{grid-column:1 / -1; border-top:0.5px solid var(--line); padding:36px 0 4px;}
+  .references-section .section-label{margin:0 0 14px;}
+  .references-list{list-style:none; margin:0; padding:0; max-width:900px;}
+  .references-list li{font-size:11.5px; line-height:1.7; color:var(--muted); margin-bottom:14px; text-align:justify; hyphens:auto;}
+  .references-list li a{color:var(--burgundy); text-decoration:none; word-break:break-all;}
+  .references-list li a:hover{text-decoration:underline;}
+
+  .issue-rail{border-left:0.5px solid var(--line); padding-left:28px; align-self:start;}
+  .rail-block{border-bottom:0.5px solid var(--line-soft); padding-bottom:20px; margin-bottom:20px;}
+  .rail-block:last-child{border-bottom:none; margin-bottom:0;}
+
+  .rail-stat{margin-bottom:22px;}
+  .rail-stat:last-child{margin-bottom:0;}
+  .rail-label{display:block; font-size:9.5px; letter-spacing:0.08em; color:var(--hint); margin-bottom:5px;}
+  .rail-value{display:block; font-family:'Newsreader',serif; font-style:italic; font-weight:500; font-size:14.5px; color:var(--ink); line-height:1.4;}
+
+  .rail-table{width:100%; border-collapse:collapse; font-size:12px;}
+  .rail-table td{padding:7px 0; border-bottom:0.5px solid var(--line-soft); color:var(--body);}
+  .rail-table tr:last-child td{border-bottom:none;}
+  .rail-table td.dir{text-align:right; color:var(--muted); white-space:nowrap;}
+  .rail-table td.dir.down, .rail-table td.dir.up{color:var(--burgundy);}
+
+  .rail-teaser-text{font-size:12px; color:var(--muted); line-height:1.6; margin:0 0 10px;}
+  .rail-link{font-size:10.5px; color:var(--burgundy); text-decoration:none;}
+  .rail-link:hover{text-decoration:underline;}
+
+  .rail-block-featured{background:#faf1f4; border-radius:8px; padding:16px 18px 18px; border-bottom:none;}
+  .rail-block-featured .eb{margin-top:0; margin-bottom:8px;}
+  .rail-link-btn{display:inline-block; font-size:10px; letter-spacing:0.05em; color:var(--burgundy); border:0.5px solid var(--burgundy); border-radius:2px; padding:7px 12px; text-decoration:none;}
+  .rail-link-btn:hover{background:var(--burgundy); color:var(--cream);}
+
+  .rail-term{font-family:'Newsreader',serif; font-size:14px; font-weight:600; margin:0 0 5px;}
+  .rail-def{font-size:11.5px; color:var(--muted); line-height:1.6; margin:0;}
+
+  .term-grid{display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:10px 0 14px;}
+  .term-box{background:#fff; border:0.5px solid var(--line); border-radius:6px; padding:10px 12px;}
+  .term-box span{font-family:'Newsreader',serif; font-size:11.5px; font-weight:400; color:var(--ink);}
+
+  .site-footer{border-top:0.5px solid var(--line); padding:44px 0 30px;}
+  .footer-top{display:flex; justify-content:space-between; align-items:center; margin-bottom:22px; flex-wrap:wrap; gap:16px;}
+  .footer-brand{display:flex; align-items:center; gap:8px; text-decoration:none; color:var(--ink); font-weight:600; font-family:'Newsreader',serif; font-size:14px;}
+  .footer-brand img{height:24px; width:24px; border-radius:50%;}
+  .footer-links{list-style:none; display:flex; gap:18px; margin:0; padding:0; flex-wrap:wrap;}
+  .footer-links a{color:var(--muted); text-decoration:none; font-size:12px;}
+  .footer-bottom{display:flex; justify-content:space-between; font-size:11px; color:var(--hint); border-top:0.5px solid var(--line); padding-top:16px; flex-wrap:wrap; gap:8px;}
+
+  a:focus-visible, .nav-cta:focus-visible{outline:2px solid var(--burgundy); outline-offset:2px;}
+
+  @media (max-width:600px){
+    .signal-noise{grid-template-columns:1fr;}
+    .signal-noise > div:first-child{padding-right:0;}
+    .signal-noise > div:last-child{padding-left:0; border-left:none; margin-top:20px;}
+  }
+
+  @media (max-width:860px){
+    .issue-layout{grid-template-columns:1fr;}
+    .issue-rail{border-left:none; padding-left:0; border-top:0.5px solid var(--line); padding-top:28px; margin-top:8px;}
+    .nav-links{display:none;}
+  }
+</style>
+</head>
+<body>
+
+<div class="folio-line">
+  <div class="wrap">
+    <span><b>Wall Street for the Girls</b> &middot; A weekly market brief</span>
+    <span>Issue No. 2 &middot; June 7, 2026</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="nav-brand" href="index.html">
+      <img src="logo.png" alt="WSG logo">
+      <span>Wall Street <em>for the girls</em></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="archive.html" class="active">Archive</a></li>
+      <li><a href="financial-syllabus.html">Financial Syllabus</a></li>
+      <li><a href="glossary.html">Glossary</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a class="nav-cta" href="https://wallstreetforthegirls.substack.com" target="_blank" rel="noopener">Subscribe</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+<section class="issue-page">
+  <div class="wrap issue-layout">
+
+    <article class="issue-main">
+      <p class="issue-dateline">&mdash; June 7, 2026 &middot; Issue No. 2</p>
+      <h1>Bitcoin is so last season. Meet HYPE &mdash; the crypto product Wall Street can finally understand.</h1>
+
+      <div class="issue-copy">
+      <p style="font-style:italic; font-size:16px; color:#3a3733; margin-bottom:10px;">Here's what you need to know this week, and why it matters.</p>
+
+      <p>Bitcoin is so last season. It&rsquo;s down, and the crowds who were obsessed with it during the height of the hype cycle have gone very quiet. Meanwhile Wall Street is already turning heads and focusing on the next big thing.</p>
+
+      <p>Her name is HYPE. Unlike bitcoin, whose value has always been harder to pin to anything concrete, HYPE has an actual business model. The kind that finance people look at and understand. That&rsquo;s rare for crypto. That&rsquo;s the story this week.</p>
+
+      <p>But before we get into it, we need to understand what crypto actually is. Because you can&rsquo;t fully understand why HYPE is different without knowing what you&rsquo;re comparing it to.</p>
+
+      <p>Basically, the financial system we grew up with runs through middlemen. Every transaction goes through someone in the middle. Crypto was built to get rid of that. A cryptocurrency is digital money that uses advanced code to verify transactions and control its own supply, with no central bank or company running it. It lives on something called a blockchain.</p>
+
+      <p>Now you may be wondering what even is a blockchain?</p>
+
+      <p>To put it plainly, a blockchain is a shared record book. A log of every transaction ever made, copied across thousands of computers at once. No one owns it, and it&rsquo;s practically impossible to alter.</p>
+
+      <p>Think of it like this.</p>
+
+      <p>Instead of one bank keeping your balance in a private system, imagine thousands of people holding the same exact spreadsheet simultaneously. To fake a transaction, you would have to change every single copy at the same time. You can&rsquo;t and that&rsquo;s the point.</p>
+
+      <p>Now that we know what crypto is, let&rsquo;s talk about where it all started.</p>
+
+      <p>Bitcoin&rsquo;s purpose was to allow people to send money directly to anyone, anywhere, without the need of a bank. There is also a limit written into the code of how bitcoins can exist and that can never be changed.</p>
+
+      <p>Then came Ethereum, and it took things further. Where bitcoin is just digital money, Ethereum is more like a programmable platform. It introduced something called smart contracts. Smart contracts are automated agreements that execute themselves when certain conditions are met. No human has to approve anything in the middle, which opened the door to something called DeFi.</p>
+
+      <p>DeFi stands for decentralized finance. DeFi is financial services like lending, trading and borrowing that run entirely on a blockchain. No bank, no broker, no one to ask permission from. It operates through code, 24 hours a day, every single day of the year. However, if something goes wrong there is no customer service and no one can reverse a transaction.</p>
+
+      <p>Crypto moves fast because it never closes. No overnight pauses, no weekends off. So when panic sets in, there is nothing to slow it down, resulting in sharp declines. That said, it has been getting calmer. As more institutional money has come in and regulated products have made it easier to access, the extreme swings have started to settle. Bitcoin is still meaningfully more volatile than the stock market, but it&rsquo;s a very different market to what it was ten years ago.</p>
+
+      <p>Which brings us to ETFs and why they matter for this week&rsquo;s story.</p>
+
+      <p>An ETF is just a product you buy through a normal brokerage, the same way you&rsquo;d buy a share in any company. It tracks the price of something, in this case a cryptocurrency. The iShares Bitcoin Trust (IBIT), for example, holds actual bitcoin in a custody account. You buy a share of the fund, the fund holds the bitcoin. No digital wallet, no private keys, no figuring out a crypto exchange. Just a line in your brokerage account and that simplicity is what brought a whole new type of investor into this market.</p>
+
+      <p>Now that we have the foundation, let&rsquo;s get into this week&rsquo;s story with HYPE.</p>
+
+      <p>HYPE (Hyperliquid) is a decentralized trading platform that is blockchain based. It lets traders buy and sell futures, which are essentially bets on where prices are going and manage risk, across crypto and commodities like oil.</p>
+
+      <p>HYPE was completely under the radar until last summer. When the US-Iran war sent traders panicking and trying to find weekend access to oil markets. HYPE was one of the only places open, and volume quickly reached roughly $1 billion a day in crude oil alone, according to Stephen Coltman, 21shares vice president and head of macro.</p>
+
+      <p>In May, Bitwise and 21Shares launched spot ETFs tracking HYPE. Grayscale followed this week with its own product. Together the three funds have pulled in close to $160 million in days.</p>
+
+      <p>For context, this is happening while bitcoin ETFs are losing assets. IBIT, for example, ended the week down around 16%. So the fact that something brand new is pulling in this kind of money during a selloff is worth paying attention to.</p>
+
+      <p>Every trade on Hyperliquid generates fees, and 99% of those fees go directly into <a class="term-link" href="glossary.html#token-buyback">buying back HYPE tokens</a>. This ties the token&rsquo;s value directly to how much the platform gets used.</p>
+
+      <p>Most crypto tokens have a vague, indirect relationship between platform activity and price but HYPE makes it explicit and automatic. The more it&rsquo;s used, the more tokens are bought back. And for crypto, that&rsquo;s almost unheard of.</p>
+
+      <p>The ETFs trading under the tickers BHYP, THYP, and HYPG are accessible through any normal brokerage, no crypto setup needed. Each one is run by a different asset manager, and all track the same underlying asset, so the main difference between them comes down to cost. That cost is measured by what&rsquo;s called an expense ratio, which is essentially the annual fee the fund charges you to manage the product.</p>
+
+      <p>The brand new HYPE ETFs are highly competitive on cost, with expense ratios sitting between 0.29% and 0.34%. Grayscale comes in with the lowest fee at 0.29%, followed by 21shares at 0.30%, and Bitwise at 0.34%. Whether that cost is worth it depends entirely on what you think the growth potential of the platform is.</p>
+
+      <p>That said, it&rsquo;s worth being clear about where things actually stand. Most people still may have not heard of Hyperliquid. The platform is currently geo-blocked for US users, and US access isn&rsquo;t expected until around 2027, according to Grayscale&rsquo;s head of research. Competition from both traditional finance and other crypto platforms is growing. The $160 million in inflows is impressive for a brand new product, but it&rsquo;s still small compared to the broader crypto market. This is early days.</p>
+
+      <p>But that&rsquo;s kind of the point. The investors putting money in right now aren&rsquo;t doing it because Hyperliquid is already mainstream. They&rsquo;re doing it because they think it will be. And the fact that they can do it through a normal brokerage account, with a structure they recognize, changes who&rsquo;s able to make that bet.</p>
+
+      <p>The bigger picture here isn&rsquo;t really about HYPE specifically. It&rsquo;s about what happens when crypto builds something that traditional finance can actually understand. For a long time, crypto and traditional finance have existed in completely separate conversations. What&rsquo;s happening this week suggests that&rsquo;s starting to change.</p>
+
+      <div class="signal-noise">
+        <div>
+          <p class="eb">&#10022; The signal</p>
+          <p>$160 million flowed into HYPE ETFs within days of launch during a broad crypto selloff.</p>
+          <p>That&rsquo;s new money coming in from outside the existing crypto ecosystem entirely, attracted by a revenue model they actually recognize. When a brand new, largely unknown product pulls in that kind of capital, it&rsquo;s worth paying attention to why.</p>
+        </div>
+        <div>
+          <p class="eb">&#10022; The noise</p>
+          <p>Bitcoin and ether are falling. That&rsquo;s already priced in and markets knew crypto was risk-off. What&rsquo;s new isn&rsquo;t the selloff, it&rsquo;s the fact that something else is defying the trend entirely.</p>
+          <p>Day-to-day price moves in BTC and ETH are less important right now than the underlying shift in where new capital is actually going.</p>
+        </div>
+      </div>
+
+      <h2 class="section-label">What&rsquo;s moving in markets</h2>
+      <p><b>HYPE ETFs</b> are the standout story. BHYP, THYP, and HYPG have gathered $160 million combined since the first of them launched in May. This is remarkable for brand new products tracking an asset most financial advisors had never heard of a month ago. The inflows have been mostly consistent day over day, which suggests this isn&rsquo;t a one day spike but a sustained interest from a specific type of investor.</p>
+      <p><b>Bitcoin ETFs</b> are doing the opposite. IBIT, the iShares Bitcoin Trust, ended the week down around 16%. The broader BTC and ETH selloff indicates investors pulling back from speculative assets when uncertainty rises.</p>
+      <p>The <b>US dollar</b> picks up mild support in this environment. When crypto sells off and risk appetite drops, some of that capital moves toward dollar denominated safe havens. It&rsquo;s not dramatic here, but the direction is consistent with the broader mood.</p>
+      <p><b>Emerging market currencies</b> feel the secondary pressure. Risk-off environments tend to pull capital away from higher risk markets and toward stronger assets.</p>
+
+      <h2 class="section-label">Currency &amp; interest rate</h2>
+      <div class="signal-noise">
+        <div>
+          <p class="eb">Where currencies stand</p>
+          <p><b>USD:</b> Mild upward pressure. Crypto risk-off nudges some capital toward dollars, though the move isn&rsquo;t dramatic from this story alone.</p>
+          <p><b>EUR/USD:</b> No direct signal this week. Watch for broader risk-off USD strength compressing the pair.</p>
+          <p><b>EM FX:</b> Under pressure. Risk-off environment pulling capital away from higher risk markets.</p>
+        </div>
+        <div>
+          <p class="eb">The yield picture</p>
+          <p><b>Rates:</b> Not directly covered in this story.</p>
+          <p><b>Fed, ECB &amp; BOE:</b> No signal this week from this source.</p>
+          <p><b>Key thing to watch:</b> If broader risk-off deepens beyond crypto, a higher demand for government bonds could push yields lower. Crypto ETF flows alone won&rsquo;t move that needle, but they can be an early read on wider sentiment shifts.</p>
+        </div>
+      </div>
+
+      <h2 class="section-label">How it all connects</h2>
+      <p class="connects-chain">Platform trading generates fees &rarr; 99% of fees buy back HYPE tokens &rarr; token supply shrinks &rarr; value tied directly to platform usage &rarr; traditional finance investors recognise the model &rarr; ETF inflows despite broader crypto selloff &rarr; mainstream awareness grows &rarr; potential for US regulatory approval in 2027 &rarr; platform access expands &rarr; cycle continues</p>
+      <p>What makes this story different from a typical crypto pump is the mechanism. Most tokens go up because people buy them hoping they&rsquo;ll go up. HYPE is designed so that the platform&rsquo;s own revenue does the buying. The more traders use Hyperliquid, the more tokens are automatically repurchased. That&rsquo;s a feedback loop that finance people can model and that&rsquo;s exactly why it&rsquo;s attracting a different kind of capital.</p>
+
+      <h2 class="section-label">Why this matters to you</h2>
+      <ul style="font-size:14px; line-height:1.75; color:var(--body); padding-left:20px; margin:0 0 16px;">
+        <li style="margin-bottom:12px;">If you are an <b>importer</b>: Crypto risk-off may provide mild USD support, nudging up the cost of USD-denominated payments in domestic currency. Worth checking whether upcoming payables are hedged.</li>
+        <li style="margin-bottom:12px;">If you are an <b>exporter</b>: If USD firms against EUR on risk-off, there may be a short window to convert USD receivables at a better rate.</li>
+        <li style="margin-bottom:12px;">If you are a <b>borrower</b>: No direct impact from this story.</li>
+        <li>If you are an <b>investor</b>: HYPE ETFs are now accessible via normal brokerage accounts. The buyback model is worth understanding before deciding whether the exposure makes sense for your portfolio.</li>
+      </ul>
+
+      <div class="key-question">
+        <p class="key-question-text">&ldquo;Are you paying attention where the money is moving in crypto or are you still only watching bitcoin?&rdquo;</p>
+        <p>A month ago, none of us had heard of HYPE. But now we do and that&rsquo;s one less thing that flies under our radar.</p>
+      </div>
+      </div>
+    </article>
+
+    <aside class="issue-rail">
+
+      <div class="rail-block">
+        <p class="eb rail-title" style="margin-top:0;">Today&rsquo;s session &middot; US weekend</p>
+        <div class="rail-stat">
+          <span class="rail-label">Risk mood</span>
+          <span class="rail-value">Risk-off</span>
+        </div>
+        <div class="rail-stat">
+          <span class="rail-label">Focus</span>
+          <span class="rail-value">Cryptocurrency &amp; digital assets</span>
+        </div>
+        <div class="rail-stat">
+          <span class="rail-label">Theme</span>
+          <span class="rail-value">HYPE ETF inflows vs. Bitcoin selloff</span>
+        </div>
+      </div>
+
+      <div class="rail-block">
+        <p class="eb" style="margin-top:0;">Asset direction</p>
+        <table class="rail-table">
+          <tr><td>HYPE ETFs</td><td class="dir up">&uarr; $160M</td></tr>
+          <tr><td>Bitcoin &amp; Ether ETFs</td><td class="dir down">&darr; Down</td></tr>
+          <tr><td>US dollar</td><td class="dir up">&uarr; Mild support</td></tr>
+          <tr><td>EM currencies</td><td class="dir down">&darr; Under pressure</td></tr>
+        </table>
+      </div>
+
+      <div class="rail-block">
+        <p class="eb" style="margin-top:0;">Key term</p>
+        <p class="rail-term" id="token-buyback">Token buyback</p>
+        <p class="rail-def">When a crypto platform uses its own revenue to purchase and retire its tokens. The same logic as a company buying back its own shares to return value to holders.</p>
+      </div>
+
+       <p class="eb" style="margin-top:22px;">Terms in this issue</p>
+        <div class="term-grid">
+          <div class="term-box"><span>Token buyback</span></div>
+          <div class="term-box"><span>Decentralized exchange (DEX)</span></div>
+          <div class="term-box"><span>Perpetual futures</span></div>
+          <div class="term-box"><span>Expense ratio</span></div>
+        </div>
+        <a class="rail-link" href="glossary.html">See full glossary &rarr;</a>
+
+    </aside>
+
+    <div class="references-section">
+      <h2 class="section-label">Additional references</h2>
+      <ul class="references-list">
+        <li>Caleb &amp; Brown. (n.d.). Crypto volatility. <a href="https://calebandbrown.com/blog/crypto-volatility/" target="_blank" rel="noopener">https://calebandbrown.com/blog/crypto-volatility/</a></li>
+        <li>CNBC. (n.d.). BHYP real-time stock quote. <a href="https://www.cnbc.com/quotes/BHYP/" target="_blank" rel="noopener">https://www.cnbc.com/quotes/BHYP/</a></li>
+        <li>Coinbase. (n.d.). What is a blockchain? <em>Crypto Basics.</em> <a href="https://www.coinbase.com/learn/crypto-basics/what-is-a-blockchain" target="_blank" rel="noopener">https://www.coinbase.com/learn/crypto-basics/what-is-a-blockchain</a></li>
+        <li>Coinbase. (n.d.). What is DeFi? <em>Crypto Basics.</em> <a href="https://www.coinbase.com/learn/crypto-basics/what-is-defi" target="_blank" rel="noopener">https://www.coinbase.com/learn/crypto-basics/what-is-defi</a></li>
+        <li>CoinDesk. (2026, March 20). Iran war volatility is driving oil trading boom on Hyperliquid, says JPMorgan. <a href="https://www.coindesk.com/business/2026/03/20/iran-war-volatility-is-driving-oil-trading-boom-on-hyperliquid-says-jpmorgan/" target="_blank" rel="noopener">https://www.coindesk.com/business/2026/03/20/iran-war-volatility-is-driving-oil-trading-boom-on-hyperliquid-says-jpmorgan/</a></li>
+        <li>CoinDesk. (2026, June 3). Grayscale launches lowest-fee U.S. Hyperliquid ETF as competition heats up around HYPE. <a href="https://www.coindesk.com/markets/2026/06/03/grayscale-launches-lowest-fee-u-s-hyperliquid-etf-as-competition-heats-up-around-hype/" target="_blank" rel="noopener">https://www.coindesk.com/markets/2026/06/03/grayscale-launches-lowest-fee-u-s-hyperliquid-etf-as-competition-heats-up-around-hype/</a></li>
+        <li>CoinDesk. (n.d.). Putting crypto volatility in context: What we can learn from the history of bitcoin crashes. <a href="https://www.coindesk.com/learn/putting-crypto-volatility-in-context-what-we-can-learn-from-the-history-of-bitcoin-crashes/" target="_blank" rel="noopener">https://www.coindesk.com/learn/putting-crypto-volatility-in-context-what-we-can-learn-from-the-history-of-bitcoin-crashes/</a></li>
+        <li>CoinGecko. (n.d.). Bitcoin price page and coin data. <a href="https://www.coingecko.com/en/coins/bitcoin" target="_blank" rel="noopener">https://www.coingecko.com/en/coins/bitcoin</a></li>
+        <li>Congressional Research Service. (n.d.). CRS product R48883. <em>Congress.gov.</em> <a href="https://www.congress.gov/crs-product/R48883" target="_blank" rel="noopener">https://www.congress.gov/crs-product/R48883</a></li>
+        <li>Escobar, K. (2026, June 6). ETF Edge: Bitcoin is cratering, but a new Wall Street crypto hype is on the rise. <em>CNBC.</em> <a href="https://www.cnbc.com/2026/06/06/bitcoin-price-crash-crypto-hype-hyperliquid-etfs.html" target="_blank" rel="noopener">https://www.cnbc.com/2026/06/06/bitcoin-price-crash-crypto-hype-hyperliquid-etfs.html</a></li>
+        <li>ETF.com. (n.d.). HYPE token ETFs: What Hyperliquid is and whether THYP, BHYP, or HYPG is worth buying. <a href="https://www.etf.com/sections/news/hype-token-etfs-what-hyperliquid-and-whether-thyp-bhyp-or-hypg-worth-buying" target="_blank" rel="noopener">https://www.etf.com/sections/news/hype-token-etfs-what-hyperliquid-and-whether-thyp-bhyp-or-hypg-worth-buying</a></li>
+        <li>Grayscale. (n.d.). Grayscale Hyperliquid Staking ETF (HYPG). <a href="https://etfs.grayscale.com/hypg" target="_blank" rel="noopener">https://etfs.grayscale.com/hypg</a></li>
+        <li>PricewaterhouseCoopers. (n.d.). Bitcoin, blockchain, and cryptocurrency. <em>PwC Fintech Financial Services.</em> <a href="https://www.pwc.com/us/en/industries/financial-services/fintech/bitcoin-blockchain-cryptocurrency.html" target="_blank" rel="noopener">https://www.pwc.com/us/en/industries/financial-services/fintech/bitcoin-blockchain-cryptocurrency.html</a></li>
+        <li>PricewaterhouseCoopers. (n.d.). Understanding cryptocurrency and digital assets. <em>PwC Tech Effect.</em> <a href="https://www.pwc.com/us/en/tech-effect/emerging-tech/understanding-cryptocurrency-digital-assets.html" target="_blank" rel="noopener">https://www.pwc.com/us/en/tech-effect/emerging-tech/understanding-cryptocurrency-digital-assets.html</a></li>
+        <li>The Motley Fool. (n.d.). Cryptocurrency ETF: Financials market sectors. <a href="https://www.fool.com/investing/stock-market/market-sectors/financials/cryptocurrency-stocks/cryptocurrency-etf/" target="_blank" rel="noopener">https://www.fool.com/investing/stock-market/market-sectors/financials/cryptocurrency-stocks/cryptocurrency-etf/</a></li>
+        <li>U.S. News &amp; World Report. (n.d.). Best cryptocurrency ETFs to buy. <em>Money Investing.</em> <a href="https://money.usnews.com/investing/articles/best-cryptocurrency-etfs-to-buy" target="_blank" rel="noopener">https://money.usnews.com/investing/articles/best-cryptocurrency-etfs-to-buy</a></li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <a class="footer-brand" href="index.html">
+        <img src="logo.png" alt="WSG logo">
+        <span>Wall Street for the Girls</span>
+      </a>
+      <ul class="footer-links">
+        <li><a href="archive.html">Archive</a></li>
+        <li><a href="financial-syllabus.html">Financial Syllabus</a></li>
+        <li><a href="glossary.html">Glossary</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="https://wallstreetforthegirls.substack.com" target="_blank" rel="noopener">Substack</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Wall Street for the Girls</span>
+      <em>Educational purposes only: reflects personal analysis, not financial advice.</em>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Issue No. 4: SpaceX Is the First Bombshell to Enter the Wall Street Villa at $2.1 Trillion — Wall Street for the Girls</title>
+<meta name="description" content="SpaceX went public and closed its first day worth roughly $2.1 trillion, making Elon Musk the first trillionaire on record. What a bookrunner actually does, why day-one demand isn't the same as a justified valuation, and what it means for your money.">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500;1,6..72,600&family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#faf7f1; --ink:#22201d; --burgundy:#7d1f42; --muted:#5c574e;
+    --hint:#a39c8c; --line:#ddd7cb; --line-soft:#ece7dc; --body:#3a3733;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--cream); color:var(--ink); font-family:'Inter',sans-serif;}
+  a{color:inherit;}
+  .wrap{max-width:1200px; margin:0 auto; padding:0 24px;}
+
+  .folio-line{border-bottom:0.5px solid var(--line); font-size:11px; letter-spacing:0.03em; color:var(--hint);}
+  .folio-line .wrap{display:flex; justify-content:space-between; padding:10px 24px;}
+
+  .site-header{border-bottom:0.5px solid var(--line);}
+  .nav{display:flex; justify-content:space-between; align-items:center; padding:16px 24px;}
+  .nav-brand{display:flex; align-items:center; gap:8px; text-decoration:none; color:var(--ink); font-family:'Newsreader',serif; font-weight:600; font-size:16px;}
+  .nav-brand img{height:28px; width:28px; border-radius:50%;}
+  .nav-brand em{font-style:italic; color:var(--burgundy);}
+  .nav-links{list-style:none; display:flex; gap:24px; margin:0; padding:0; align-items:center;}
+  .nav-links a{text-decoration:none; color:var(--muted); font-size:12px; letter-spacing:0.04em;}
+  .nav-links a.active{color:var(--burgundy); border-bottom:1.5px solid var(--burgundy); padding-bottom:2px;}
+  .nav-links a.nav-cta{background:var(--ink); color:var(--cream); padding:9px 18px; border-radius:2px;}
+
+  .issue-page{padding:48px 0 80px;}
+  .issue-layout{display:grid; grid-template-columns:minmax(0,640px) minmax(0,320px); gap:32px; align-items:start; justify-content:center;}
+
+  .issue-dateline{font-size:11.5px; letter-spacing:0.03em; color:var(--burgundy); margin:0 0 10px;}
+  .issue-main h1{font-family:'Newsreader',serif; font-weight:600; font-size:30px; line-height:1.3; margin:0 0 20px; max-width:620px;}
+  .issue-main p{font-size:14px; line-height:1.75; color:var(--body); margin:0 0 16px; text-align:justify; hyphens:auto;}
+
+  .eb{font-size:10.5px; letter-spacing:0.08em; color:var(--burgundy); text-transform:uppercase; margin:28px 0 8px;}
+  .rail-title{font-weight:700; font-size:12px;}
+  .section-label{font-family:'Newsreader',serif; font-size:17px; font-weight:600; margin:30px 0 12px; color:var(--burgundy);}
+  .term-link{color:var(--burgundy); text-decoration:none; border-bottom:1.5px dotted var(--burgundy);}
+
+  .issue-copy{max-width:620px;}
+  .signal-noise{display:grid; grid-template-columns:1fr 1fr; gap:0; margin:28px 0 16px; padding-top:24px; border-top:0.5px solid var(--line);}
+  .signal-noise .eb{margin-top:0;}
+  .signal-noise p:last-child{margin-bottom:0;}
+  .signal-noise > div:first-child{padding-right:28px;}
+  .signal-noise > div:last-child{padding-left:28px; border-left:0.5px solid var(--line);}
+
+  .key-question{margin:32px 0 0; padding-top:18px; border-top:1px solid var(--ink);}
+  .key-question .key-question-text{font-family:'Newsreader',serif; font-style:italic; font-weight:700; font-size:20px; color:#7d1f42; line-height:1.6; margin:0 0 14px; text-align:center;}
+
+  p.connects-chain{margin:26px 0; padding:20px 24px; border-top:1px solid var(--ink); border-bottom:1px solid var(--ink); font-family:'Newsreader',serif; font-style:italic; font-size:15px; line-height:1.85; color:var(--body); text-align:center;}
+
+  .references-section{grid-column:1 / -1; border-top:0.5px solid var(--line); padding:36px 0 4px;}
+  .references-section .section-label{margin:0 0 14px;}
+  .references-list{list-style:none; margin:0; padding:0; max-width:900px;}
+  .references-list li{font-size:11.5px; line-height:1.7; color:var(--muted); margin-bottom:14px; text-align:justify; hyphens:auto;}
+  .references-list li a{color:var(--burgundy); text-decoration:none; word-break:break-all;}
+  .references-list li a:hover{text-decoration:underline;}
+
+  .issue-rail{border-left:0.5px solid var(--line); padding-left:28px; align-self:start;}
+  .rail-block{border-bottom:0.5px solid var(--line-soft); padding-bottom:20px; margin-bottom:20px;}
+  .rail-block:last-child{border-bottom:none; margin-bottom:0;}
+
+  .rail-stat{margin-bottom:22px;}
+  .rail-stat:last-child{margin-bottom:0;}
+  .rail-label{display:block; font-size:9.5px; letter-spacing:0.08em; color:var(--hint); margin-bottom:5px;}
+  .rail-value{display:block; font-family:'Newsreader',serif; font-style:italic; font-weight:500; font-size:14.5px; color:var(--ink); line-height:1.4;}
+
+  .rail-table{width:100%; border-collapse:collapse; font-size:12px;}
+  .rail-table td{padding:7px 0; border-bottom:0.5px solid var(--line-soft); color:var(--body);}
+  .rail-table tr:last-child td{border-bottom:none;}
+  .rail-table td.dir{text-align:right; color:var(--muted); white-space:nowrap;}
+  .rail-table td.dir.down, .rail-table td.dir.up{color:var(--burgundy);}
+
+  .rail-teaser-text{font-size:12px; color:var(--muted); line-height:1.6; margin:0 0 10px;}
+  .rail-link{font-size:10.5px; color:var(--burgundy); text-decoration:none;}
+  .rail-link:hover{text-decoration:underline;}
+
+  .rail-block-featured{background:#faf1f4; border-radius:8px; padding:16px 18px 18px; border-bottom:none;}
+  .rail-block-featured .eb{margin-top:0; margin-bottom:8px;}
+  .rail-link-btn{display:inline-block; font-size:10px; letter-spacing:0.05em; color:var(--burgundy); border:0.5px solid var(--burgundy); border-radius:2px; padding:7px 12px; text-decoration:none;}
+  .rail-link-btn:hover{background:var(--burgundy); color:var(--cream);}
+
+  .rail-term{font-family:'Newsreader',serif; font-size:14px; font-weight:600; margin:0 0 5px;}
+  .rail-def{font-size:11.5px; color:var(--muted); line-height:1.6; margin:0;}
+
+  .term-grid{display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:10px 0 14px;}
+  .term-box{background:#fff; border:0.5px solid var(--line); border-radius:6px; padding:10px 12px;}
+  .term-box span{font-family:'Newsreader',serif; font-size:11.5px; font-weight:400; color:var(--ink);}
+
+  .site-footer{border-top:0.5px solid var(--line); padding:44px 0 30px;}
+  .footer-top{display:flex; justify-content:space-between; align-items:center; margin-bottom:22px; flex-wrap:wrap; gap:16px;}
+  .footer-brand{display:flex; align-items:center; gap:8px; text-decoration:none; color:var(--ink); font-weight:600; font-family:'Newsreader',serif; font-size:14px;}
+  .footer-brand img{height:24px; width:24px; border-radius:50%;}
+  .footer-links{list-style:none; display:flex; gap:18px; margin:0; padding:0; flex-wrap:wrap;}
+  .footer-links a{color:var(--muted); text-decoration:none; font-size:12px;}
+  .footer-bottom{display:flex; justify-content:space-between; font-size:11px; color:var(--hint); border-top:0.5px solid var(--line); padding-top:16px; flex-wrap:wrap; gap:8px;}
+
+  a:focus-visible, .nav-cta:focus-visible{outline:2px solid var(--burgundy); outline-offset:2px;}
+
+  @media (max-width:600px){
+    .signal-noise{grid-template-columns:1fr;}
+    .signal-noise > div:first-child{padding-right:0;}
+    .signal-noise > div:last-child{padding-left:0; border-left:none; margin-top:20px;}
+  }
+
+  @media (max-width:860px){
+    .issue-layout{grid-template-columns:1fr;}
+    .issue-rail{border-left:none; padding-left:0; border-top:0.5px solid var(--line); padding-top:28px; margin-top:8px;}
+    .nav-links{display:none;}
+  }
+</style>
+</head>
+<body>
+
+<div class="folio-line">
+  <div class="wrap">
+    <span><b>Wall Street for the Girls</b> &middot; A weekly market brief</span>
+    <span>Issue No. 4 &middot; June 14, 2026</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="nav-brand" href="index.html">
+      <img src="logo.png" alt="WSG logo">
+      <span>Wall Street <em>for the girls</em></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="archive.html" class="active">Archive</a></li>
+      <li><a href="financial-syllabus.html">Financial Syllabus</a></li>
+      <li><a href="glossary.html">Glossary</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a class="nav-cta" href="https://wallstreetforthegirls.substack.com" target="_blank" rel="noopener">Subscribe</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+<section class="issue-page">
+  <div class="wrap issue-layout">
+
+    <article class="issue-main">
+      <p class="issue-dateline">&mdash; June 14, 2026 &middot; Issue No. 4</p>
+      <h1>SpaceX is the first bombshell to enter the Wall Street villa at $2.1 trillion.</h1>
+
+      <div class="issue-copy">
+      <p style="font-style:italic; font-size:16px; color:#3a3733; margin-bottom:10px;">Here's what you need to know this week, and why it matters.</p>
+
+      <p>Last week we told you three bombshells were about to enter the Wall Street villa. On Friday, SpaceX was the first to walk in.</p>
+
+      <p>SpaceX began trading on the Nasdaq and the entrance was everything we expected.</p>
+
+      <p>The stock opened at $150, climbed more than 19% to $160.95, and peaked at $176.52 during the session. Over 500 million shares traded in a single day, more than any other listing has managed all year. When the dust settled, the market had put its number on SpaceX at roughly $2.1 trillion.</p>
+
+      <p>To put that in context, $2.1 trillion puts SpaceX in the same conversation as Apple and Microsoft, two of the most valuable companies. Only a tiny number of companies in history have ever reached this valuation, and SpaceX got there on its first day of public trading.</p>
+
+      <p>That figure also made Elon Musk the first trillionaire on record. Thousands of new millionaires and several new billionaires are expected to come out of it too, the early employees and private investors who held their places on the guest list while the rest of us watched from outside.</p>
+
+      <p>What makes this number even more striking is something we covered in detail last week. SpaceX is not yet profitable, meaning the $2.1 trillion valuation is not a reflection of what the company earns today. It is a bet on what it will earn eventually, and a very large one.</p>
+
+      <p>Part of that bet rests on Starlink, SpaceX&rsquo;s satellite internet service that beams broadband from space to anywhere on earth. Starlink is growing, but some investors flagged concerns about how fast before the listing even opened, which is part of why not everyone is treating Friday as a straightforward success.</p>
+
+      <p>When a company this large lists, it shifts capital around the whole market and sets the tone for every other company waiting in line behind it. Over time it can also end up inside the index funds and pension pots that many of us already hold. A major index like the S&amp;P 500 will consider SpaceX for inclusion if and when it meets the criteria, including a profitability requirement it has not yet reached. At that point every passive fund tracking that index automatically buys shares in it. That includes most workplace pensions. The decision gets made for you whether you were paying attention or not.</p>
+
+      <p>Retail investors, meaning everyday individuals rather than large funds, raced to get a piece of SpaceX, partly driven by years of loyalty to Musk through Tesla. SpaceX gave the retail class a smaller allocation than many had hoped for, so a lot of people walked away with only a fraction of what they bid for.</p>
+
+      <p>But SpaceX was still the most bought stock among retail traders on the day, and one of the most discussed names on Reddit&rsquo;s WallStreetBets forum in the days leading up to the listing.</p>
+
+      <p>Not everyone is ready to call it a clear success though. Jay Woods, chief market strategist at Freedom Capital Markets, acknowledged the demand was clearly there, but raised a very important question. Can the stock hold its opening price, or was Friday&rsquo;s excitement driven by a retail crowd that will fade once the hype does?</p>
+
+      <p>Other space companies fell as money rotated toward the new giant, with Redwire down more than 11% and Rocket Lab more than 10%. Goldman Sachs, the bank that ran the deal, rose more than 2% and was among the top gainers in the banking sector. And in a quietly significant detail, Tesla, Musk&rsquo;s other company and a long time retail favourite, now sits below SpaceX in <a class="term-link" href="glossary.html#market-capitalization">market value</a>.</p>
+
+      <p>SpaceX is through the door, but she is not alone for long.</p>
+
+      <p>Anthropic and OpenAI have recently filed confidentially with regulators, and the villa is about to get a lot more crowded.</p>
+
+      <p>But before the next bombshell walks in, the question worth sitting with is whether $2.1 trillion was the right price for this one.</p>
+
+      <div class="signal-noise">
+        <div>
+          <p class="eb">&#10022; The signal</p>
+          <p>The size and depth of the order book is the real signal. More than 500 million shares traded, the heaviest debut of the year, and demand was strong enough that many investors received only part of what they asked for.</p>
+          <p>The bigger story isn&rsquo;t the price. It&rsquo;s what a debut this clean unlocks for every company still waiting in line behind it. SpaceX is the test case. If the stock holds its opening price over the coming weeks, Anthropic and OpenAI have a far easier path through the door behind it. If it fades, the mood shifts for everyone still waiting.</p>
+        </div>
+        <div>
+          <p class="eb">&#10022; The noise</p>
+          <p>&ldquo;Musk becomes the first trillionaire&rdquo; is the headline everyone will repeat, and it is genuinely a first. But for markets it is secondary. His wealth rises and falls with the share price, and it tells you nothing about whether $2.1 trillion is the right number for the company itself.</p>
+          <p>The day one price swings are also mostly noise for now. The stock ran from a $150 open to a $176.52 high and settled at $160.95, and trading desks had predicted it might reach $200. Single session moves on a debut are completely normal. As Woods put it, you have to give it a full trading week before reading much into the price.</p>
+        </div>
+      </div>
+
+      <h2 class="section-label">What&rsquo;s moving in markets</h2>
+      <p><b>SpaceX</b> is the entire story this week. The stock opened at $150, climbed more than 19% to $160.95, and ended the day worth around $2.1 trillion. Volume was the largest of any listing this year. The strength of demand was clear. Whether it lasts is the open question, particularly given that SpaceX is not yet profitable and part of its valuation rests on Starlink still being in its growth phase.</p>
+      <p><b>Space sector peers</b> went the other way. As investors crowded into the new giant, they pulled money out of the smaller names around it. Redwire fell more than 11% and Rocket Lab more than 10%, and a broad basket of space stocks dropped too. This is a rotation, not a rejection of the sector. The same enthusiasm that lifted SpaceX simply came at their expense.</p>
+      <p><b>Goldman Sachs</b> was a quiet winner. As the bank that led the SpaceX deal, it earned both fees and credibility, and its shares rose more than 2%, placing it among the biggest gainers in the banking sector that day. When a landmark IPO goes well, the bank that ran it shares in the glow.</p>
+      <p><b>Tesla</b> had a muddled session, swinging between small gains and losses. The notable part is structural rather than daily. Musk&rsquo;s electric car company, long a retail favourite, is now worth less than his rocket company, a neat marker of how far SpaceX&rsquo;s valuation has stretched.</p>
+      <p>The <b>IPO pipeline</b> is the forward-looking mover. SpaceX&rsquo;s debut is widely expected to encourage the listings lined up behind it, and both Anthropic and OpenAI have recently filed confidentially with regulators. One successful mega-listing changes the calculation for everyone still waiting.</p>
+
+      <h2 class="section-label">Currency &amp; interest rate</h2>
+      <div class="signal-noise">
+        <div>
+          <p class="eb">Where currencies stand</p>
+          <p><b>USD:</b> This week&rsquo;s story is an equity event, not a currency one, so the FX picture here is structural context rather than live news. A major US listing of this size typically pulls some global capital into dollar denominated assets as foreign investors participate, which creates mild upward pressure on the dollar. The move tends to be modest, but the direction is consistent with how markets usually respond to large US listings.</p>
+          <p><b>EUR/USD:</b> No direct signal from this story. Watch for broader dollar strength if IPO enthusiasm continues drawing in foreign money as more listings approach.</p>
+          <p><b>EM FX:</b> No direct signal this week.</p>
+        </div>
+        <div>
+          <p class="eb">The yield picture</p>
+          <p><b>Rates:</b> The Fed&rsquo;s position and the broader rate environment are not directly touched by a single IPO debut.</p>
+        </div>
+      </div>
+
+      <h2 class="section-label">How it all connects</h2>
+      <p class="connects-chain">SpaceX prices at $135, opens at $150 and jumps 19% &rarr; roughly $2.1 trillion market value &rarr; company is not yet profitable, valuation rests on Starlink&rsquo;s growth potential &rarr; demand exceeds shares available &rarr; strong order book reassures the market &rarr; the frozen IPO pipeline reopens &rarr; Anthropic and OpenAI clear a path to their own listings &rarr; public markets begin pricing the giants private investors built</p>
+      <p>What makes this debut unusual is the gap between price and proof. As we covered last week, SpaceX is not yet profitable, and a significant portion of its $2.1 trillion valuation rests on Starlink, its satellite internet business that is still in its growth phase. The CNBC article specifically flags that some investors raised concerns about Starlink&rsquo;s growth before the listing even opened. Public markets are usually more demanding than private ones, and investors here are paying an enormous sum for what SpaceX might become rather than what it earns today. The thing that matters beyond SpaceX is the ripple effect. When one listing this size goes smoothly, it lowers the perceived risk for every company in line behind it. A single good debut can reopen a door that had been stuck for years.</p>
+      <p>The harder part is reading the demand. Because retail investors received smaller allocations than they wanted, there is now a pool of buyers still looking for a stable moment to get in. That pent-up demand can support the price in the short term. But it can also be the very thing Woods warned about, an excited crowd inflating a debut that still has to prove itself once the initial rush fades. This is why day one is not the verdict. The real test is whether the stock holds its opening level once a full week of ordinary trading replaces the excitement of the entrance.</p>
+
+      <h2 class="section-label">Why this matters to you</h2>
+      <p style="font-style:italic;"><b>The broader market picture</b></p>
+      <p>Markets are in a risk-on mood this week and a blockbuster debut does that. But a strong first day is not the same as a settled valuation, and the bigger structural point sits underneath the noise. When companies this large list on a major exchange they may eventually qualify for inclusion in major indices. At that point every passive fund tracking those indices automatically buys shares, and that includes most workplace pensions and retirement accounts.</p>
+      <p style="font-style:italic;"><b>For your business or portfolio</b></p>
+      <ul style="font-size:14px; line-height:1.75; color:var(--body); padding-left:20px; margin:0 0 16px;">
+        <li style="margin-bottom:12px;">If you are an <b>importer</b>: No direct currency impact from this story. Keep an eye on the dollar in case IPO enthusiasm draws in enough foreign capital to firm it up.</li>
+        <li style="margin-bottom:12px;">If you are an <b>exporter</b>: If the dollar strengthens on heavy foreign participation, holders of dollar receivables may get a slightly better rate. Worth watching as more listings approach.</li>
+        <li style="margin-bottom:12px;">If you are a <b>borrower</b>: No direct rate impact. IPO market activity does not change the Fed&rsquo;s hold position.</li>
+        <li>If you are an <b>investor</b>: SpaceX and the names filing behind it will likely enter the indices you already own. Understand the valuation and the profitability gap before they arrive automatically and be cautious about chasing a first-day pop.</li>
+      </ul>
+
+      <div class="key-question">
+        <p class="key-question-text">&ldquo;Do you know the difference between a great debut and a great investment?&rdquo;</p>
+        <p>Friday told us the demand was there. But demand on day one and a justified valuation are two very different things, and only one of them matters for your portfolio in the long run.</p>
+      </div>
+      </div>
+    </article>
+
+    <aside class="issue-rail">
+
+      <div class="rail-block">
+        <p class="eb rail-title" style="margin-top:0;">Today&rsquo;s session &middot; US markets</p>
+        <div class="rail-stat">
+          <span class="rail-label">Risk mood</span>
+          <span class="rail-value">Risk-on</span>
+        </div>
+        <div class="rail-stat">
+          <span class="rail-label">Focus</span>
+          <span class="rail-value">Equities</span>
+        </div>
+        <div class="rail-stat">
+          <span class="rail-label">Theme</span>
+          <span class="rail-value">SpaceX debut &amp; the first trillionaire</span>
+        </div>
+      </div>
+
+      <div class="rail-block">
+        <p class="eb" style="margin-top:0;">Asset direction</p>
+        <table class="rail-table">
+          <tr><td>SpaceX</td><td class="dir up">&uarr; Up 19%</td></tr>
+          <tr><td>Space peers</td><td class="dir down">&darr; Down 10&ndash;11%</td></tr>
+          <tr><td>Goldman Sachs</td><td class="dir up">&uarr; Up 2%</td></tr>
+          <tr><td>Tesla</td><td class="dir">&harr;</td></tr>
+          <tr><td>IPO pipeline</td><td class="dir up">&uarr; Reopening</td></tr>
+        </table>
+      </div>
+
+      <div class="rail-block">
+        <p class="eb" style="margin-top:0;">Key term</p>
+        <p class="rail-term" id="market-capitalization">Market capitalization</p>
+        <p class="rail-def">The total value of a company, found by multiplying its share price by the number of shares in existence. SpaceX&rsquo;s sits near $2.1 trillion.</p>
+      </div>
+
+       <p class="eb" style="margin-top:22px;">Terms in this issue</p>
+        <div class="term-grid">
+          <div class="term-box"><span>Market capitalization</span></div>
+          <div class="term-box"><span>Bookrunner</span></div>
+          <div class="term-box"><span>Retail vs institutional investors</span></div>
+        </div>
+        <a class="rail-link" href="glossary.html">See full glossary &rarr;</a>
+
+    </aside>
+
+    <div class="references-section">
+      <h2 class="section-label">Additional references</h2>
+      <ul class="references-list">
+        <li>Apple Inc. (2026). <em>Market capitalisation reference.</em> Nasdaq. <a href="https://www.nasdaq.com/market-activity/stocks/aapl" target="_blank" rel="noopener">https://www.nasdaq.com/market-activity/stocks/aapl</a></li>
+        <li>Microsoft Corporation. (2026). <em>Market capitalisation reference.</em> Nasdaq. <a href="https://www.nasdaq.com/market-activity/stocks/msft" target="_blank" rel="noopener">https://www.nasdaq.com/market-activity/stocks/msft</a></li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <a class="footer-brand" href="index.html">
+        <img src="logo.png" alt="WSG logo">
+        <span>Wall Street for the Girls</span>
+      </a>
+      <ul class="footer-links">
+        <li><a href="archive.html">Archive</a></li>
+        <li><a href="financial-syllabus.html">Financial Syllabus</a></li>
+        <li><a href="glossary.html">Glossary</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="https://wallstreetforthegirls.substack.com" target="_blank" rel="noopener">Substack</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Wall Street for the Girls</span>
+      <em>Educational purposes only: reflects personal analysis, not financial advice.</em>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
