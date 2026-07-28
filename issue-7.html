@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Issue No. 7: Inflation Is Like Glitter, Easy to Spread, Impossible to Clean Up — Wall Street for the Girls</title>
+<meta name="description" content="The ECB just hiked rates even as the ceasefire holds and oil falls. What second-round effects actually are, why inflation is proving sticky, and what it means for your money.">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500;1,6..72,600&family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#faf7f1; --ink:#22201d; --burgundy:#7d1f42; --muted:#5c574e;
+    --hint:#a39c8c; --line:#ddd7cb; --line-soft:#ece7dc; --body:#3a3733;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--cream); color:var(--ink); font-family:'Inter',sans-serif;}
+  a{color:inherit;}
+  .wrap{max-width:1200px; margin:0 auto; padding:0 24px;}
+
+  .folio-line{border-bottom:0.5px solid var(--line); font-size:11px; letter-spacing:0.03em; color:var(--hint);}
+  .folio-line .wrap{display:flex; justify-content:space-between; padding:10px 24px;}
+
+  .site-header{border-bottom:0.5px solid var(--line);}
+  .nav{display:flex; justify-content:space-between; align-items:center; padding:16px 24px;}
+  .nav-brand{display:flex; align-items:center; gap:8px; text-decoration:none; color:var(--ink); font-family:'Newsreader',serif; font-weight:600; font-size:16px;}
+  .nav-brand img{height:28px; width:28px; border-radius:50%;}
+  .nav-brand em{font-style:italic; color:var(--burgundy);}
+  .nav-links{list-style:none; display:flex; gap:24px; margin:0; padding:0; align-items:center;}
+  .nav-links a{text-decoration:none; color:var(--muted); font-size:12px; letter-spacing:0.04em;}
+  .nav-links a.active{color:var(--burgundy); border-bottom:1.5px solid var(--burgundy); padding-bottom:2px;}
+  .nav-links a.nav-cta{background:var(--ink); color:var(--cream); padding:9px 18px; border-radius:2px;}
+
+  .issue-page{padding:48px 0 80px;}
+  .issue-layout{display:grid; grid-template-columns:minmax(0,640px) minmax(0,320px); gap:32px; align-items:start; justify-content:center;}
+
+  .issue-dateline{font-size:11.5px; letter-spacing:0.03em; color:var(--burgundy); margin:0 0 10px;}
+  .issue-main h1{font-family:'Newsreader',serif; font-weight:600; font-size:30px; line-height:1.3; margin:0 0 20px; max-width:620px;}
+  .issue-main p{font-size:14px; line-height:1.75; color:var(--body); margin:0 0 16px; text-align:justify; hyphens:auto;}
+
+  .eb{font-size:10.5px; letter-spacing:0.08em; color:var(--burgundy); text-transform:uppercase; margin:28px 0 8px;}
+  .rail-title{font-weight:700; font-size:12px;}
+  .section-label{font-family:'Newsreader',serif; font-size:17px; font-weight:600; margin:30px 0 12px; color:var(--burgundy);}
+  .term-link{color:var(--burgundy); text-decoration:none; border-bottom:1.5px dotted var(--burgundy);}
+
+  .issue-copy{max-width:620px;}
+  .signal-noise{display:grid; grid-template-columns:1fr 1fr; gap:0; margin:28px 0 16px; padding-top:24px; border-top:0.5px solid var(--line);}
+  .signal-noise .eb{margin-top:0;}
+  .signal-noise p:last-child{margin-bottom:0;}
+  .signal-noise > div:first-child{padding-right:28px;}
+  .signal-noise > div:last-child{padding-left:28px; border-left:0.5px solid var(--line);}
+
+  .key-question{margin:32px 0 0; padding-top:18px; border-top:1px solid var(--ink);}
+  .key-question .key-question-text{font-family:'Newsreader',serif; font-style:italic; font-weight:700; font-size:20px; color:#7d1f42; line-height:1.6; margin:0 0 14px; text-align:center;}
+
+  p.connects-chain{margin:26px 0; padding:20px 24px; border-top:1px solid var(--ink); border-bottom:1px solid var(--ink); font-family:'Newsreader',serif; font-style:italic; font-size:15px; line-height:1.85; color:var(--body); text-align:center;}
+
+  .references-section{grid-column:1 / -1; border-top:0.5px solid var(--line); padding:36px 0 4px;}
+  .references-section .section-label{margin:0 0 14px;}
+  .references-list{list-style:none; margin:0; padding:0; max-width:900px;}
+  .references-list li{font-size:11.5px; line-height:1.7; color:var(--muted); margin-bottom:14px; text-align:justify; hyphens:auto;}
+  .references-list li a{color:var(--burgundy); text-decoration:none; word-break:break-all;}
+  .references-list li a:hover{text-decoration:underline;}
+
+  .issue-rail{border-left:0.5px solid var(--line); padding-left:28px; align-self:start;}
+  .rail-block{border-bottom:0.5px solid var(--line-soft); padding-bottom:20px; margin-bottom:20px;}
+  .rail-block:last-child{border-bottom:none; margin-bottom:0;}
+
+  .rail-stat{margin-bottom:22px;}
+  .rail-stat:last-child{margin-bottom:0;}
+  .rail-label{display:block; font-size:9.5px; letter-spacing:0.08em; color:var(--hint); margin-bottom:5px;}
+  .rail-value{display:block; font-family:'Newsreader',serif; font-style:italic; font-weight:500; font-size:14.5px; color:var(--ink); line-height:1.4;}
+
+  .rail-table{width:100%; border-collapse:collapse; font-size:12px;}
+  .rail-table td{padding:7px 0; border-bottom:0.5px solid var(--line-soft); color:var(--body);}
+  .rail-table tr:last-child td{border-bottom:none;}
+  .rail-table td.dir{text-align:right; color:var(--muted); white-space:nowrap;}
+  .rail-table td.dir.down, .rail-table td.dir.up{color:var(--burgundy);}
+
+  .rail-teaser-text{font-size:12px; color:var(--muted); line-height:1.6; margin:0 0 10px;}
+  .rail-link{font-size:10.5px; color:var(--burgundy); text-decoration:none;}
+  .rail-link:hover{text-decoration:underline;}
+
+  .rail-block-featured{background:#faf1f4; border-radius:8px; padding:16px 18px 18px; border-bottom:none;}
+  .rail-block-featured .eb{margin-top:0; margin-bottom:8px;}
+  .rail-link-btn{display:inline-block; font-size:10px; letter-spacing:0.05em; color:var(--burgundy); border:0.5px solid var(--burgundy); border-radius:2px; padding:7px 12px; text-decoration:none;}
+  .rail-link-btn:hover{background:var(--burgundy); color:var(--cream);}
+
+  .rail-term{font-family:'Newsreader',serif; font-size:14px; font-weight:600; margin:0 0 5px;}
+  .rail-def{font-size:11.5px; color:var(--muted); line-height:1.6; margin:0;}
+
+  .term-grid{display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:10px 0 14px;}
+  .term-box{background:#fff; border:0.5px solid var(--line); border-radius:6px; padding:10px 12px;}
+  .term-box span{font-family:'Newsreader',serif; font-size:11.5px; font-weight:400; color:var(--ink);}
+
+  .site-footer{border-top:0.5px solid var(--line); padding:44px 0 30px;}
+  .footer-top{display:flex; justify-content:space-between; align-items:center; margin-bottom:22px; flex-wrap:wrap; gap:16px;}
+  .footer-brand{display:flex; align-items:center; gap:8px; text-decoration:none; color:var(--ink); font-weight:600; font-family:'Newsreader',serif; font-size:14px;}
+  .footer-brand img{height:24px; width:24px; border-radius:50%;}
+  .footer-links{list-style:none; display:flex; gap:18px; margin:0; padding:0; flex-wrap:wrap;}
+  .footer-links a{color:var(--muted); text-decoration:none; font-size:12px;}
+  .footer-bottom{display:flex; justify-content:space-between; font-size:11px; color:var(--hint); border-top:0.5px solid var(--line); padding-top:16px; flex-wrap:wrap; gap:8px;}
+
+  a:focus-visible, .nav-cta:focus-visible{outline:2px solid var(--burgundy); outline-offset:2px;}
+
+  @media (max-width:600px){
+    .signal-noise{grid-template-columns:1fr;}
+    .signal-noise > div:first-child{padding-right:0;}
+    .signal-noise > div:last-child{padding-left:0; border-left:none; margin-top:20px;}
+  }
+
+  @media (max-width:860px){
+    .issue-layout{grid-template-columns:1fr;}
+    .issue-rail{border-left:none; padding-left:0; border-top:0.5px solid var(--line); padding-top:28px; margin-top:8px;}
+    .nav-links{display:none;}
+  }
+</style>
+</head>
+<body>
+
+<div class="folio-line">
+  <div class="wrap">
+    <span><b>Wall Street for the Girls</b> &middot; A weekly market brief</span>
+    <span>Issue No. 7 &middot; June 24, 2026</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="nav-brand" href="index.html">
+      <img src="logo.png" alt="WSG logo">
+      <span>Wall Street <em>for the girls</em></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="archive.html" class="active">Archive</a></li>
+      <li><a href="financial-syllabus.html">Financial Syllabus</a></li>
+      <li><a href="glossary.html">Glossary</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a class="nav-cta" href="https://wallstreetforthegirls.substack.com" target="_blank" rel="noopener">Subscribe</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+<section class="issue-page">
+  <div class="wrap issue-layout">
+
+    <article class="issue-main">
+      <p class="issue-dateline">&mdash; June 24, 2026 &middot; Issue No. 7</p>
+      <h1>Inflation is like glitter: easy to spread, impossible to clean up.</h1>
+
+      <div class="issue-copy">
+      <p style="font-style:italic; font-size:16px; color:#3a3733; margin-bottom:10px;">Here's what you need to know this week, and why it matters.</p>
+
+      <p>Everyone loves a bit of sparkle. Glitter makes everything feel like a celebration. It is pure joy in a bottle. But that festive magic comes with a catch.</p>
+
+      <p>One innocent craft project, one birthday card, or one festival later, and it&rsquo;s suddenly everywhere. On your cheek. In your bed. In the butter, for reasons nobody can explain. You wipe, you vacuum, and you shower, swearing you finally got it all. Then days later, while you&rsquo;re curled up on the couch watching Off Campus, a single fleck catches the light right on the TV remote like nothing ever happened.</p>
+
+      <p>And just like that, you&rsquo;re back at square one.</p>
+
+      <p>Because glitter does not care how hard you scrub. It goes where it wants, stays as long as it likes, and simply refuses to leave.</p>
+
+      <p>This week, the European Central Bank told us that inflation is doing exactly the same thing.</p>
+
+      <p>For context, the European Central Bank, or ECB, is the institution that sets interest rates for the twenty-one countries that use the euro. Think of it as Europe&rsquo;s version of the US Federal Reserve.</p>
+
+      <p>On Tuesday, June 23rd 2026, its chief economist, Philip Lane, told the European Parliament in Brussels that the bank is facing the risk that inflation hovers above its goal for quite some time. His target word was stabilizes, as in the ECB wants inflation to settle back at 2% over the medium term.</p>
+
+      <p>In the central bank world, medium term basically means &ldquo;we are definitely not fixing this overnight, and it could actually take years,&rdquo; and settle back just means they want prices to stop throwing a tantrum and stay put.</p>
+
+      <p>But the message underneath what he said was less reassuring. A range of forward-looking signals point to more price pressure in the coming months, driven by rising wages and costs filtering deeper into the economy.</p>
+
+      <p>Just like those stray flecks on your TV remote, the initial party is over, but the residual mess is sticking around and proving almost impossible to sweep away.</p>
+
+      <p>This matters to you just as much as it matters to Brussels.</p>
+
+      <p>Back in Issue 1, we talked about how the conflict in the Middle East was pushing energy prices up and how those rising costs work their way into everything. Back then, it was a straightforward story where a geopolitical conflict pushed prices in one direction, and that direction was up. But what the ECB is telling us now is that the glitter has officially spread. The original spill was energy, but now that sparkle has worked its way into services, into wages, and into the wider economy. The war might be winding down, but the glitter is already deeply embedded in the carpet, and the vacuum will not get rid of it anytime soon.</p>
+
+      <p>Euro-area core inflation was revised up to 2.6%, which is higher than everyone first thought. The measures the ECB watches most closely, core inflation came in stronger than expected, and services inflation remains elevated.</p>
+
+      <p>Core inflation is the figure you get when you remove the volatile food and energy prices to see the underlying trend. Services inflation tracks the price of things like your rent, insurance, and travel rather than physical goods. Both of these tend to be stickier than a one-off jump in the price of oil. When they start rising, it is a clear sign that the glitter spill has officially soaked into the fabric of the economy.</p>
+
+      <p>Because of this, the ECB just did something it had not done in a while.</p>
+
+      <p>The ECB raised interest rates this month, its first hike since 2023, and markets are already betting on another one before the year ends.</p>
+
+      <p>Raising interest rates is the main tool a central bank has to cool inflation. It makes borrowing more expensive, which slows spending and theoretically takes the heat out of prices. But here is the part that makes this week interesting.</p>
+
+      <p>The ECB is tightening even as peace with Iran looks more likely and oil prices fall. Usually, cheaper oil means a sigh of relief for your wallet, but Lane made it clear that even with a peace deal, the economic damage is already done.</p>
+
+      <p>The spark might be gone, but the glitter is already everywhere, and the cleanup is going to take a lot more than a drop in oil prices to fix.</p>
+
+      <p>It feels totally backwards. You would think that if the conflict that caused the chaos is finally winding down, the pressure would instantly ease. But that is the exact trap of inflation. The initial crisis was just the moment the bottle dropped, and clearing up the original mess does not magically vanish the pieces that already spread. That realization is the sneaky but incredibly important shift that happened this week.</p>
+
+      <p>In the sections ahead, we are breaking down what is genuinely a new trend, what is just noise, and what all of this central bank drama actually means for your money. We are starting with the one big idea that makes the rest of this issue click into place.</p>
+
+      <div class="signal-noise">
+        <div>
+          <p class="eb">&#10022; The signal</p>
+          <p>First is that the core and services inflation came in stronger than thought and that price pressure is broadening beyond energy into the wider economy. This is the difference between a spill and a stain. Lane cited forward-looking signals, including surveys of purchasing managers and businesses&rsquo; own selling-price expectations, that point to more pressure ahead.</p>
+          <p>The second signal is wages. Lane noted &ldquo;some momentum&rdquo; there, with pay set to outpace inflation this year. This is also known as the <a class="term-link" href="glossary.html#second-round-effects">second-round effects</a>, and it also keeps inflation sticky long after oil calms down.</p>
+          <p>Several officials have independently flagged the same thing, which moves this from a worry to a trend.</p>
+        </div>
+        <div>
+          <p class="eb">&#10022; The noise</p>
+          <p>The bank&rsquo;s point is that the damage from the Middle Eastern conflict has already leaked into the wider economy and will not reverse just because the headlines improve. Treating the ceasefire as an all-clear for prices is the mistake to avoid.</p>
+          <p>The day-to-day oil move is also secondary. Brent crude slipped toward $77 a barrel after falling 3.3% on Monday, its biggest drop in almost a week. However, a single session does not tell you about inflation broadening underneath.</p>
+          <p>The exact timing of the next ECB hike is noise too. What is clear is the direction. As Slovak central-bank governor Peter Kazimir put it, &ldquo;the direction is clear and I think we still have work to do.&rdquo;</p>
+        </div>
+      </div>
+
+      <h2 class="section-label">What&rsquo;s moving in markets</h2>
+      <p>The <b>euro</b> is the currency in focus this week. A central bank that is hiking and signalling more to come tends to support its own currency. So the hawkish tone from the ECB, meaning its lean toward higher rates to fight inflation, is mildly supportive for the euro against the dollar. However, Europe&rsquo;s growth is fragile and weak growth pulls the other way keeping any euro strength modest rather than dramatic.</p>
+      <p><b>Euro-area government bond yields</b> are pushing higher. When a central bank raises rates and markets expect more, those yields climb, because new lending has to offer more to compete. The June hike, plus a second one now priced in before year-end, lifts the whole picture.</p>
+      <p><b>European equities</b> are the soft spot because higher rates raise the cost of borrowing for companies and make safer assets like bonds relatively more attractive. In addition, a recent survey of euro-zone purchasing managers showed the conflict is taking a toll on businesses across Europe, though it is not tipping the bloc into recession.</p>
+      <p><b>Oil</b> is the foundation of this story and prices are finally coming down, with Brent slipping toward $77 after a 3.3% Monday drop as the war-risk premium fades. But the real paradox this week is that the inflation set off by oil is proving sticky even as crude prices fall. That gap between dropping commodity prices and the persistent pricing pressures is exactly what second-round effects look like in real time.</p>
+      <p style="font-style:italic; color:var(--muted);"><b>Note on market context:</b> Asset directions and currency movements reflect institutional market analysis and informed structural context, rather than data explicitly disclosed within the primary ECB report.</p>
+
+      <h2 class="section-label">Currency &amp; interest rate</h2>
+      <div class="signal-noise">
+        <div>
+          <p class="eb">Where currencies stand</p>
+          <p><b>EUR/USD:</b> Mildly firmer. A hawkish ECB that is actively hiking gives the euro support, but Europe&rsquo;s weak growth keeps the move muted.</p>
+          <p><b>EUR and the broader dollar:</b> The US dollar has been consistently strong recently, held up by US rates staying higher for longer. This week&rsquo;s twist is that the euro has its own reason to gain a little ground, so the usual one-way dollar strength is facing a bit more pushback than normal.</p>
+          <p><b>Key FX level:</b> Whether a hawkish ECB can keep the euro supported even as growth weakens. That fundamental disconnect is what is driving the market.</p>
+        </div>
+        <div>
+          <p class="eb">The yield picture</p>
+          <p><b>Euro-area 10Y:</b> Rising, following the June hike. The market expects a second one before the year ends.</p>
+          <p><b>ECB:</b> Hawkish leaning and data-dependent. It hiked in June for the first time since 2023, and President Christine Lagarde said the bank must remain agile and ready to adjust as the shock evolves and there is no evidence yet of de-anchoring of inflation expectations or second-round effects that would warrant a more forceful policy response.</p>
+          <p><b>Key rates level:</b> The second ECB hike the market expects before year-end. Any change in that sentiment will instantly ripple through euro rates and the currency itself.</p>
+        </div>
+      </div>
+
+      <h2 class="section-label">How it all connects</h2>
+      <p class="connects-chain">Iran war pushes energy prices up &rarr; cost surge spills into services and wages &rarr; core and services inflation come in stronger than expected &rarr; ECB hikes and signals more &rarr; euro-area yields rise and the euro gets a modest lift &rarr; growth risks skew to the downside &rarr; stagflation squeeze</p>
+      <p>What makes this week genuinely hard to manage is that the cause and the cure no longer line up. The thing that started the fire, the war and the energy spike, is fading. Oil is falling, the ceasefire is holding, and in a simpler world that would be the end of the inflation story. But inflation has spread into places the war no longer controls, into the price of services and into wages, and those have a momentum of their own.</p>
+      <p>That is why the ECB is doing the counterintuitive thing and tightening despite the ceasefire. It is trying to break the second-round cycle where prices and wages start feeding into each other, capping the inflationary damage before it sets. The risk, and the reason the mood remains cautious, is that hiking into a fragile economy could drag growth down even further. This is the ultimate stagflation squeeze. The bank must choose between letting inflation linger or risking a recession, and right now it is choosing to fight the inflation it can still reach.</p>
+
+      <h2 class="section-label">Why this matters to you</h2>
+      <p style="font-style:italic;"><b>The broader market picture</b></p>
+      <p>Markets are in a risk-off mood this week, meaning investors are leaning toward caution and safer assets while inflation looks sticky and growth looks soft. The single most useful thing to take away is this: the relief many people expected from the Iran ceasefire, lower prices and eventually lower rates, has been pushed further out. The ECB is hiking, not cutting, and it is telling us plainly that peace alone will not bring inflation to heel. For anyone who had quietly assumed cheaper borrowing was just around the corner, this week is a reset of that timeline.</p>
+      <p style="font-style:italic;"><b>For your business or portfolio</b></p>
+      <ul style="font-size:14px; line-height:1.75; color:var(--body); padding-left:20px; margin:0 0 16px;">
+        <li style="margin-bottom:12px;">If you are an <b>importer</b>: Sticky inflation and higher euro rates lift both your input costs and your financing costs. Worth reviewing whether your hedging on upcoming euro payments still makes sense.</li>
+        <li style="margin-bottom:12px;">If you are an <b>exporter</b>: A firmer euro on ECB hawkishness can chip away at your competitiveness abroad. If you hold euro receivables, consider whether to lock in a rate before the euro firms further.</li>
+        <li style="margin-bottom:12px;">If you are a <b>borrower</b>: ECB is hiking with more expected, so euro floating-rate debt is getting pricier. This is a sensible moment to look hard at whether a fixed-rate switch fits your situation.</li>
+        <li>If you are an <b>investor</b>: Higher-for-longer euro rates pressure rate-sensitive and long-duration holdings. Ask whether your European equity and bond exposure is positioned for inflation that lingers rather than fades.</li>
+      </ul>
+
+      <div class="key-question">
+        <p class="key-question-text">&ldquo;Can central banks successfully force an economy back to normal when the global landscape is constantly changing underneath them?&rdquo;</p>
+        <p>The initial shock is over, but the structural cleanup is just beginning. Watching the ECB hike rates into a ceasefire shows that in the world of macroeconomics, resolving the crisis is only half the battle.</p>
+      </div>
+      </div>
+    </article>
+
+    <aside class="issue-rail">
+
+      <div class="rail-block">
+        <p class="eb rail-title" style="margin-top:0;">Today&rsquo;s session &middot; London</p>
+        <div class="rail-stat">
+          <span class="rail-label">Risk mood</span>
+          <span class="rail-value">Risk-off</span>
+        </div>
+        <div class="rail-stat">
+          <span class="rail-label">Focus</span>
+          <span class="rail-value">Rates &amp; inflation</span>
+        </div>
+        <div class="rail-stat">
+          <span class="rail-label">Theme</span>
+          <span class="rail-value">ECB hike &amp; sticky euro-area inflation</span>
+        </div>
+      </div>
+
+      <div class="rail-block">
+        <p class="eb" style="margin-top:0;">Asset direction</p>
+        <table class="rail-table">
+          <tr><td>EUR/USD</td><td class="dir up">&uarr;</td></tr>
+          <tr><td>Euro-area 10Y yield</td><td class="dir up">&uarr;</td></tr>
+          <tr><td>European equities</td><td class="dir down">&darr;</td></tr>
+          <tr><td>Brent crude</td><td class="dir down">&darr;</td></tr>
+        </table>
+      </div>
+
+      <div class="rail-block rail-block-featured">
+        <p class="eb" style="margin-top:0;">This issue&rsquo;s foundation</p>
+        <p class="rail-teaser-text">Before we dive in, here&rsquo;s the one thing to know this week.</p>
+        <a class="rail-link-btn" href="foundation-7.html">Read &rarr;</a>
+      </div>
+
+      <div class="rail-block rail-block-featured">
+        <p class="eb" style="margin-top:0;">This issue&rsquo;s syllabus &middot; Fixed income</p>
+        <p class="rail-teaser-text">With sticky inflation forcing the ECB to raise interest rates this month, monetary policy is driving the global financial narrative.</p>
+        <a class="rail-link-btn" href="financial-syllabus-fixed-income-7.html">Read &rarr;</a>
+      </div>
+
+      <div class="rail-block">
+        <p class="eb" style="margin-top:0;">Key term</p>
+        <p class="rail-term" id="second-round-effects">Second-round effects</p>
+        <p class="rail-def">When an initial price shock, like energy, feeds into wages and other prices, so inflation keeps going even after the original cause fades.</p>
+      </div>
+
+       <p class="eb" style="margin-top:22px;">Terms in this issue</p>
+        <div class="term-grid">
+          <div class="term-box"><span>Medium-term target</span></div>
+          <div class="term-box"><span>Core inflation</span></div>
+          <div class="term-box"><span>Services inflation</span></div>
+          <div class="term-box"><span>Data-dependent</span></div>
+          <div class="term-box"><span>Second-round effects</span></div>
+          <div class="term-box"><span>Selling-price expectations</span></div>
+          <div class="term-box"><span>Purchasing managers&rsquo; index (PMI)</span></div>
+          <div class="term-box"><span>De-anchoring of inflation expectations</span></div>
+          <div class="term-box"><span>Yield curve</span></div>
+          <div class="term-box"><span>Maturity (or tenor)</span></div>
+        </div>
+        <a class="rail-link" href="glossary.html">See full glossary &rarr;</a>
+
+    </aside>
+
+    <div class="references-section">
+      <h2 class="section-label">Additional references</h2>
+      <ul class="references-list">
+        <li>Estevez, E. (2024, June 15). Stagflation. <em>Investopedia.</em> <a href="https://www.investopedia.com/terms/s/stagflation.asp" target="_blank" rel="noopener">https://www.investopedia.com/terms/s/stagflation.asp</a></li>
+        <li>European Commission. (2026). What is the euro area? <a href="https://economy-finance.ec.europa.eu/euro/what-euro-area_en" target="_blank" rel="noopener">https://economy-finance.ec.europa.eu/euro/what-euro-area_en</a></li>
+        <li>Hayes, A. (2023, September 27). Yield curve. <em>Investopedia.</em> <a href="https://www.investopedia.com/terms/y/yieldcurve.asp" target="_blank" rel="noopener">https://www.investopedia.com/terms/y/yieldcurve.asp</a></li>
+        <li>Schroers, M., &amp; Randow, J. (2026, June 23). ECB&rsquo;s Lane sees danger inflation will top 2% for some time. <em>Financial Post.</em> <a href="https://financialpost.com/pmn/business-pmn/ecbs-lane-sees-danger-inflation-will-top-2-for-some-time" target="_blank" rel="noopener">https://financialpost.com/pmn/business-pmn/ecbs-lane-sees-danger-inflation-will-top-2-for-some-time</a></li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <a class="footer-brand" href="index.html">
+        <img src="logo.png" alt="WSG logo">
+        <span>Wall Street for the Girls</span>
+      </a>
+      <ul class="footer-links">
+        <li><a href="archive.html">Archive</a></li>
+        <li><a href="financial-syllabus.html">Financial Syllabus</a></li>
+        <li><a href="glossary.html">Glossary</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="https://wallstreetforthegirls.substack.com" target="_blank" rel="noopener">Substack</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Wall Street for the Girls</span>
+      <em>Educational purposes only: reflects personal analysis, not financial advice.</em>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

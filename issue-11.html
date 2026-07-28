@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Issue No. 11: When One Friend Argues With Customer Service for the Whole Group — Wall Street for the Girls</title>
+<meta name="description" content="Hedge funds are fighting over who leads the $9.4 billion Skechers buyout lawsuit. What appraisal rights actually are, why funds buy into deals just to argue about the price, and what it means for your money.">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500;1,6..72,600&family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#faf7f1; --ink:#22201d; --burgundy:#7d1f42; --muted:#5c574e;
+    --hint:#a39c8c; --line:#ddd7cb; --line-soft:#ece7dc; --body:#3a3733;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--cream); color:var(--ink); font-family:'Inter',sans-serif;}
+  a{color:inherit;}
+  .wrap{max-width:1200px; margin:0 auto; padding:0 24px;}
+
+  .folio-line{border-bottom:0.5px solid var(--line); font-size:11px; letter-spacing:0.03em; color:var(--hint);}
+  .folio-line .wrap{display:flex; justify-content:space-between; padding:10px 24px;}
+
+  .site-header{border-bottom:0.5px solid var(--line);}
+  .nav{display:flex; justify-content:space-between; align-items:center; padding:16px 24px;}
+  .nav-brand{display:flex; align-items:center; gap:8px; text-decoration:none; color:var(--ink); font-family:'Newsreader',serif; font-weight:600; font-size:16px;}
+  .nav-brand img{height:28px; width:28px; border-radius:50%;}
+  .nav-brand em{font-style:italic; color:var(--burgundy);}
+  .nav-links{list-style:none; display:flex; gap:24px; margin:0; padding:0; align-items:center;}
+  .nav-links a{text-decoration:none; color:var(--muted); font-size:12px; letter-spacing:0.04em;}
+  .nav-links a.active{color:var(--burgundy); border-bottom:1.5px solid var(--burgundy); padding-bottom:2px;}
+  .nav-links a.nav-cta{background:var(--ink); color:var(--cream); padding:9px 18px; border-radius:2px;}
+
+  .issue-page{padding:48px 0 80px;}
+  .issue-layout{display:grid; grid-template-columns:minmax(0,640px) minmax(0,320px); gap:32px; align-items:start; justify-content:center;}
+
+  .issue-dateline{font-size:11.5px; letter-spacing:0.03em; color:var(--burgundy); margin:0 0 10px;}
+  .issue-main h1{font-family:'Newsreader',serif; font-weight:600; font-size:30px; line-height:1.3; margin:0 0 20px; max-width:620px;}
+  .issue-main p{font-size:14px; line-height:1.75; color:var(--body); margin:0 0 16px; text-align:justify; hyphens:auto;}
+
+  .eb{font-size:10.5px; letter-spacing:0.08em; color:var(--burgundy); text-transform:uppercase; margin:28px 0 8px;}
+  .rail-title{font-weight:700; font-size:12px;}
+  .section-label{font-family:'Newsreader',serif; font-size:17px; font-weight:600; margin:30px 0 12px; color:var(--burgundy);}
+  .term-link{color:var(--burgundy); text-decoration:none; border-bottom:1.5px dotted var(--burgundy);}
+
+  .issue-copy{max-width:620px;}
+  .signal-noise{display:grid; grid-template-columns:1fr 1fr; gap:0; margin:28px 0 16px; padding-top:24px; border-top:0.5px solid var(--line);}
+  .signal-noise .eb{margin-top:0;}
+  .signal-noise p:last-child{margin-bottom:0;}
+  .signal-noise > div:first-child{padding-right:28px;}
+  .signal-noise > div:last-child{padding-left:28px; border-left:0.5px solid var(--line);}
+
+  .key-question{margin:32px 0 0; padding-top:18px; border-top:1px solid var(--ink);}
+  .key-question .key-question-text{font-family:'Newsreader',serif; font-style:italic; font-weight:700; font-size:20px; color:#7d1f42; line-height:1.6; margin:0 0 14px; text-align:center;}
+
+  p.connects-chain{margin:26px 0; padding:20px 24px; border-top:1px solid var(--ink); border-bottom:1px solid var(--ink); font-family:'Newsreader',serif; font-style:italic; font-size:15px; line-height:1.85; color:var(--body); text-align:center;}
+
+  .references-section{grid-column:1 / -1; border-top:0.5px solid var(--line); padding:36px 0 4px;}
+  .references-section .section-label{margin:0 0 14px;}
+  .references-list{list-style:none; margin:0; padding:0; max-width:900px;}
+  .references-list li{font-size:11.5px; line-height:1.7; color:var(--muted); margin-bottom:14px; text-align:justify; hyphens:auto;}
+  .references-list li a{color:var(--burgundy); text-decoration:none; word-break:break-all;}
+  .references-list li a:hover{text-decoration:underline;}
+
+  .issue-rail{border-left:0.5px solid var(--line); padding-left:28px; align-self:start;}
+  .rail-block{border-bottom:0.5px solid var(--line-soft); padding-bottom:20px; margin-bottom:20px;}
+  .rail-block:last-child{border-bottom:none; margin-bottom:0;}
+
+  .rail-stat{margin-bottom:22px;}
+  .rail-stat:last-child{margin-bottom:0;}
+  .rail-label{display:block; font-size:9.5px; letter-spacing:0.08em; color:var(--hint); margin-bottom:5px;}
+  .rail-value{display:block; font-family:'Newsreader',serif; font-style:italic; font-weight:500; font-size:14.5px; color:var(--ink); line-height:1.4;}
+
+  .rail-table{width:100%; border-collapse:collapse; font-size:12px;}
+  .rail-table td{padding:7px 0; border-bottom:0.5px solid var(--line-soft); color:var(--body);}
+  .rail-table tr:last-child td{border-bottom:none;}
+  .rail-table td.dir{text-align:right; color:var(--muted); white-space:nowrap;}
+  .rail-table td.dir.down, .rail-table td.dir.up{color:var(--burgundy);}
+
+  .rail-teaser-text{font-size:12px; color:var(--muted); line-height:1.6; margin:0 0 10px;}
+  .rail-link{font-size:10.5px; color:var(--burgundy); text-decoration:none;}
+  .rail-link:hover{text-decoration:underline;}
+
+  .rail-block-featured{background:#faf1f4; border-radius:8px; padding:16px 18px 18px; border-bottom:none;}
+  .rail-block-featured .eb{margin-top:0; margin-bottom:8px;}
+  .rail-link-btn{display:inline-block; font-size:10px; letter-spacing:0.05em; color:var(--burgundy); border:0.5px solid var(--burgundy); border-radius:2px; padding:7px 12px; text-decoration:none;}
+  .rail-link-btn:hover{background:var(--burgundy); color:var(--cream);}
+
+  .rail-term{font-family:'Newsreader',serif; font-size:14px; font-weight:600; margin:0 0 5px;}
+  .rail-def{font-size:11.5px; color:var(--muted); line-height:1.6; margin:0;}
+
+  .term-grid{display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:10px 0 14px;}
+  .term-box{background:#fff; border:0.5px solid var(--line); border-radius:6px; padding:10px 12px;}
+  .term-box span{font-family:'Newsreader',serif; font-size:11.5px; font-weight:400; color:var(--ink);}
+
+  .site-footer{border-top:0.5px solid var(--line); padding:44px 0 30px;}
+  .footer-top{display:flex; justify-content:space-between; align-items:center; margin-bottom:22px; flex-wrap:wrap; gap:16px;}
+  .footer-brand{display:flex; align-items:center; gap:8px; text-decoration:none; color:var(--ink); font-weight:600; font-family:'Newsreader',serif; font-size:14px;}
+  .footer-brand img{height:24px; width:24px; border-radius:50%;}
+  .footer-links{list-style:none; display:flex; gap:18px; margin:0; padding:0; flex-wrap:wrap;}
+  .footer-links a{color:var(--muted); text-decoration:none; font-size:12px;}
+  .footer-bottom{display:flex; justify-content:space-between; font-size:11px; color:var(--hint); border-top:0.5px solid var(--line); padding-top:16px; flex-wrap:wrap; gap:8px;}
+
+  a:focus-visible, .nav-cta:focus-visible{outline:2px solid var(--burgundy); outline-offset:2px;}
+
+  @media (max-width:600px){
+    .signal-noise{grid-template-columns:1fr;}
+    .signal-noise > div:first-child{padding-right:0;}
+    .signal-noise > div:last-child{padding-left:0; border-left:none; margin-top:20px;}
+  }
+
+  @media (max-width:860px){
+    .issue-layout{grid-template-columns:1fr;}
+    .issue-rail{border-left:none; padding-left:0; border-top:0.5px solid var(--line); padding-top:28px; margin-top:8px;}
+    .nav-links{display:none;}
+  }
+</style>
+</head>
+<body>
+
+<div class="folio-line">
+  <div class="wrap">
+    <span><b>Wall Street for the Girls</b> &middot; A weekly market brief</span>
+    <span>Issue No. 11 &middot; July 12, 2026</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="nav-brand" href="index.html">
+      <img src="logo.png" alt="WSG logo">
+      <span>Wall Street <em>for the girls</em></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="archive.html" class="active">Archive</a></li>
+      <li><a href="financial-syllabus.html">Financial Syllabus</a></li>
+      <li><a href="glossary.html">Glossary</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a class="nav-cta" href="https://wallstreetforthegirls.substack.com" target="_blank" rel="noopener">Subscribe</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+<section class="issue-page">
+  <div class="wrap issue-layout">
+
+    <article class="issue-main">
+      <p class="issue-dateline">&mdash; July 12, 2026 &middot; Issue No. 11</p>
+      <h1>When one friend argues with customer service for the whole group.</h1>
+
+      <div class="issue-copy">
+      <p style="font-style:italic; font-size:16px; color:#3a3733; margin-bottom:10px;">Here's what you need to know this week, and why it matters.</p>
+
+      <p>There is always that one moment after a group booking goes wrong.</p>
+
+      <p>Four of us split a villa for a long weekend, or the bill for one very ambitious birthday dinner. Everyone pays. And then the company on the other end does something that leaves the whole group short changed. The villa gets downgraded. The booking is cancelled with a partial refund that barely counts as one.</p>
+
+      <p>Here is what never happens next. We don&rsquo;t each sit on hold for forty minutes to argue over our own slice. The amounts are too small and life is too short. The company is counting on exactly that.</p>
+
+      <p>What actually happens is that one friend says, leave it with me. She gathers the receipts, writes the email on behalf of everyone, and argues the whole group&rsquo;s case at once. It is efficient. It is sensible. It is, honestly, the only way most group complaints ever get fought at all.</p>
+
+      <p>But notice what just happened.</p>
+
+      <p>The entire group&rsquo;s outcome now depends on one person. She decides which arguments to make. She decides whether the 20% voucher is acceptable or insulting. She decides when to escalate and when to settle. If she fights well, everyone gets their money back. If she folds early, everyone folds with her, whether they wanted to or not.</p>
+
+      <p>So the real question was never whether someone should argue for the group. It was always who gets to be that friend.</p>
+
+      <p>Now imagine two people volunteer at the same time. One of them, you happen to know, also has her own separate complaint with the very same company. You start to wonder whose refund she will fight hardest for. And another volunteer, it turns out, was not even on the original trip. She bought someone&rsquo;s spot after the problem was already public, at a discount, precisely because she was confident the refund fight could be won. Suddenly the group chat is not really about the villa anymore. It is about trust, incentives, and who holds the pen.</p>
+
+      <p>This week, some of the smartest investors on Wall Street had exactly that argument, in a courtroom in Delaware, about sneakers.</p>
+
+      <p>Let us rewind, because the story starts in a place we already know well. In Issue 10, just last week, we watched tariffs distort Nike&rsquo;s numbers. This week&rsquo;s company is Skechers, the world&rsquo;s third largest footwear maker, and tariffs are once again where the trouble begins.</p>
+
+      <p>In April 2025, new US tariffs were announced, and Skechers, which makes much of its footwear in Asia, was hit hard. The company gave up on predicting the rest of its year, and its shares fell sharply. Then, a month into that turmoil, Skechers&rsquo; founder, Robert Greenberg, and his son Michael, the company&rsquo;s president, agreed to sell the entire company to 3G Capital. The price was $9.4 billion, or $63 per share in cash, pitched as a 30% premium to the company&rsquo;s volume weighted average share price over the prior fifteen trading days. A premium simply means an amount paid above the going market price.</p>
+
+      <p>We covered private equity properly in Issue 8, when Volkswagen sold Everllence to Bain Capital, so you already know the shape of this. A private equity firm buys a company off the stock market, works on it, and aims to sell it later at a profit. Skechers was being taken private, meaning its shares would stop trading on the stock exchange entirely.</p>
+
+      <p>Here is the detail that matters most, and it relates to something we learned in Issue 8 about Volkswagen and Porsche SE. The Greenberg family controlled roughly 58 to 60% of Skechers&rsquo; voting power. Under the rules, that was enough to approve the sale entirely on their own, in writing, without ever holding a shareholder vote. Every other shareholder was informed that their shares would be cashed out, at $63 each under the standard cash option. The deal closed in September 2025. The ticker disappeared. Nearly everyone got their money.</p>
+
+      <p>And you would think that would be the end of the story.</p>
+
+      <p>Well, it was not. A group of investors looked at that $63 and decided it was too low. The deal happened at the exact moment tariff panic had crushed the share price. Selling a company at the bottom of a temporary storm meant selling it for less than it was really worth. And the people who agreed that price, the founding family, were also the people who gained the most from completing the deal.</p>
+
+      <p>Now here is where the story turns from a complaint into a strategy. The hedge funds stopped resembling upset shareholders and started resembling the volunteer who bought her way onto the trip.</p>
+
+      <p>Several hedge funds, including Verition Fund Management and Empyrean Capital Partners, bought most of their Skechers shares after the deal was announced.</p>
+
+      <p>They were not longtime owners caught off guard. They bought in on purpose, knowing the company was being sold at $63, because they believed a judge might later decide the shares were worth more. That is a deliberate investment strategy, and it has a name we will unpack fully in this week&rsquo;s Finance Syllabus. For now, just know that it exists, buying into a finished deal specifically to argue about its price.</p>
+
+      <p>The arguing happens in Delaware, and it happens on two separate legal tracks at once.</p>
+
+      <p>The first track is called an <a class="term-link" href="glossary.html#appraisal-rights">appraisal case</a>. Appraisal is a shareholder&rsquo;s legal right to refuse the deal price and ask a judge to independently decide what the shares were actually worth, also known as fair value. Multiple investment firms are running this case, asking the judge to set that number.</p>
+
+      <p>The second track is a proposed class action. A class action is one lawsuit brought on behalf of an entire group of people who were all harmed the same way. In this case it is all the shareholders who were cashed out at $63. This suit accuses Skechers&rsquo; management of breaching their fiduciary duties, which is the legal obligation of directors and controlling insiders to act in shareholders&rsquo; best interests rather than their own.</p>
+
+      <p>Some hedge funds are involved in both tracks at the same time, and there is a clever reason why. Last year, Delaware overhauled its corporate law, and one change made it much harder for shareholders to get a company&rsquo;s internal documents in fiduciary duty cases. The rules now narrow what counts as the &ldquo;books and records&rdquo; a shareholder can demand, mostly limiting it to formal board materials. Appraisal cases, on the other hand, offer a broader path to internal records. So the funds&rsquo; attorneys are filing appraisal lawsuits first, using them to gather the documents, and then using what they find in the class action. The route to the evidence changed, and the strategy simply rerouted around it.</p>
+
+      <p>Which brings us to this week&rsquo;s actual news, and back to our group chat.</p>
+
+      <p>The class action needs a lead plaintiff, the shareholder chosen to represent everyone else in the case. That person, or in this instance one of the hedge funds, gets real power once they take the role. The lead plaintiff picks the lawyers, controls the legal strategy, and can agree settlements on behalf of everyone in the class, subject to the court&rsquo;s approval. It is, precisely, the friend who argues with customer service for the whole group. And this week, in a Delaware courtroom, the funds fought over who gets to hold that role.</p>
+
+      <p>Verition and Empyrean want the job, and their pitch is bold. Their attorneys argued that being involved in both legal fights is actually a selling point, because the parallel appraisal case has already turned up a huge amount of internal company records. They also say they are the right funds for the job because their two clients own the biggest portion of the class, shares worth almost $625 million between them, about 31% of everyone involved.</p>
+
+      <p>Other shareholders pushed back hard at a hearing on Thursday, and their objection is the same one you had in the group chat. Empyrean and its law firm are also involved in the separate appraisal case against the same company. Alexandra Sadinsky, an attorney fighting for hedge fund ODS Capital and a pension plan to lead the case instead, put it plainly. A lawyer, she argued, &ldquo;can&rsquo;t faithfully serve two masters,&rdquo; warning the conflict could hurt what the class ultimately recovers. Ed Timlin, an attorney for Verition and Empyrean, dismissed those conflict claims as theoretical.</p>
+
+      <p>Then there is the question of who was actually on the trip.</p>
+
+      <p>Ned Weinberger, an attorney for FMI Common Stock Fund, argued that his side is the only one solely representing a genuine long-time shareholder, one that bought into Skechers years before the deal was ever announced. Every rival group, he said, is fronted by an arbitrager, an investor who buys in around a deal purely to profit from the deal or the fight about it, rather than from the business itself.</p>
+
+      <p>Hedge fund Pentwater Capital Management, alongside another pension plan that bought its shares before the announcement, made its own bid. Christine Mackintosh, the attorney for that group, argued that Pentwater holds the largest economic stake of any litigant and chose to pour its resources into the class lawsuit rather than an appraisal claim, while describing the biggest rival pair as deeply conflicted.</p>
+
+      <p>Vice Chancellor Lori Will, the judge overseeing the case, said she would decide the winner of the leadership contest as soon as possible.</p>
+
+      <p>So here is where we stand. The deal is done. The money moved ten months ago. The company is private. And yet the price of Skechers is still being negotiated, just in a courtroom instead of a boardroom, by investors who each want to hold the pen for everyone. The rest of this issue breaks down how that strategy actually works, what is signal and what is noise, and what any of it has to do with the rest of us.</p>
+
+      <div class="signal-noise">
+        <div>
+          <p class="eb">&#10022; The signal</p>
+          <p>The main signal is that hedge funds bought into Skechers after the buyout was announced, specifically to fight about the price. That is not shareholder outrage, it is an asset class, sophisticated capital treating a Delaware courtroom the way other investors treat a market.</p>
+          <p>The second signal is the legal sequencing. After Delaware&rsquo;s law overhaul made internal documents harder to obtain in fiduciary cases, funds began filing appraisal suits first purely to gather records, then arming the class action with what they found. Strategy adapting to new rules in real time, that is how professional money actually thinks.</p>
+          <p>The third signal is what the lead plaintiff role is worth. Whoever wins it picks the lawyers, sets the strategy, and can settle for everyone. In a class action, the driver&rsquo;s choices bind every passenger.</p>
+        </div>
+        <div>
+          <p class="eb">&#10022; The noise</p>
+          <p>The &ldquo;$9.4 billion buyout&rdquo; headline itself is the noise. The deal closed in September 2025 and the money changed hands long ago. Nothing about the transaction is new this week. What is new is the fight over who controls the lawsuit about it.</p>
+          <p>This is also not a &ldquo;Skechers is in trouble&rdquo; story. The company&rsquo;s shoes, its stores, and its customers are not the dispute. The price tag is the fight.</p>
+        </div>
+      </div>
+
+      <h2 class="section-label">What&rsquo;s moving in markets</h2>
+      <p style="font-style:italic; color:var(--muted);"><b>Note:</b> This week&rsquo;s story is a courtroom and deal dispute and does not publish live market data. The paragraphs below map the story onto the markets it touches.</p>
+      <p><b>Deal litigation</b> is the market this week. A $9.4 billion take-private that closed ten months ago is still generating fresh, competitive investment activity. When funds commit hundreds of millions of dollars to positions whose entire return depends on a judge, it tells us the aftermath of big buyouts has become a recognised arena of its own.</p>
+      <p><b>Skechers</b> itself no longer has a share price. The stock stopped trading in September 2025 when the deal closed. That is the strangest and most instructive part of this story. The &ldquo;price&rdquo; of Skechers still exists, but it now lives in a Delaware courtroom, argued over by lawyers, rather than on a ticker updated by millions of buyers and sellers every second.</p>
+      <p><b>Founder-controlled companies</b> are the ones to watch. The Greenberg family controlled roughly 58 to 60% of Skechers&rsquo; votes, enough to approve the sale in writing, with no shareholder vote at all. When control is concentrated, every other shareholder&rsquo;s protection is not the vote they do not have. It is the court they can go to afterwards.</p>
+      <p>The <b>hedge funds</b> are the buyers in this market. Verition and Empyrean hold a combined stake valued at almost $625 million, about 31% of the proposed class. Pentwater claims the largest economic stake of any litigant. These are serious, deliberate positions in a legal outcome, sized the way other funds size positions in stocks.</p>
+      <p><b>Credit</b> sits underneath everything. Buyouts of this kind are typically funded largely with borrowed money, the leveraged buyout structure we walked through in Issue 8. With interest rates still elevated, that debt is expensive, and expensive debt pushes buyers to fight for lower purchase prices. The cheaper the buyer needs the deal to be, the more likely someone later argues the price was unfair. High rates and appraisal fights are, in that sense, quietly connected.</p>
+
+      <h2 class="section-label">Currency &amp; interest rate</h2>
+      <p style="font-style:italic; color:var(--muted);"><b>Note:</b> This week&rsquo;s article does not publish currency or rates data. The view below is informed context, built around the one interest rate that genuinely sits inside this story.</p>
+      <p>There is an interest rate at the center of this week&rsquo;s story, and it is written into Delaware law rather than set at a central bank meeting. Under Delaware law, an appraisal award earns statutory interest from the day the deal closes until the day the judgment is paid, at 5% over the Federal Reserve discount rate, compounded quarterly. It accrues by default, whichever way the ruling goes, and the company can only stop the clock by prepaying money to the very shareholders suing it. Even then, interest keeps running on anything the judge later awards above that prepayment.</p>
+      <p>Now connect that to the environment we have been living in all year. With rates still elevated, that statutory rate is generous. For a fund deciding whether to lock up hundreds of millions of dollars in a courtroom for years, a guaranteed, compounding return on the eventual award quietly changes the maths of the whole bet. So the rate environment is pressing on this story from both sides at once. Expensive borrowing pushes buyers to fight for lower deal prices, and the same high rates make the legal fight over those prices better compensated while it drags on.</p>
+      <p><b>Key rate signal to watch:</b> Not a market level this week, but a statutory one. Five percent over the Fed&rsquo;s discount rate, compounded quarterly, is what the clock pays while everyone argues.</p>
+
+      <h2 class="section-label">How it all connects</h2>
+      <p class="connects-chain">Tariff turmoil impacts Skechers&rsquo; share price &rarr; the founding family agrees a $63/share sale to 3G Capital, approved with its own votes &rarr; hedge funds buy in after the announcement, betting the price was too low &rarr; the deal closes and the stock disappears &rarr; the price fight moves into two Delaware courtrooms &rarr; the funds now fight each other over who leads the class action</p>
+      <p>What makes this week different from an ordinary market story is that the price is being discovered after the money already moved. Normally, price discovery happens in public, before anything changes hands, through millions of buyers and sellers voting with their orders every second. If you think a public company is undervalued, you can simply refuse to sell and wait. But a take-private removes that option. Shareholders were forced out at $63 whether they agreed or not, so their disagreement had nowhere to go except a courtroom. The market of millions has been replaced, for this one company, by a market of one judge.</p>
+      <p>And the reason the current fight is so intense is that the class action&rsquo;s own structure creates a prize inside the prize. The mechanism that protects small shareholders, pooling everyone&rsquo;s claim into one case, necessarily hands enormous power to whoever steers it. The lead plaintiff&rsquo;s choices about lawyers, strategy, and settlement bind every member of the class, including pension plans holding shares on behalf of ordinary savers. That is why the conflict question matters so much more than the courtroom one-liners suggest. A leader running a separate, private case against the same company might, even with the best intentions, face moments where the group&rsquo;s best outcome and her own diverge. The judge&rsquo;s choice of a leader will quietly shape what every former Skechers shareholder eventually receives.</p>
+
+      <h2 class="section-label">Why this matters to you</h2>
+      <p style="font-style:italic;"><b>The broader market picture</b></p>
+      <p>Markets have been cautious lately, but that has not stopped investors from hunting for returns in unusual places. This week&rsquo;s story shows one of them, the gap between a deal&rsquo;s headline price and what a court might later say that price should have been. For the rest of us, the lesson is less about hedge funds and more about what they are implicitly telling us. A &ldquo;final&rdquo; price agreed by the people with the most power in the room is worth checking, and the checking has real cash value. This week&rsquo;s story lives in a courtroom rather than across the whole market, so instead of the usual importer, exporter, borrower and investor breakdown, the groups below are the ones it actually speaks to.</p>
+      <p style="font-style:italic;"><b>If you are building your financial literacy</b></p>
+      <p>The takeaway is that a deal price is a negotiated number, not an objective truth. It reflects timing, pressure, and who held the power when it was set. The important thing is asking who agreed a price, under what circumstances, and who checked it, a question that works on far more than corporate buyouts.</p>
+      <p style="font-style:italic;"><b>If you own index funds or a pension</b></p>
+      <p>If you hold broad US index funds, you likely owned a sliver of Skechers without knowing it and were cashed out at $63 without ever being asked. Notice that pension plans are literally among the litigants fighting to lead this case. The outcome of contests like this one flows through, in tiny amounts, to ordinary savers. Shareholder rights are not some abstract legal ideas. They are part of what your funds are actually worth.</p>
+      <p style="font-style:italic;"><b>If you follow the brands you love</b></p>
+      <p>This is the second sneaker story in two issues, and that is not a coincidence. Last week we watched tariffs distort Nike&rsquo;s numbers. This week, tariff turmoil is the very backdrop against which the fairness of Skechers&rsquo; sale price is being contested. Moments of maximum pessimism around a brand are exactly when buyers with conviction, or opportunism, tend to appear.</p>
+      <p style="font-style:italic;"><b>If you run a business</b></p>
+      <p>The lesson is that how you sell matters as much as what you sell for. A sale approved over the heads of minority co-owners, at a stressed moment, invited years of litigation. Fair process is not bureaucracy. It is protection, for both sides, against exactly this aftermath.</p>
+
+      <div class="key-question">
+        <p class="key-question-text">&ldquo;When a price is agreed by the people with the most power in the room, who checks that it was fair for everyone else, and what is that check worth?&rdquo;</p>
+        <p>This week&rsquo;s fight is not really about sneakers, or even about hedge funds. It is about the system that exists to second-guess a powerful room&rsquo;s number, and the uncomfortable truth that even that system depends on someone having the final say. Noticing who is reaching for that power, and why, is a skill that travels far beyond Delaware.</p>
+      </div>
+      </div>
+    </article>
+
+    <aside class="issue-rail">
+
+      <div class="rail-block">
+        <p class="eb rail-title" style="margin-top:0;">Today&rsquo;s session &middot; New York</p>
+        <div class="rail-stat">
+          <span class="rail-label">Risk mood</span>
+          <span class="rail-value">Neutral (deal specific)</span>
+        </div>
+        <div class="rail-stat">
+          <span class="rail-label">Focus</span>
+          <span class="rail-value">Alternatives &amp; deal litigation</span>
+        </div>
+        <div class="rail-stat">
+          <span class="rail-label">Theme</span>
+          <span class="rail-value">The fight to lead the Skechers buyout lawsuit</span>
+        </div>
+      </div>
+
+      <div class="rail-block">
+        <p class="eb" style="margin-top:0;">Asset direction</p>
+        <table class="rail-table">
+          <tr><td>Deal litigation</td><td class="dir up">&uarr; Active</td></tr>
+          <tr><td>Skechers</td><td class="dir">Delisted</td></tr>
+          <tr><td>Founder-controlled companies</td><td class="dir">! Watch !</td></tr>
+          <tr><td>Credit / LBO financing</td><td class="dir">&harr; Backdrop</td></tr>
+        </table>
+      </div>
+
+      <div class="rail-block rail-block-featured">
+        <p class="eb" style="margin-top:0;">This issue&rsquo;s foundation</p>
+        <p class="rail-teaser-text">Before we dive in, here&rsquo;s the one thing to know this week.</p>
+        <a class="rail-link-btn" href="foundation-11.html">Read &rarr;</a>
+      </div>
+
+      <div class="rail-block rail-block-featured">
+        <p class="eb" style="margin-top:0;">This issue&rsquo;s syllabus &middot; Alternatives</p>
+        <p class="rail-teaser-text">This week&rsquo;s story lives in the alternatives world, in the hedge fund corner of it.</p>
+        <a class="rail-link-btn" href="financial-syllabus-alternatives-11.html">Read &rarr;</a>
+      </div>
+
+      <div class="rail-block">
+        <p class="eb" style="margin-top:0;">Key term</p>
+        <p class="rail-term" id="appraisal-rights">Appraisal rights</p>
+        <p class="rail-def">A shareholder&rsquo;s legal right to refuse a deal price and ask a judge to independently decide what the shares were worth.</p>
+      </div>
+
+       <p class="eb" style="margin-top:22px;">Terms in this issue</p>
+        <div class="term-grid">
+          <div class="term-box"><span>Take-private</span></div>
+          <div class="term-box"><span>Premium (in a deal)</span></div>
+          <div class="term-box"><span>Class action</span></div>
+          <div class="term-box"><span>Lead plaintiff</span></div>
+          <div class="term-box"><span>Fiduciary duty</span></div>
+          <div class="term-box"><span>Appraisal rights</span></div>
+          <div class="term-box"><span>Fair value</span></div>
+          <div class="term-box"><span>Statutory interest (appraisal)</span></div>
+          <div class="term-box"><span>Merger arbitrage</span></div>
+          <div class="term-box"><span>Appraisal arbitrage</span></div>
+          <div class="term-box"><span>Controlling shareholder</span></div>
+          <div class="term-box"><span>Written consent</span></div>
+          <div class="term-box"><span>Books and records</span></div>
+          <div class="term-box"><span>Discovery</span></div>
+          <div class="term-box"><span>Delaware Court of Chancery</span></div>
+          <div class="term-box"><span>Conflict of interest (in litigation)</span></div>
+        </div>
+        <a class="rail-link" href="glossary.html">See full glossary &rarr;</a>
+
+    </aside>
+
+    <div class="references-section">
+      <h2 class="section-label">Additional references</h2>
+      <ul class="references-list">
+        <li>Willmer, S., &amp; Kay, J. (2026, July 10). Hedge funds fight to lead suit over Skechers $9.4 billion buyout. <em>Bloomberg Law.</em> <a href="https://www.bloomberg.com/news/articles/2026-07-10/hedge-funds-fight-to-lead-suit-over-skechers-9-4-billion-buyout" target="_blank" rel="noopener">https://www.bloomberg.com/news/articles/2026-07-10/hedge-funds-fight-to-lead-suit-over-skechers-9-4-billion-buyout</a></li>
+        <li>Skechers U.S.A., Inc. (2025, May 5). Skechers agrees to be acquired by 3G Capital [Press release]. <a href="https://about.skechers.com/press-release/skechers-agrees-to-be-acquired-by-3g-capital" target="_blank" rel="noopener">https://about.skechers.com/press-release/skechers-agrees-to-be-acquired-by-3g-capital</a></li>
+        <li>Skechers U.S.A., Inc. (2025, May 5). Form 8-K, Exhibit 99.1. <em>U.S. Securities and Exchange Commission.</em> <a href="https://www.sec.gov/Archives/edgar/data/1065837/000119312525112159/d943603dex991.htm" target="_blank" rel="noopener">https://www.sec.gov/Archives/edgar/data/1065837/000119312525112159/d943603dex991.htm</a></li>
+        <li>Skechers U.S.A., Inc. (2025, August 5). Information statement/prospectus (Form DEFM14C). <em>U.S. Securities and Exchange Commission.</em> <a href="https://www.sec.gov/Archives/edgar/data/1065837/000110465925074187/tm2516935-12_defm14c.htm" target="_blank" rel="noopener">https://www.sec.gov/Archives/edgar/data/1065837/000110465925074187/tm2516935-12_defm14c.htm</a></li>
+        <li>Fonrouge, G. (2025, May 5). Skechers to be acquired by 3G Capital in take-private deal, shares soar 24%. <em>CNBC.</em> <a href="https://www.cnbc.com/2025/05/05/skechers-to-be-acquired-by-3g-capital.html" target="_blank" rel="noopener">https://www.cnbc.com/2025/05/05/skechers-to-be-acquired-by-3g-capital.html</a></li>
+        <li>Hedgeweek. (2025, November 24). Hedge funds press Skechers appraisal suit after 3G buyout settlement talks fail. <a href="https://www.hedgeweek.com/hedge-funds-press-skechers-appraisal-suit-after-3g-buyout-settlement-talks-fail/" target="_blank" rel="noopener">https://www.hedgeweek.com/hedge-funds-press-skechers-appraisal-suit-after-3g-buyout-settlement-talks-fail/</a></li>
+        <li>Mayer Brown. (2025, April). Delaware changes its corporate law: What litigators and clients need to know about Senate Bill 21. <a href="https://www.mayerbrown.com/en/insights/publications/2025/04/delaware-changes-its-corporate-law-what-you-should-know-about-senate-bill-21" target="_blank" rel="noopener">https://www.mayerbrown.com/en/insights/publications/2025/04/delaware-changes-its-corporate-law-what-you-should-know-about-senate-bill-21</a></li>
+        <li>Delaware General Corporation Law, 8 Del. C. &sect; 262 (appraisal rights). <a href="https://law.justia.com/codes/delaware/title-8/chapter-1/subchapter-ix/section-262/" target="_blank" rel="noopener">https://law.justia.com/codes/delaware/title-8/chapter-1/subchapter-ix/section-262/</a></li>
+        <li>Investopedia. (n.d.). Appraisal right. <a href="https://www.investopedia.com/terms/a/appraisalright.asp" target="_blank" rel="noopener">https://www.investopedia.com/terms/a/appraisalright.asp</a></li>
+        <li>Investopedia. (n.d.). Merger arbitrage. <a href="https://www.investopedia.com/terms/r/riskarbitrage.asp" target="_blank" rel="noopener">https://www.investopedia.com/terms/r/riskarbitrage.asp</a></li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <a class="footer-brand" href="index.html">
+        <img src="logo.png" alt="WSG logo">
+        <span>Wall Street for the Girls</span>
+      </a>
+      <ul class="footer-links">
+        <li><a href="archive.html">Archive</a></li>
+        <li><a href="financial-syllabus.html">Financial Syllabus</a></li>
+        <li><a href="glossary.html">Glossary</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="https://wallstreetforthegirls.substack.com" target="_blank" rel="noopener">Substack</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Wall Street for the Girls</span>
+      <em>Educational purposes only: reflects personal analysis, not financial advice.</em>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

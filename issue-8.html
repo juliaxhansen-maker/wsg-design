@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Issue No. 8: Volkswagen Sold Half of Its Wardrobe but Kept the Investment Piece — Wall Street for the Girls</title>
+<meta name="description" content="Volkswagen sold 51% of its diesel engine unit to Bain Capital for more than double its book value. What a leveraged buyout actually is, why private equity pays up for growth stories, and what it means for your money.">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500;1,6..72,600&family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#faf7f1; --ink:#22201d; --burgundy:#7d1f42; --muted:#5c574e;
+    --hint:#a39c8c; --line:#ddd7cb; --line-soft:#ece7dc; --body:#3a3733;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--cream); color:var(--ink); font-family:'Inter',sans-serif;}
+  a{color:inherit;}
+  .wrap{max-width:1200px; margin:0 auto; padding:0 24px;}
+
+  .folio-line{border-bottom:0.5px solid var(--line); font-size:11px; letter-spacing:0.03em; color:var(--hint);}
+  .folio-line .wrap{display:flex; justify-content:space-between; padding:10px 24px;}
+
+  .site-header{border-bottom:0.5px solid var(--line);}
+  .nav{display:flex; justify-content:space-between; align-items:center; padding:16px 24px;}
+  .nav-brand{display:flex; align-items:center; gap:8px; text-decoration:none; color:var(--ink); font-family:'Newsreader',serif; font-weight:600; font-size:16px;}
+  .nav-brand img{height:28px; width:28px; border-radius:50%;}
+  .nav-brand em{font-style:italic; color:var(--burgundy);}
+  .nav-links{list-style:none; display:flex; gap:24px; margin:0; padding:0; align-items:center;}
+  .nav-links a{text-decoration:none; color:var(--muted); font-size:12px; letter-spacing:0.04em;}
+  .nav-links a.active{color:var(--burgundy); border-bottom:1.5px solid var(--burgundy); padding-bottom:2px;}
+  .nav-links a.nav-cta{background:var(--ink); color:var(--cream); padding:9px 18px; border-radius:2px;}
+
+  .issue-page{padding:48px 0 80px;}
+  .issue-layout{display:grid; grid-template-columns:minmax(0,640px) minmax(0,320px); gap:32px; align-items:start; justify-content:center;}
+
+  .issue-dateline{font-size:11.5px; letter-spacing:0.03em; color:var(--burgundy); margin:0 0 10px;}
+  .issue-main h1{font-family:'Newsreader',serif; font-weight:600; font-size:30px; line-height:1.3; margin:0 0 20px; max-width:620px;}
+  .issue-main p{font-size:14px; line-height:1.75; color:var(--body); margin:0 0 16px; text-align:justify; hyphens:auto;}
+
+  .eb{font-size:10.5px; letter-spacing:0.08em; color:var(--burgundy); text-transform:uppercase; margin:28px 0 8px;}
+  .rail-title{font-weight:700; font-size:12px;}
+  .section-label{font-family:'Newsreader',serif; font-size:17px; font-weight:600; margin:30px 0 12px; color:var(--burgundy);}
+  .term-link{color:var(--burgundy); text-decoration:none; border-bottom:1.5px dotted var(--burgundy);}
+
+  .issue-copy{max-width:620px;}
+  .signal-noise{display:grid; grid-template-columns:1fr 1fr; gap:0; margin:28px 0 16px; padding-top:24px; border-top:0.5px solid var(--line);}
+  .signal-noise .eb{margin-top:0;}
+  .signal-noise p:last-child{margin-bottom:0;}
+  .signal-noise > div:first-child{padding-right:28px;}
+  .signal-noise > div:last-child{padding-left:28px; border-left:0.5px solid var(--line);}
+
+  .key-question{margin:32px 0 0; padding-top:18px; border-top:1px solid var(--ink);}
+  .key-question .key-question-text{font-family:'Newsreader',serif; font-style:italic; font-weight:700; font-size:20px; color:#7d1f42; line-height:1.6; margin:0 0 14px; text-align:center;}
+
+  p.connects-chain{margin:26px 0; padding:20px 24px; border-top:1px solid var(--ink); border-bottom:1px solid var(--ink); font-family:'Newsreader',serif; font-style:italic; font-size:15px; line-height:1.85; color:var(--body); text-align:center;}
+
+  .references-section{grid-column:1 / -1; border-top:0.5px solid var(--line); padding:36px 0 4px;}
+  .references-section .section-label{margin:0 0 14px;}
+  .references-list{list-style:none; margin:0; padding:0; max-width:900px;}
+  .references-list li{font-size:11.5px; line-height:1.7; color:var(--muted); margin-bottom:14px; text-align:justify; hyphens:auto;}
+  .references-list li a{color:var(--burgundy); text-decoration:none; word-break:break-all;}
+  .references-list li a:hover{text-decoration:underline;}
+
+  .issue-rail{border-left:0.5px solid var(--line); padding-left:28px; align-self:start;}
+  .rail-block{border-bottom:0.5px solid var(--line-soft); padding-bottom:20px; margin-bottom:20px;}
+  .rail-block:last-child{border-bottom:none; margin-bottom:0;}
+
+  .rail-stat{margin-bottom:22px;}
+  .rail-stat:last-child{margin-bottom:0;}
+  .rail-label{display:block; font-size:9.5px; letter-spacing:0.08em; color:var(--hint); margin-bottom:5px;}
+  .rail-value{display:block; font-family:'Newsreader',serif; font-style:italic; font-weight:500; font-size:14.5px; color:var(--ink); line-height:1.4;}
+
+  .rail-table{width:100%; border-collapse:collapse; font-size:12px;}
+  .rail-table td{padding:7px 0; border-bottom:0.5px solid var(--line-soft); color:var(--body);}
+  .rail-table tr:last-child td{border-bottom:none;}
+  .rail-table td.dir{text-align:right; color:var(--muted); white-space:nowrap;}
+  .rail-table td.dir.down, .rail-table td.dir.up{color:var(--burgundy);}
+
+  .rail-teaser-text{font-size:12px; color:var(--muted); line-height:1.6; margin:0 0 10px;}
+  .rail-link{font-size:10.5px; color:var(--burgundy); text-decoration:none;}
+  .rail-link:hover{text-decoration:underline;}
+
+  .rail-block-featured{background:#faf1f4; border-radius:8px; padding:16px 18px 18px; border-bottom:none;}
+  .rail-block-featured .eb{margin-top:0; margin-bottom:8px;}
+  .rail-link-btn{display:inline-block; font-size:10px; letter-spacing:0.05em; color:var(--burgundy); border:0.5px solid var(--burgundy); border-radius:2px; padding:7px 12px; text-decoration:none;}
+  .rail-link-btn:hover{background:var(--burgundy); color:var(--cream);}
+
+  .rail-term{font-family:'Newsreader',serif; font-size:14px; font-weight:600; margin:0 0 5px;}
+  .rail-def{font-size:11.5px; color:var(--muted); line-height:1.6; margin:0;}
+
+  .term-grid{display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:10px 0 14px;}
+  .term-box{background:#fff; border:0.5px solid var(--line); border-radius:6px; padding:10px 12px;}
+  .term-box span{font-family:'Newsreader',serif; font-size:11.5px; font-weight:400; color:var(--ink);}
+
+  .site-footer{border-top:0.5px solid var(--line); padding:44px 0 30px;}
+  .footer-top{display:flex; justify-content:space-between; align-items:center; margin-bottom:22px; flex-wrap:wrap; gap:16px;}
+  .footer-brand{display:flex; align-items:center; gap:8px; text-decoration:none; color:var(--ink); font-weight:600; font-family:'Newsreader',serif; font-size:14px;}
+  .footer-brand img{height:24px; width:24px; border-radius:50%;}
+  .footer-links{list-style:none; display:flex; gap:18px; margin:0; padding:0; flex-wrap:wrap;}
+  .footer-links a{color:var(--muted); text-decoration:none; font-size:12px;}
+  .footer-bottom{display:flex; justify-content:space-between; font-size:11px; color:var(--hint); border-top:0.5px solid var(--line); padding-top:16px; flex-wrap:wrap; gap:8px;}
+
+  a:focus-visible, .nav-cta:focus-visible{outline:2px solid var(--burgundy); outline-offset:2px;}
+
+  @media (max-width:600px){
+    .signal-noise{grid-template-columns:1fr;}
+    .signal-noise > div:first-child{padding-right:0;}
+    .signal-noise > div:last-child{padding-left:0; border-left:none; margin-top:20px;}
+  }
+
+  @media (max-width:860px){
+    .issue-layout{grid-template-columns:1fr;}
+    .issue-rail{border-left:none; padding-left:0; border-top:0.5px solid var(--line); padding-top:28px; margin-top:8px;}
+    .nav-links{display:none;}
+  }
+</style>
+</head>
+<body>
+
+<div class="folio-line">
+  <div class="wrap">
+    <span><b>Wall Street for the Girls</b> &middot; A weekly market brief</span>
+    <span>Issue No. 8 &middot; June 28, 2026</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="nav-brand" href="index.html">
+      <img src="logo.png" alt="WSG logo">
+      <span>Wall Street <em>for the girls</em></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="archive.html" class="active">Archive</a></li>
+      <li><a href="financial-syllabus.html">Financial Syllabus</a></li>
+      <li><a href="glossary.html">Glossary</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a class="nav-cta" href="https://wallstreetforthegirls.substack.com" target="_blank" rel="noopener">Subscribe</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+<section class="issue-page">
+  <div class="wrap issue-layout">
+
+    <article class="issue-main">
+      <p class="issue-dateline">&mdash; June 28, 2026 &middot; Issue No. 8</p>
+      <h1>Volkswagen sold half of its wardrobe but kept the investment piece.</h1>
+
+      <div class="issue-copy">
+      <p style="font-style:italic; font-size:16px; color:#3a3733; margin-bottom:10px;">Here's what you need to know this week, and why it matters.</p>
+
+      <p>Somewhere in your closet, there is a piece worth more than you paid for it.</p>
+
+      <p>Maybe it is the vintage Chanel. Maybe it is the designer bag you saved months for, or the coat you almost talked yourself out of buying. While the fast fashion pile loses its value the moment it leaves the shop, a true investment piece does the opposite. It holds its worth, and every so often it quietly climbs. Anyone who has ever listed something on Vinted or The RealReal already understands the lesson hiding in that.</p>
+
+      <p>A wardrobe is never just a wardrobe. It is a portfolio.</p>
+
+      <p>Some of it exists to be worn and eventually let go, and some of it is an asset. Something you hold onto not because of what it is today, but because of what it will be worth tomorrow.</p>
+
+      <p>The real skill, the thing that separates the people who clear out their closet brilliantly from the ones who hand over a fortune by accident, is knowing how to tell those two apart. Knowing what to sell, knowing what to keep, and not letting go of the one piece you are sure will appreciate.</p>
+
+      <p>This week, Volkswagen proved it knows the difference too.</p>
+
+      <p>The German carmaker agreed to sell a controlling 51% stake in Everllence, its diesel engine unit, to Bain Capital. Bain Capital is a <a class="term-link" href="glossary.html#private-equity">private equity</a> firm, which means it is a type of investor that buys companies not listed on the stock market, works to grow them and make them more valuable, and then aims to sell them on later at a profit.</p>
+
+      <p>Now here is where it gets interesting.</p>
+
+      <p>On Volkswagen&rsquo;s own accounts, Everllence was valued at roughly &euro;3.4 billion as recently as the end of May. That figure is what is known as the book value which is what an asset is recorded as being worth in a company&rsquo;s financial records. It is the official price on the internal label.</p>
+
+      <p>Now take a look at the deal. Bain is paying proceeds of around &euro;7.4 billion, approximately $8.4 billion. And that is the price for just 51% of the business.</p>
+
+      <p>This basically means that barely more than half of Everllence brought in more than double what the entire unit was carried at on Volkswagen&rsquo;s own books. The piece hanging quietly at the back of the corporate closet had been worth far more than anyone&rsquo;s label suggested, and a private equity firm just paid to prove it.</p>
+
+      <p>But why sell it at all? If this piece is such a strong investment, why not simply keep the whole thing?</p>
+
+      <p>There are two answers, and together they tell us something worth understanding about how large businesses actually make decisions.</p>
+
+      <p>The first is the most immediate. Volkswagen needs the cash. The organization is in the middle of deep cost cuts across its car business, and selling a unit it considers non-core brings in a large sum right now. Money it can redirect into the cars that are its actual livelihood. We have all made this call at some point. You can love a piece and still sell it because something more urgent needs that money first, like paying rent.</p>
+
+      <p>The second answer is about focus, and this one is easy to underestimate. Running any business costs something beyond money. It costs time, attention, and the energy of the people at the very top, all of which are finite. Volkswagen&rsquo;s core job, the thing it genuinely has to win at, is designing and selling cars in one of the most competitive markets in the world. Everllence makes engines for ships and generators for data centres, which is a strong business, but it is a completely different one. Different customers, different rivals, different problems to solve every single day.</p>
+
+      <p>Every hour that leadership spends thinking about ship engines is an hour not spent on cars. By handing control to Bain, Volkswagen hands over that daily attention too, and gets to point everything it has at the fight that actually matters for its future. Volkswagen&rsquo;s CEO, Oliver Blume, described the deal as giving Everllence the leaner structure it needs to chase growth in data centres, energy, and shipping, while the group concentrates harder on its core business. This is the financial equivalent of decluttering with intention rather than just clearing space for the sake of it.</p>
+
+      <p>And here is where it gets clever.</p>
+
+      <p>Volkswagen did not have to choose between the cash and the upside. By selling 51% of the business, it gets the money and the focus it needs today. But it did not sell the piece and walk away entirely. It kept 49%, which means it stays a part owner, still holding nearly half of the potential appreciation if Bain makes Everllence more valuable over time.</p>
+
+      <p>Think of it like a luxury investment piece that two people decide to buy together. Maybe it is a vintage watch or a rare bag, something both of you believe will be worth significantly more in a few years. One person puts in the most money, takes the lead on decisions, and does the work of looking after it. The other stays in, contributing less and doing less day to day, but still holding a real share of the upside when the value climbs. Neither of them literally splits the object in half. They split the ownership of it.</p>
+
+      <p>That is exactly the structure Volkswagen and Bain put in place here. Bain is the majority owner, the one taking control and doing the hard work of growing Everllence. Volkswagen is the co-owner who stepped back, took the cash, freed up its focus, and still holds 49% of whatever this business becomes.</p>
+
+      <p>Which brings us to the obvious question. Why would anyone pay so far above book value for a maker of diesel engines?</p>
+
+      <p>For the same reason a sharp reseller pays up for a piece everyone else walked past. You are not buying what it is worth today. You are buying what you believe it will be worth tomorrow.</p>
+
+      <p>Everllence makes engines for ships, which does not exactly sound like the future. But it also makes generators that power data centres, a business still developing, but one Bain is betting on.</p>
+
+      <p>Now here is the gossip, because every good deal has some.</p>
+
+      <p>Bain was not the only buyer that wanted Everllence. It beat out CVC, another major private equity firm, as well as a consortium led by EQT which had brought some very powerful people to the table. It included EQT itself, but also two of Volkswagen&rsquo;s own biggest shareholders. The first was Porsche SE, which holds 53.3% of Volkswagen&rsquo;s voting rights and has more say in the company than anyone else. Voting rights are what decide who controls a company&rsquo;s decisions and they do not always match how much of the company&rsquo;s value you actually own. And the second was Qatar, which holds 17% through its state-owned investment fund.</p>
+
+      <p>Two of the people with the most power inside Volkswagen were sitting on the other side of this deal, trying to buy the asset Volkswagen was selling. They looked at the same business and decided it was worth competing for. That tells us something about how desirable this asset actually is, separate from any official valuation.</p>
+
+      <p>There is a catch, as there always is.</p>
+
+      <p>This is an agreement, not yet a completed sale. It still needs sign-off from regulators and from employee representatives, including a consultation process required under French law, where Everllence also has operations, with Volkswagen aiming to close by the end of the year.</p>
+
+      <p>As part of the deal, its five German sites are guaranteed to stay open until at least the end of 2030. That kind of protection limits how quickly Bain can restructure those sites, and it is standard in large European industrial deals, where employee rights carry genuine legal weight. It is worth knowing because it shapes how Bain will need to approach the growth story it is betting on.</p>
+
+      <p>So nothing has fully changed hands yet. But the shape of this deal tells us something genuinely worth knowing about where the money is moving right now, and how it gets there. The rest of this issue breaks down what is the signal, the noise, and what any of it means for us.</p>
+
+      <div class="signal-noise">
+        <div>
+          <p class="eb">&#10022; The signal</p>
+          <p>The main signal is the gap between what Everllence was worth on paper and what it actually sold for. The whole unit was carried at about &euro;3.4 billion on Volkswagen&rsquo;s books but only 51% of it went for roughly &euro;7.4 billion in the deal. That gap is private capital telling us it values this business on its future and AI-power potential, not its accounting. When a buyer pays this far above book value, it is making a confident bet about tomorrow.</p>
+          <p>The other signal is that a deal this large, funded mostly with borrowed money, is a sign that the lending markets are open and that big investors are confident enough to commit billions. That matters even more right now because borrowing is expensive in the higher-for-longer rate environment. When a leveraged buyout of this size happens in that environment, it suggests the appetite for ambitious, debt-funded bets in private markets is not going anywhere.</p>
+        </div>
+        <div>
+          <p class="eb">&#10022; The noise</p>
+          <p>The headline that Volkswagen is cutting costs is not new. We have known the group has been reducing its costs for a while now, and it is already priced into how the market sees the company. The &ldquo;Volkswagen is in trouble&rdquo; story misses what is actually happening, which is a company making a deliberate and strategic choice about what to keep and what to let go.</p>
+          <p>The &ldquo;diesel engines for ships&rdquo; framing is also a distraction. The legacy shipping business is not what makes this deal interesting, and it is certainly not what justified the price. The growth story, and the &euro;7.4 billion, depend entirely on where Everllence is heading.</p>
+        </div>
+      </div>
+
+      <h2 class="section-label">What&rsquo;s moving in markets</h2>
+      <p><b>Private markets</b> are the entire story this week. The Volkswagen and Bain deal is one of the biggest European carve-outs of the year. A multi-billion-euro business is moving to a new majority owner, funded mostly with debt, at a price well above what it was recorded as being worth. When deals of this scale go through, they tell us that private capital has both the money to spend and the confidence to spend it.</p>
+      <p><b>Volkswagen</b> and <b>Porsche SE</b> are the equities worth watching. Volkswagen walks away with exactly what it was after which is cash, a simpler business, and the freedom to focus entirely on cars. Porsche SE, its largest shareholder, backed the rival consortium and lost. Volkswagen&rsquo;s own board chose an outside buyer over the people who hold the most power in the company.</p>
+      <p>The quieter winners are the <b>companies building AI-power infrastructure</b>. This deal just put a very large and very public price tag on generators and energy systems that keep data centres running. That matters for how that entire sector gets valued going forward.</p>
+      <p><b>Credit markets</b> are what make a deal like this possible. A leveraged buyout only happens if someone is willing to lend the money. The fact that lenders are funding a purchase this size, in a world where borrowing is expensive, tells us something real. The appetite for big, ambitious bets has not gone away. It has just moved somewhere most people are not watching.</p>
+
+      <h2 class="section-label">Currency &amp; interest rate</h2>
+      <p style="font-style:italic; color:var(--muted);"><b>Note:</b> This week&rsquo;s article does not directly cover the currency and rates markets. The view below is informed context, with one figure derived from the article&rsquo;s own numbers.</p>
+      <p>The one currency detail this deal hands us is worth pausing on. The article tells us &euro;7.4 billion is roughly $8.4 billion. Divide the dollar figure by the euro figure and you get about 1.135. That number is the euro-to-dollar exchange rate, which is written as EUR/USD. The value show many dollars one euro is worth.</p>
+      <p style="text-align:center; font-family:'Newsreader',serif; font-style:italic; font-size:15px;">EUR/USD = $8.4 billion &divide; &euro;7.4 billion = 1.135</p>
+      <p>That is the exchange rate sitting quietly inside the deal&rsquo;s own numbers. It is a small detail, but financial announcements often have market information hiding in plain sight if you know where to look.</p>
+      <p>Beyond that, the broader rate environment matters here as context rather than news. Borrowing costs have stayed high across the major economies. The fact that Bain committed to a &euro;7.4 billion leveraged deal anyway tells you how confident they are about Everllence.</p>
+
+      <h2 class="section-label">How it all connects</h2>
+      <p class="connects-chain">VW decides Everllence no longer fits and puts it up for sale &rarr; Bain sees an AI-infrastructure asset worth far more than its book value &rarr; outbids everyone, including VW&rsquo;s own shareholders &rarr; funds the purchase mostly with borrowed money &rarr; VW exits with &euro;7.4 billion for 51% and keeps a 49% stake in the upside.</p>
+      <p>What makes this week&rsquo;s story different from an ordinary company sale is both who is doing the buying and how they are doing it. This is not one carmaker selling a division to another carmaker. It is a public industrial giant handing control of part of itself to private capital, paying for it largely with debt, at a price set by a growth story rather than by what the business earns today. That is private markets in its purest form. No public stock exchange, no live ticker, no daily price update. Just a deal, a price, and a bet on the future. And that bet got funded even with expensive borrowing and cautious public mood.</p>
+
+      <h2 class="section-label">Why this matters to you</h2>
+      <p style="font-style:italic;"><b>The broader market picture</b></p>
+      <p>The message is mixed, but in an interesting way. Public markets have been cautious for months, worried about sticky inflation and high interest rates. But here, in private markets, a buyer is confident enough to commit billions of borrowed money to a long-term bet on the future. When those two moods pull in opposite directions, it is worth being aware of, because private capital often moves before the rest of the market catches on.</p>
+      <p style="font-style:italic;"><b>For your business or portfolio</b></p>
+      <p>This week&rsquo;s story lives in the private markets world, so rather than the usual breakdown, here are the two groups of people this deal is most directly relevant to.</p>
+      <p>If you have a pension or an investment fund, private equity is likely already part of it, even if nobody has ever told you that. Many large funds allocate a portion of their money to private markets because deals like this one can generate returns that public markets do not always offer. It may be worth taking a moment to look at what is actually inside what you own, and whether you understand it.</p>
+      <p>If you own a business, this deal is a reminder that what something is worth on paper and what someone would actually pay for it can be two very different numbers. Bain paid well above Everllence&rsquo;s book value because it believed in the growth story, not the accounting.</p>
+
+      <div class="key-question">
+        <p class="key-question-text">&ldquo;If the most confident investors in the world are placing their biggest bets somewhere most of us never look, what does that make you think about where you are paying attention?&rdquo;</p>
+        <p>This week&rsquo;s deal is not really about Volkswagen or diesel engines. It is about where capital moves when it is feeling bold and why understanding that corner of the market might be more relevant to your financial life than you would expect. Something worth sitting with.</p>
+      </div>
+      </div>
+    </article>
+
+    <aside class="issue-rail">
+
+      <div class="rail-block">
+        <p class="eb rail-title" style="margin-top:0;">Today&rsquo;s session &middot; London/Frankfurt</p>
+        <div class="rail-stat">
+          <span class="rail-label">Risk mood</span>
+          <span class="rail-value">Risk-on</span>
+        </div>
+        <div class="rail-stat">
+          <span class="rail-label">Focus</span>
+          <span class="rail-value">Alternatives (private markets) &amp; credit</span>
+        </div>
+        <div class="rail-stat">
+          <span class="rail-label">Theme</span>
+          <span class="rail-value">VW sells Everllence to Bain Capital</span>
+        </div>
+      </div>
+
+      <div class="rail-block">
+        <p class="eb" style="margin-top:0;">Asset direction</p>
+        <table class="rail-table">
+          <tr><td>Private markets (the deal)</td><td class="dir up">&uarr; Active</td></tr>
+          <tr><td>Volkswagen</td><td class="dir up">&uarr; Supported</td></tr>
+          <tr><td>Porsche SE</td><td class="dir down">&darr; On the losing side</td></tr>
+          <tr><td>Credit / leveraged loans</td><td class="dir up">&uarr; Open</td></tr>
+        </table>
+      </div>
+
+      <div class="rail-block rail-block-featured">
+        <p class="eb" style="margin-top:0;">This issue&rsquo;s foundation</p>
+        <p class="rail-teaser-text">Before we dive in, here&rsquo;s the one thing to know this week.</p>
+        <a class="rail-link-btn" href="foundation-8.html">Read &rarr;</a>
+      </div>
+
+      <div class="rail-block rail-block-featured">
+        <p class="eb" style="margin-top:0;">This issue&rsquo;s syllabus &middot; Alternatives</p>
+        <p class="rail-teaser-text">Let&rsquo;s start with what private markets actually means.</p>
+        <a class="rail-link-btn" href="financial-syllabus-alternatives-8.html">Read &rarr;</a>
+      </div>
+
+      <div class="rail-block">
+        <p class="eb" style="margin-top:0;">Key term</p>
+        <p class="rail-term" id="private-equity">Private equity</p>
+        <p class="rail-def">Investors who buy companies not listed on the stock market, work to make them more valuable, and sell them on later for a profit.</p>
+      </div>
+
+       <p class="eb" style="margin-top:22px;">Terms in this issue</p>
+        <div class="term-grid">
+          <div class="term-box"><span>Private equity</span></div>
+          <div class="term-box"><span>Private markets</span></div>
+          <div class="term-box"><span>Carve-out</span></div>
+          <div class="term-box"><span>Leveraged buyout (LBO)</span></div>
+          <div class="term-box"><span>Leverage</span></div>
+          <div class="term-box"><span>Book value</span></div>
+          <div class="term-box"><span>Equity (in a deal)</span></div>
+          <div class="term-box"><span>Exit</span></div>
+          <div class="term-box"><span>Voting rights vs economic stake</span></div>
+          <div class="term-box"><span>Sovereign wealth fund</span></div>
+          <div class="term-box"><span>Leveraged loan</span></div>
+          <div class="term-box"><span>Dry powder</span></div>
+          <div class="term-box"><span>Higher for longer</span></div>
+        </div>
+        <a class="rail-link" href="glossary.html">See full glossary &rarr;</a>
+
+    </aside>
+
+    <div class="references-section">
+      <h2 class="section-label">Additional references</h2>
+      <ul class="references-list">
+        <li>Amann, C., &amp; More, R. (2026, June 25). Volkswagen to sell diesel engine unit to Bain in deal generating &euro;7.4 billion. <em>Reuters.</em> <a href="https://www.reuters.com/business/bain-capital-set-buy-controlling-stake-volkswagens-everllence-unit-ft-reports-2026-06-24/" target="_blank" rel="noopener">https://www.reuters.com/business/bain-capital-set-buy-controlling-stake-volkswagens-everllence-unit-ft-reports-2026-06-24/</a></li>
+        <li>Gleiss Lutz. (2026). Gleiss Lutz advises Volkswagen Supervisory Board on Everllence sale. <a href="https://www.gleisslutz.com/en/mandates-firm-news/gleiss-lutz-advises-volkswagen-supervisory-board-everllence-sale" target="_blank" rel="noopener">https://www.gleisslutz.com/en/mandates-firm-news/gleiss-lutz-advises-volkswagen-supervisory-board-everllence-sale</a></li>
+        <li>Investopedia. (n.d.). Limited partner. <a href="https://www.investopedia.com/terms/l/limited-partner.asp" target="_blank" rel="noopener">https://www.investopedia.com/terms/l/limited-partner.asp</a></li>
+        <li>Investopedia. (n.d.). Leveraged buyout (LBO). <a href="https://www.investopedia.com/terms/l/leveragedbuyout.asp" target="_blank" rel="noopener">https://www.investopedia.com/terms/l/leveragedbuyout.asp</a></li>
+        <li>Investopedia. (n.d.). Dry powder. <a href="https://www.investopedia.com/terms/d/drypowder.asp" target="_blank" rel="noopener">https://www.investopedia.com/terms/d/drypowder.asp</a></li>
+        <li>Investopedia. (n.d.). Private equity. <a href="https://www.investopedia.com/terms/p/privateequity.asp" target="_blank" rel="noopener">https://www.investopedia.com/terms/p/privateequity.asp</a></li>
+        <li>KPMG. (n.d.). Pulse of private equity. <a href="https://kpmg.com/se/en/industries/private-equity/pulse-of-private-equity.html" target="_blank" rel="noopener">https://kpmg.com/se/en/industries/private-equity/pulse-of-private-equity.html</a></li>
+        <li>PitchBook. (2026). Global private market funds&rsquo; dry powder dashboard. <a href="https://pitchbook.com/news/articles/global-private-market-funds-dry-powder-dashboard-2026" target="_blank" rel="noopener">https://pitchbook.com/news/articles/global-private-market-funds-dry-powder-dashboard-2026</a></li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <a class="footer-brand" href="index.html">
+        <img src="logo.png" alt="WSG logo">
+        <span>Wall Street for the Girls</span>
+      </a>
+      <ul class="footer-links">
+        <li><a href="archive.html">Archive</a></li>
+        <li><a href="financial-syllabus.html">Financial Syllabus</a></li>
+        <li><a href="glossary.html">Glossary</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="https://wallstreetforthegirls.substack.com" target="_blank" rel="noopener">Substack</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Wall Street for the Girls</span>
+      <em>Educational purposes only: reflects personal analysis, not financial advice.</em>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

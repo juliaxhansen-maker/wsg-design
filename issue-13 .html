@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Issue No. 13: The Free Trial Is Over, and the Subscription Renewed Itself — Wall Street for the Girls</title>
+<meta name="description" content="The tariffs that were due to expire this week didn't. What a tariff actually is, who really pays it, and what it means for your money.">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500;1,6..72,600&family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#faf7f1; --ink:#22201d; --burgundy:#7d1f42; --muted:#5c574e;
+    --hint:#a39c8c; --line:#ddd7cb; --line-soft:#ece7dc; --body:#3a3733;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--cream); color:var(--ink); font-family:'Inter',sans-serif;}
+  a{color:inherit;}
+  .wrap{max-width:1200px; margin:0 auto; padding:0 24px;}
+
+  .folio-line{border-bottom:0.5px solid var(--line); font-size:11px; letter-spacing:0.03em; color:var(--hint);}
+  .folio-line .wrap{display:flex; justify-content:space-between; padding:10px 24px;}
+
+  .site-header{border-bottom:0.5px solid var(--line);}
+  .nav{display:flex; justify-content:space-between; align-items:center; padding:16px 24px;}
+  .nav-brand{display:flex; align-items:center; gap:8px; text-decoration:none; color:var(--ink); font-family:'Newsreader',serif; font-weight:600; font-size:16px;}
+  .nav-brand img{height:28px; width:28px; border-radius:50%;}
+  .nav-brand em{font-style:italic; color:var(--burgundy);}
+  .nav-links{list-style:none; display:flex; gap:24px; margin:0; padding:0; align-items:center;}
+  .nav-links a{text-decoration:none; color:var(--muted); font-size:12px; letter-spacing:0.04em;}
+  .nav-links a.active{color:var(--burgundy); border-bottom:1.5px solid var(--burgundy); padding-bottom:2px;}
+  .nav-links a.nav-cta{background:var(--ink); color:var(--cream); padding:9px 18px; border-radius:2px;}
+
+  .issue-page{padding:48px 0 80px;}
+  .issue-layout{display:grid; grid-template-columns:minmax(0,640px) minmax(0,320px); gap:32px; align-items:start; justify-content:center;}
+
+  .issue-dateline{font-size:11.5px; letter-spacing:0.03em; color:var(--burgundy); margin:0 0 10px;}
+  .issue-main h1{font-family:'Newsreader',serif; font-weight:600; font-size:30px; line-height:1.3; margin:0 0 20px; max-width:620px;}
+  .issue-main p{font-size:14px; line-height:1.75; color:var(--body); margin:0 0 16px; text-align:justify; hyphens:auto;}
+
+  .eb{font-size:10.5px; letter-spacing:0.08em; color:var(--burgundy); text-transform:uppercase; margin:28px 0 8px;}
+  .rail-title{font-weight:700; font-size:12px;}
+  .section-label{font-family:'Newsreader',serif; font-size:17px; font-weight:600; margin:30px 0 12px; color:var(--burgundy);}
+  .term-link{color:var(--burgundy); text-decoration:none; border-bottom:1.5px dotted var(--burgundy);}
+
+  .issue-copy{max-width:620px;}
+  .signal-noise{display:grid; grid-template-columns:1fr 1fr; gap:0; margin:28px 0 16px; padding-top:24px; border-top:0.5px solid var(--line);}
+  .signal-noise .eb{margin-top:0;}
+  .signal-noise p:last-child{margin-bottom:0;}
+  .signal-noise > div:first-child{padding-right:28px;}
+  .signal-noise > div:last-child{padding-left:28px; border-left:0.5px solid var(--line);}
+
+  .key-question{margin:32px 0 0; padding-top:18px; border-top:1px solid var(--ink);}
+  .key-question .key-question-text{font-family:'Newsreader',serif; font-style:italic; font-weight:700; font-size:20px; color:#7d1f42; line-height:1.6; margin:0 0 14px; text-align:center;}
+
+  p.connects-chain{margin:26px 0; padding:20px 24px; border-top:1px solid var(--ink); border-bottom:1px solid var(--ink); font-family:'Newsreader',serif; font-style:italic; font-size:15px; line-height:1.85; color:var(--body); text-align:center;}
+
+  .references-section{grid-column:1 / -1; border-top:0.5px solid var(--line); padding:36px 0 4px;}
+  .references-section .section-label{margin:0 0 14px;}
+  .references-list{list-style:none; margin:0; padding:0; max-width:900px;}
+  .references-list li{font-size:11.5px; line-height:1.7; color:var(--muted); margin-bottom:14px; text-align:justify; hyphens:auto;}
+  .references-list li a{color:var(--burgundy); text-decoration:none; word-break:break-all;}
+  .references-list li a:hover{text-decoration:underline;}
+
+  .issue-rail{border-left:0.5px solid var(--line); padding-left:28px; align-self:start;}
+  .rail-block{border-bottom:0.5px solid var(--line-soft); padding-bottom:20px; margin-bottom:20px;}
+  .rail-block:last-child{border-bottom:none; margin-bottom:0;}
+
+  .rail-stat{margin-bottom:22px;}
+  .rail-stat:last-child{margin-bottom:0;}
+  .rail-label{display:block; font-size:9.5px; letter-spacing:0.08em; color:var(--hint); margin-bottom:5px;}
+  .rail-value{display:block; font-family:'Newsreader',serif; font-style:italic; font-weight:500; font-size:14.5px; color:var(--ink); line-height:1.4;}
+
+  .rail-table{width:100%; border-collapse:collapse; font-size:12px;}
+  .rail-table td{padding:7px 0; border-bottom:0.5px solid var(--line-soft); color:var(--body);}
+  .rail-table tr:last-child td{border-bottom:none;}
+  .rail-table td.dir{text-align:right; color:var(--muted); white-space:nowrap;}
+  .rail-table td.dir.down, .rail-table td.dir.up{color:var(--burgundy);}
+
+  .rail-teaser-text{font-size:12px; color:var(--muted); line-height:1.6; margin:0 0 10px;}
+  .rail-link{font-size:10.5px; color:var(--burgundy); text-decoration:none;}
+  .rail-link:hover{text-decoration:underline;}
+
+  .rail-block-featured{background:#faf1f4; border-radius:8px; padding:16px 18px 18px; border-bottom:none;}
+  .rail-block-featured .eb{margin-top:0; margin-bottom:8px;}
+  .rail-link-btn{display:inline-block; font-size:10px; letter-spacing:0.05em; color:var(--burgundy); border:0.5px solid var(--burgundy); border-radius:2px; padding:7px 12px; text-decoration:none;}
+  .rail-link-btn:hover{background:var(--burgundy); color:var(--cream);}
+
+  .rail-term{font-family:'Newsreader',serif; font-size:14px; font-weight:600; margin:0 0 5px;}
+  .rail-def{font-size:11.5px; color:var(--muted); line-height:1.6; margin:0;}
+
+  .term-grid{display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:10px 0 14px;}
+  .term-box{background:#fff; border:0.5px solid var(--line); border-radius:6px; padding:10px 12px;}
+  .term-box span{font-family:'Newsreader',serif; font-size:11.5px; font-weight:400; color:var(--ink);}
+
+  .site-footer{border-top:0.5px solid var(--line); padding:44px 0 30px;}
+  .footer-top{display:flex; justify-content:space-between; align-items:center; margin-bottom:22px; flex-wrap:wrap; gap:16px;}
+  .footer-brand{display:flex; align-items:center; gap:8px; text-decoration:none; color:var(--ink); font-weight:600; font-family:'Newsreader',serif; font-size:14px;}
+  .footer-brand img{height:24px; width:24px; border-radius:50%;}
+  .footer-links{list-style:none; display:flex; gap:18px; margin:0; padding:0; flex-wrap:wrap;}
+  .footer-links a{color:var(--muted); text-decoration:none; font-size:12px;}
+  .footer-bottom{display:flex; justify-content:space-between; font-size:11px; color:var(--hint); border-top:0.5px solid var(--line); padding-top:16px; flex-wrap:wrap; gap:8px;}
+
+  a:focus-visible, .nav-cta:focus-visible{outline:2px solid var(--burgundy); outline-offset:2px;}
+
+  @media (max-width:600px){
+    .signal-noise{grid-template-columns:1fr;}
+    .signal-noise > div:first-child{padding-right:0;}
+    .signal-noise > div:last-child{padding-left:0; border-left:none; margin-top:20px;}
+  }
+
+  @media (max-width:860px){
+    .issue-layout{grid-template-columns:1fr;}
+    .issue-rail{border-left:none; padding-left:0; border-top:0.5px solid var(--line); padding-top:28px; margin-top:8px;}
+    .nav-links{display:none;}
+  }
+</style>
+</head>
+<body>
+
+<div class="folio-line">
+  <div class="wrap">
+    <span><b>Wall Street for the Girls</b> &middot; A weekly market brief</span>
+    <span>Issue No. 13 &middot; July 26, 2026</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="nav-brand" href="index.html">
+      <img src="logo.png" alt="WSG logo">
+      <span>Wall Street <em>for the girls</em></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="archive.html" class="active">Archive</a></li>
+      <li><a href="financial-syllabus.html">Financial Syllabus</a></li>
+      <li><a href="glossary.html">Glossary</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a class="nav-cta" href="https://wallstreetforthegirls.substack.com" target="_blank" rel="noopener">Subscribe</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+<section class="issue-page">
+  <div class="wrap issue-layout">
+
+    <article class="issue-main">
+      <p class="issue-dateline">&mdash; July 26, 2026 &middot; Issue No. 13</p>
+      <h1>The free trial is over, and the subscription renewed itself.</h1>
+
+      <div class="issue-copy">
+      <p style="font-style:italic; font-size:16px; color:#3a3733; margin-bottom:10px;">Here's what you need to know this week, and why it matters.</p>
+      <p>The free trial. Thirty days of something we don&rsquo;t really need but would be nice to have, offered for nothing.</p>
+
+      <p>The streaming service we signed up for to watch one show. The meditation app that promised to fix our sleep. The premium version we only wanted for one week. We clicked yes fully intending to cancel before it charged us, and we genuinely meant it. Some of us even set a reminder, but most of us just trusted ourselves to remember.</p>
+
+      <p>Then the free trial ends, and here is the weird part. Nothing happens.</p>
+
+      <p>There is no alarm, no final warning in bold, no moment where the screen asks you one last time if you&rsquo;re sure. The service keeps working, exactly as it did the day before. And then one morning you wake up to your bank statement. You take a look, and there it is. The charge, sitting right there.</p>
+
+      <p>The free thing became a paid thing while we weren&rsquo;t paying attention.</p>
+
+      <p>What stays with you isn&rsquo;t the charge. It&rsquo;s how reasonable the whole thing sounds when you open the app and see the notification. They kept your settings. They saved your place. They renewed you, the message explains, so you wouldn&rsquo;t have to lift a finger. For your convenience, of course.</p>
+
+      <p>That is the exact moment the temporary becomes permanent. Not with a decision you made, but with a renewal you never actively chose.</p>
+
+      <p>This week, the entire US economy got that message.</p>
+
+      <p>And when you open it, it reads like the ones we already know too well. Your trial period has ended. Your plan has been renewed. No action needed on your end. We did this so nothing would be interrupted, or inconvenient.</p>
+
+      <p>You might be wondering what the &ldquo;subscription&rdquo; actually is. It&rsquo;s the <a class="term-link" href="glossary.html#tariff">tariffs</a> that were due to expire this week and didn&rsquo;t. Let&rsquo;s start with what a tariff even is because the word gets thrown around constantly and it&rsquo;s almost never explained. A tariff is a tax a country charges on imported goods. The important detail, and we&rsquo;ll come back to it more than once, is that the tax is paid by the company doing the importing, not by the foreign country that made the goods. When a shipment arrives at a US port, an American business hands the money to its own government before it can sell any of it.</p>
+
+      <p>Which raises the obvious question. Why was there ever a trial period at all?</p>
+
+      <p>Back in February, the Supreme Court ruled that the legal authority the president had been using to impose blanket tariffs, which is a flat rate applied across nearly every country at once, did not actually authorize them. This basically means that the tariffs already in place were standing on nothing. Not badly designed, not too high, just missing the legal basis that was supposed to allow them in the first place.</p>
+
+      <p>So the blanket tariffs fell through. And just like that, they were gone.</p>
+
+      <p>But an administration that wants tariffs badly enough does not simply give up and wait around for a better legal argument. Within days, a replacement appeared. A temporary 10% surcharge on most of the world, built on a different piece of legislation called Section 122 of the Trade Act of 1974. This one came with an expiration date built right in, a maximum of 150 days, and the only way to run it any longer was through an Act of Congress. Which means an actual law passed by both chambers of Congress and signed, not just a decision the president could make alone. It was the tool the administration turned to immediately because it was the fastest one available. Section 122 could be used the same day, by the president alone, with no vote and no waiting on Congress, and it could be applied to nearly every country at once. After losing the broader tariffs in court, speed and reach were exactly what the administration needed, and Section 122 offered both.</p>
+
+      <p>And this week, at midnight on Thursday, those 150 days ran out.</p>
+
+      <p>One minute after midnight, the moment the old tariffs expired, a new set took their place. The rates now run from 10% up to 12.5%, and they apply to 60 of America&rsquo;s biggest trading partners. Between them, those partners account for 99.4% of the goods the US imports. The order reaches almost every route into the country, though hundreds of pages of exemptions sit underneath it.</p>
+
+      <p>The old deal had an expiry date. This one doesn&rsquo;t come with one. According to the administration&rsquo;s own team, it&rsquo;s what they&rsquo;re hoping will be permanent.</p>
+
+      <p>And just like the free trial email, it arrived wrapped in the warm language of doing you a favor. These new tariffs are the result of a months-long investigation into forced labor, and a senior administration official described the move as &ldquo;the most sweeping international labor rights action the United States has ever taken.&rdquo;</p>
+
+      <p>That is the noble reason, the one they want you to hear first. But the same official gave a second reason, and this one tells you what&rsquo;s actually going on. The tariffs were brought in now, in the official&rsquo;s own words, &ldquo;really to avoid complexity.&rdquo; Steady rates, they added, would be better for businesses.</p>
+
+      <p>That second reason is the whole story compressed into a single line. The pitch isn&rsquo;t that any of this will cost you less. The pitch is that it will be simpler, steadier, easier to plan around. It&rsquo;s the fine print that says we kept your settings so you would not be interrupted.</p>
+
+      <p>That framing is doing more work than it looks like. When a cost is temporary, you expect it to go away. You keep reminding yourself this is not how things normally are and that it will pass. You plan around the day it ends. That is exactly how most of the world has treated tariffs all year. As a storm that will pass.</p>
+
+      <p>Except this time, the storm didn&rsquo;t pass. The new tariffs are built on a different part of the same law, Section 301. A Section 301 action doesn&rsquo;t last forever, though. It lasts four years. And then it renews, on request, for as long as somebody wants it to, with no restrictions on the rate. It isn&rsquo;t a cost with no end date. It&rsquo;s a cost that renews itself unless someone actively stops it.</p>
+
+      <p>As for how much more expensive this actually makes daily life, the honest answer is not much, at least not on the day itself. The Budget Lab at Yale put the effective tariff rate, the average tariff actually carried across everything the US imports, at around 11.8%, and these new tariffs are expected to lift that by a percentage point or two. But over a year, that changes. Days before the tariffs were implemented, the Budget Lab ran the numbers both ways. If the temporary tariffs had simply expired with nothing to replace them, the estimated annual cost to the average household came out to roughly $550. If Section 301 tariffs came in instead, that figure roughly doubled, to around $1,100.</p>
+
+      <p>On Friday, they did. You won&rsquo;t feel it in one afternoon at the checkout. You&rsquo;ll feel it over the course of a year.</p>
+
+      <p>And the thing is, this isn&rsquo;t even the final charge. It&rsquo;s the new baseline. A baseline that is expected to keep increasing. And that&rsquo;s not a guess. A second investigation is already underway, and it is into what&rsquo;s called excess structural capacity. This one is aimed at China, the European Union, and 16 other trading partners, and it is expected to conclude within months.</p>
+
+      <p>One economist, Simon MacAdam of the research firm Capital Economics, described those coming duties as top-up tariffs, meant to return overall US tariff levels to those in place before the Supreme Court&rsquo;s ruling in February. On top of that, the same week brought a fresh threat of 50% tariffs on a range of Canadian goods, and 100% tariffs on generic drugs starting in 2028.</p>
+
+      <p>So the subscription didn&rsquo;t just renew. It renewed on a plan built to keep going up.</p>
+
+      <p>Jamieson Greer, the US Trade Representative, summed up the logic by telling lawmakers this week that the policy is the same, and that while the specific legal authorities being used have changed, the trade strategy has not. A senior official put it even more plainly, describing the president as eager to maximize tariffs in the time he has left in office.</p>
+
+      <p>The rest of this issue is about learning to read the statement anyway, because a cost you&rsquo;ve decided to treat as permanent is a completely different thing from one you keep waiting to end.</p>
+
+      <div class="signal-noise">
+        <div>
+          <p class="eb">&#10022; The signal</p>
+          <p>The real news isn&rsquo;t the size of the tariff. It&rsquo;s what it&rsquo;s built on. Section 122 stops dead after 150 days unless Congress acts. Section 301 doesn&rsquo;t stop on its own either. It runs for four years, then renews on request, indefinitely, with no cap on the rate. And this is a floor, not a ceiling. An investigation into excess structural capacity, covering China, the EU, and 16 others, is expected to finish within months and push rates back toward where they were before February&rsquo;s ruling. Add the new threats of 50% on Canadian goods and 100% on generic drugs from 2028, and the direction is clear.</p>
+        </div>
+        <div>
+          <p class="eb">&#10022; The noise</p>
+          <p>The day one price shock is noise. Rates barely moved, up a point or two from 11.8%. Which country landed at 10% versus 12.5%, or India&rsquo;s move down for what the White House called progress on forced labor, is worth a glance, but it&rsquo;s not the story. The forced labor framing explains the legal route. The cost structure underneath is what actually impacts markets and you.</p>
+        </div>
+      </div>
+
+      <h2 class="section-label">What&rsquo;s moving in markets</h2>
+      <p style="font-style:italic; color:var(--muted);"><b>Note:</b> This week&rsquo;s article is a trade policy story and the view below is informed context.</p>
+      <p><b>Import heavy shares</b> carry the pressure this week. The companies most exposed are the ones whose whole business depends on bringing physical goods across a border. Now that the tariff renews rather than expires, the trade-off between smaller profits and higher prices stops being a one off decision and becomes a permanent condition of doing business. The companies that feel it the most are the ones selling wants rather than needs, known as consumer discretionary, because when they raise prices consumers can decide whether they wait for the purchase.</p>
+      <p><b>Domestic and services businesses</b> are not as heavily impacted. A company that makes and sells inside the country, or sells a service rather than a shippable object, has very little imported cost to be taxed on. The same headline that hurts an import-reliant retailer barely affects a domestic software firm. That split, between companies that are exposed and companies that aren&rsquo;t, is why the stock market doesn&rsquo;t move as one block this week. It sorts winners from losers instead.</p>
+      <p><b>Bond yields</b> face a mild upward tilt. Tariffs raise the price of imported goods, which is inflationary, and more of that increase is still working its way through. Federal Reserve Bank of New York research this month found that nearly half of firms that have already paid tariffs still plan further price increases. That matters because it points to sticky inflation, meaning price increases that stay in place rather than moving back down on their own. When inflation looks sticky like that, central banks have less room to cut interest rates. And when rates stay higher for longer, the yield tends to run a little higher too.</p>
+      <p>The <b>dollar</b> is a mixed story. Two forces pull against each other. Tariffs reduce imports and argue for keeping US rates higher for longer, both of which support the dollar. But an openly unpredictable tariff policy, and the risk that other countries impose their own duties, pull the other way.</p>
+      <p><b>Energy</b> avoided the tariffs. Oil and natural gas were excluded to avoid economic turmoil, meaning a sudden jump in fuel, heating, and transport costs that would ripple through prices everywhere else. The single input that impacts the price of almost everything else, from the delivery van to the factory to the flight, was protected on purpose.</p>
+
+      <h2 class="section-label">Currency &amp; interest rate</h2>
+      <p style="font-style:italic; color:var(--muted);"><b>Note:</b> This week&rsquo;s article does not cover currencies or interest rates. The analysis below is informed context, built around the main reference article&rsquo;s own numbers.</p>
+      <div class="signal-noise">
+        <div>
+          <p class="eb">Where currencies stand</p>
+          <p><b>USD:</b> Mixed. There are two forces mentioned in the previous section pulling in opposite ways.</p>
+          <p><b>EUR/USD:</b> Weaker bias. For anyone whose costs are in euros, the direct tariff impact is on the softer side. But the indirect impact of a cautious Fed on cutting rates tends to favor the dollar over the euro.</p>
+          <p><b>EM FX:</b> Under pressure. Countries whose economies rely heavily on exporting goods into the US now face a permanent cost to entry and currencies tend to reflect that over time rather than overnight.</p>
+        </div>
+        <div>
+          <p class="eb">The rates picture</p>
+          <p><b>Fed:</b> Faces a version of this problem it can&rsquo;t easily fix. Tariffs push goods prices up, and rate cuts can&rsquo;t undo that. Cutting into tariff-driven inflation risks making it permanent, so the more likely path is fewer cuts, not more.</p>
+          <p><b>ECB &amp; BOE:</b> Neither sets US trade policy, but both absorb it through a stronger dollar and slower global trade since it has become more expensive to access the US market. The EU&rsquo;s 10% band is the softer outcome here, so this is more a growth problem than a price one.</p>
+          <p><b>Yield curve:</b> Short-dated yields stay supported as rate cuts get delayed. Longer-dated yields are pulled between sticky inflation on one side and slower growth on the other.</p>
+        </div>
+      </div>
+
+      <h2 class="section-label">How it all connects</h2>
+      <p class="connects-chain">Temporary tariffs get replaced by ones that renew themselves &rarr; import costs rise and stay elevated &rarr; companies absorb the cost, so margins shrink, or pass it on, so prices rise &rarr; inflation stays sticky &rarr; central banks keep rates higher for longer</p>
+      <p>What makes this week different is what makes it easy to underestimate. No crash, no crisis, no single terrible day to point at. The rate barely moved. A cost everyone had been treating as temporary just became one that renews on its own, with more scheduled to arrive. That kind of shift is harder to notice than a market crash and often more important long-term.</p>
+      <p>The reason it is so hard to fix is that a tariff is a supply-side problem, and the tools built to fight inflation were never designed for that kind of problem. A central bank has one main tool, interest rates, and that tool works by cooling demand, meaning how much people and businesses want to spend. It&rsquo;s effective at calming an economy running too hot, where too much money chases too few goods. It does almost nothing about a tariff. A tariff doesn&rsquo;t make anyone want to buy more, it makes imported things cost more to bring in. So, a central bank can raise or lower rates as many times as it likes, and it still can&rsquo;t undo the tax already sitting on a shipment at the border. That mismatch, between what&rsquo;s actually causing the problem and what the available tools can fix, is why this shows up in your borrowing costs and investments all at once, and why no single institution can simply make it go away.</p>
+
+      <h2 class="section-label">Why this matters to you</h2>
+      <p style="font-style:italic;"><b>The broader market picture</b></p>
+      <p>This week doesn&rsquo;t have an immediate, direct impact but it&rsquo;s worth understanding anyway. The most important financial shifts are usually not the dramatic ones. They&rsquo;re the ones that happen without anyone noticing at the time. This week, the price of importing almost everything into the United States stopped being temporary and became a permanent feature, with more already scheduled. You won&rsquo;t feel it as a sudden jump in prices, but you may feel it slowly, as things start to cost a little more each time and stay that way. The value this week isn&rsquo;t in reacting. It&rsquo;s in noticing something while it&rsquo;s still happening.</p>
+      <p>Here is what it means a little closer to home.</p>
+      <p style="font-style:italic;"><b>If you are building your financial literacy</b></p>
+      <p>When you read that a tariff, or honestly any cost, has taken effect, the useful instinct is to ask two questions in sequence. Who actually pays this, and does it expire or does it renew? Those two questions turn a vague, alarming headline into something you genuinely understand.</p>
+      <p style="font-style:italic;"><b>If this connects to your work or portfolio</b></p>
+      <ul style="font-size:14px; line-height:1.75; color:var(--body); padding-left:20px; margin:0 0 16px;">
+        <li style="margin-bottom:12px;">If you are an <b>importer</b>, meaning your costs depend on goods bought abroad, the question shifts from when these tariffs end to how exposed you are if they don&rsquo;t. The exemptions are real but uneven. Energy is exempt, goods covered by the USMCA stay largely tariff free, and steel and aluminum are taxed under their own separate rules.</li>
+        <li style="margin-bottom:12px;">If you are an <b>exporter</b>, meaning you earn by selling abroad, the direct hit from US import duties is smaller. As a general matter, the risk worth watching is retaliation, other countries taxing US goods in return, which can turn into a wider trade war.</li>
+        <li style="margin-bottom:12px;">If you are a <b>borrower</b> with <b>floating-rate debt</b>, meaning a rate that moves with the market, the impact is indirect. Tariffs keep inflation firm, which keeps central banks cautious about cutting, which keeps borrowing costs elevated longer.</li>
+        <li>If you are an <b>investor</b>, you may be more tariff exposed than you realize, depending on how import reliant the companies you actually own are. Retail and electronics carry it directly. Domestic and services businesses barely notice it.</li>
+      </ul>
+
+      <div class="key-question">
+        <p class="key-question-text">&ldquo;The next time a tariff headline crosses your feed, will you know to ask who&rsquo;s actually paying it?&rdquo;</p>
+        <p>It&rsquo;s rarely the country that gets named in the headline. It&rsquo;s an importer, absorbing the cost or passing it on. That single question is the one that turns a policy headline into something you actually understand.</p>
+      </div>
+      </div>
+    </article>
+
+    <aside class="issue-rail">
+
+      <div class="rail-block">
+        <p class="eb rail-title" style="margin-top:0;">Today&rsquo;s session</p>
+        <div class="rail-stat">
+          <span class="rail-label">Risk mood</span>
+          <span class="rail-value">Neutral</span>
+        </div>
+        <div class="rail-stat">
+          <span class="rail-label">Focus</span>
+          <span class="rail-value">Equities &amp; Trade Policy</span>
+        </div>
+        <div class="rail-stat">
+          <span class="rail-label">Theme</span>
+          <span class="rail-value">&ldquo;Temporary&rdquo; tariffs made permanent under Section 301</span>
+        </div>
+      </div>
+
+      <div class="rail-block">
+        <p class="eb" style="margin-top:0;">Asset direction</p>
+        <table class="rail-table">
+          <tr><td>Import-heavy equities</td><td class="dir down">&darr;</td></tr>
+          <tr><td>Domestic/services equities</td><td class="dir">&harr;</td></tr>
+          <tr><td>US bond yields</td><td class="dir up">&uarr; mild</td></tr>
+          <tr><td>US dollar</td><td class="dir">&harr;</td></tr>
+          <tr><td>Oil &amp; natural gas</td><td class="dir">&harr;</td></tr>
+        </table>
+      </div>
+
+      <div class="rail-block rail-block-featured">
+        <p class="eb" style="margin-top:0;">This issue&rsquo;s foundation</p>
+        <p class="rail-teaser-text">Before we dive in, here&rsquo;s the one thing to know this week.</p>
+        <a class="rail-link-btn" href="foundation-13.html">Read &rarr;</a>
+      </div>
+
+      <div class="rail-block rail-block-featured">
+        <p class="eb" style="margin-top:0;">This issue&rsquo;s syllabus &middot; Equities</p>
+        <p class="rail-teaser-text">This week&rsquo;s focus is on equities.</p>
+        <a class="rail-link-btn" href="financial-syllabus-equities-13.html">Read &rarr;</a>
+      </div>
+
+      <div class="rail-block">
+        <p class="eb" style="margin-top:0;">Key term</p>
+        <p class="rail-term" id="tariff">Tariff</p>
+        <p class="rail-def">A tax a country charges on goods coming in from abroad. Paid by the company importing them, not by the exporting country.</p>
+      </div>
+
+       <p class="eb" style="margin-top:22px;">Terms in this issue</p>
+        <div class="term-grid">
+          <div class="term-box"><span>Tariff</span></div>
+          <div class="term-box"><span>Import duty</span></div>
+          <div class="term-box"><span>Tariff incidence</span></div>
+          <div class="term-box"><span>Section 122</span></div>
+          <div class="term-box"><span>Section 301</span></div>
+          <div class="term-box"><span>Effective tariff rate</span></div>
+          <div class="term-box"><span>Cost pass-through</span></div>
+          <div class="term-box"><span>Gross margin</span></div>
+          <div class="term-box"><span>Consumer discretionary</span></div>
+          <div class="term-box"><span>USMCA</span></div>
+          <div class="term-box"><span>Excess structural capacity</span></div>
+          <div class="term-box"><span>Top-up tariffs</span></div>
+          <div class="term-box"><span>Retaliation (Trade)</span></div>
+          <div class="term-box"><span>Inflationary</span></div>
+        </div>
+        <a class="rail-link" href="glossary.html">See full glossary &rarr;</a>
+
+    </aside>
+
+    <div class="references-section">
+      <h2 class="section-label">Additional references</h2>
+      <ul class="references-list">
+        <li>Abel, J. R., Amiti, M., Deitz, R., Heise, S., &amp; Montalbano, N. (2026, July 8). More tariff pass-through is in the pipeline. <em>Federal Reserve Bank of New York Liberty Street Economics.</em> <a href="https://libertystreeteconomics.newyorkfed.org/2026/07/more-tariff-pass-through-is-in-the-pipeline/" target="_blank" rel="noopener">https://libertystreeteconomics.newyorkfed.org/2026/07/more-tariff-pass-through-is-in-the-pipeline/</a></li>
+        <li>Amiti, M., Flanagan, C., Heise, S., &amp; Weinstein, D. E. (2026, February 12). Who is paying for the 2025 U.S. tariffs? <em>Federal Reserve Bank of New York Liberty Street Economics.</em> <a href="https://libertystreeteconomics.newyorkfed.org/2026/02/who-is-paying-for-the-2025-u-s-tariffs/" target="_blank" rel="noopener">https://libertystreeteconomics.newyorkfed.org/2026/02/who-is-paying-for-the-2025-u-s-tariffs/</a></li>
+        <li>Balance-of-payments authority, 19 U.S.C. &sect; 2132. <em>Office of the Law Revision Counsel.</em> <a href="https://uscode.house.gov/view.xhtml?req=(title:19%20section:2132%20edition:prelim)" target="_blank" rel="noopener">https://uscode.house.gov/view.xhtml?req=(title:19%20section:2132%20edition:prelim)</a></li>
+        <li>The Budget Lab at Yale. (2026, July 21). The state of U.S. tariffs. <em>Yale University.</em> Retrieved July 25, 2026, from <a href="https://budgetlab.yale.edu/research/state-us-tariffs" target="_blank" rel="noopener">https://budgetlab.yale.edu/research/state-us-tariffs</a></li>
+        <li>Congressional Research Service. (2026). Section 122 of the Trade Act of 1974 (IF13199). <a href="https://www.congress.gov/crs-product/IF13199" target="_blank" rel="noopener">https://www.congress.gov/crs-product/IF13199</a></li>
+        <li>Congressional Research Service. (2026). Section 301 of the Trade Act of 1974 (IF11346). <a href="https://www.congress.gov/crs-product/IF11346" target="_blank" rel="noopener">https://www.congress.gov/crs-product/IF11346</a></li>
+        <li>Liability of importer for duties, 19 C.F.R. &sect; 141.1. <em>Electronic Code of Federal Regulations.</em> <a href="https://www.ecfr.gov/current/title-19/chapter-I/part-141/subpart-A/section-141.1" target="_blank" rel="noopener">https://www.ecfr.gov/current/title-19/chapter-I/part-141/subpart-A/section-141.1</a></li>
+        <li>Modification and termination of actions, 19 U.S.C. &sect; 2417. <em>Office of the Law Revision Counsel.</em> <a href="https://uscode.house.gov/view.xhtml?req=(title:19%20section:2417%20edition:prelim)" target="_blank" rel="noopener">https://uscode.house.gov/view.xhtml?req=(title:19%20section:2417%20edition:prelim)</a></li>
+        <li>Werschkul, B. (2026, July 24). Trump&rsquo;s next phase of global tariffs goes into effect, affecting countries that provide 99.4% of US imports. <em>Yahoo Finance.</em> <a href="https://uk.finance.yahoo.com/news/trumps-next-phase-of-global-tariffs-goes-into-effect-affecting-countries-that-provide994-of-us-imports-210032314.html" target="_blank" rel="noopener">https://uk.finance.yahoo.com/news/trumps-next-phase-of-global-tariffs-goes-into-effect-affecting-countries-that-provide994-of-us-imports-210032314.html</a></li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <a class="footer-brand" href="index.html">
+        <img src="logo.png" alt="WSG logo">
+        <span>Wall Street for the Girls</span>
+      </a>
+      <ul class="footer-links">
+        <li><a href="archive.html">Archive</a></li>
+        <li><a href="financial-syllabus.html">Financial Syllabus</a></li>
+        <li><a href="glossary.html">Glossary</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="https://wallstreetforthegirls.substack.com" target="_blank" rel="noopener">Substack</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Wall Street for the Girls</span>
+      <em>Educational purposes only: reflects personal analysis, not financial advice.</em>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
