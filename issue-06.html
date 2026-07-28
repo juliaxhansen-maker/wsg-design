@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Issue No. 6: Japan Tried Retail Therapy on the Yen, and It Didn't Help — Wall Street for the Girls</title>
+<meta name="description" content="Japan spent $73 billion trying to prop up the yen this week, and it barely worked. What the carry trade actually is, why interest rate gaps move currencies, and what it means for your money.">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500;1,6..72,600&family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#faf7f1; --ink:#22201d; --burgundy:#7d1f42; --muted:#5c574e;
+    --hint:#a39c8c; --line:#ddd7cb; --line-soft:#ece7dc; --body:#3a3733;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--cream); color:var(--ink); font-family:'Inter',sans-serif;}
+  a{color:inherit;}
+  .wrap{max-width:1200px; margin:0 auto; padding:0 24px;}
+
+  .folio-line{border-bottom:0.5px solid var(--line); font-size:11px; letter-spacing:0.03em; color:var(--hint);}
+  .folio-line .wrap{display:flex; justify-content:space-between; padding:10px 24px;}
+
+  .site-header{border-bottom:0.5px solid var(--line);}
+  .nav{display:flex; justify-content:space-between; align-items:center; padding:16px 24px;}
+  .nav-brand{display:flex; align-items:center; gap:8px; text-decoration:none; color:var(--ink); font-family:'Newsreader',serif; font-weight:600; font-size:16px;}
+  .nav-brand img{height:28px; width:28px; border-radius:50%;}
+  .nav-brand em{font-style:italic; color:var(--burgundy);}
+  .nav-links{list-style:none; display:flex; gap:24px; margin:0; padding:0; align-items:center;}
+  .nav-links a{text-decoration:none; color:var(--muted); font-size:12px; letter-spacing:0.04em;}
+  .nav-links a.active{color:var(--burgundy); border-bottom:1.5px solid var(--burgundy); padding-bottom:2px;}
+  .nav-links a.nav-cta{background:var(--ink); color:var(--cream); padding:9px 18px; border-radius:2px;}
+
+  .issue-page{padding:48px 0 80px;}
+  .issue-layout{display:grid; grid-template-columns:minmax(0,640px) minmax(0,320px); gap:32px; align-items:start; justify-content:center;}
+
+  .issue-dateline{font-size:11.5px; letter-spacing:0.03em; color:var(--burgundy); margin:0 0 10px;}
+  .issue-main h1{font-family:'Newsreader',serif; font-weight:600; font-size:30px; line-height:1.3; margin:0 0 20px; max-width:620px;}
+  .issue-main p{font-size:14px; line-height:1.75; color:var(--body); margin:0 0 16px; text-align:justify; hyphens:auto;}
+
+  .eb{font-size:10.5px; letter-spacing:0.08em; color:var(--burgundy); text-transform:uppercase; margin:28px 0 8px;}
+  .rail-title{font-weight:700; font-size:12px;}
+  .section-label{font-family:'Newsreader',serif; font-size:17px; font-weight:600; margin:30px 0 12px; color:var(--burgundy);}
+  .term-link{color:var(--burgundy); text-decoration:none; border-bottom:1.5px dotted var(--burgundy);}
+
+  .issue-copy{max-width:620px;}
+  .signal-noise{display:grid; grid-template-columns:1fr 1fr; gap:0; margin:28px 0 16px; padding-top:24px; border-top:0.5px solid var(--line);}
+  .signal-noise .eb{margin-top:0;}
+  .signal-noise p:last-child{margin-bottom:0;}
+  .signal-noise > div:first-child{padding-right:28px;}
+  .signal-noise > div:last-child{padding-left:28px; border-left:0.5px solid var(--line);}
+
+  .key-question{margin:32px 0 0; padding-top:18px; border-top:1px solid var(--ink);}
+  .key-question .key-question-text{font-family:'Newsreader',serif; font-style:italic; font-weight:700; font-size:20px; color:#7d1f42; line-height:1.6; margin:0 0 14px; text-align:center;}
+
+  p.connects-chain{margin:26px 0; padding:20px 24px; border-top:1px solid var(--ink); border-bottom:1px solid var(--ink); font-family:'Newsreader',serif; font-style:italic; font-size:15px; line-height:1.85; color:var(--body); text-align:center;}
+
+  .references-section{grid-column:1 / -1; border-top:0.5px solid var(--line); padding:36px 0 4px;}
+  .references-section .section-label{margin:0 0 14px;}
+  .references-list{list-style:none; margin:0; padding:0; max-width:900px;}
+  .references-list li{font-size:11.5px; line-height:1.7; color:var(--muted); margin-bottom:14px; text-align:justify; hyphens:auto;}
+  .references-list li a{color:var(--burgundy); text-decoration:none; word-break:break-all;}
+  .references-list li a:hover{text-decoration:underline;}
+
+  .issue-rail{border-left:0.5px solid var(--line); padding-left:28px; align-self:start;}
+  .rail-block{border-bottom:0.5px solid var(--line-soft); padding-bottom:20px; margin-bottom:20px;}
+  .rail-block:last-child{border-bottom:none; margin-bottom:0;}
+
+  .rail-stat{margin-bottom:22px;}
+  .rail-stat:last-child{margin-bottom:0;}
+  .rail-label{display:block; font-size:9.5px; letter-spacing:0.08em; color:var(--hint); margin-bottom:5px;}
+  .rail-value{display:block; font-family:'Newsreader',serif; font-style:italic; font-weight:500; font-size:14.5px; color:var(--ink); line-height:1.4;}
+
+  .rail-table{width:100%; border-collapse:collapse; font-size:12px;}
+  .rail-table td{padding:7px 0; border-bottom:0.5px solid var(--line-soft); color:var(--body);}
+  .rail-table tr:last-child td{border-bottom:none;}
+  .rail-table td.dir{text-align:right; color:var(--muted); white-space:nowrap;}
+  .rail-table td.dir.down, .rail-table td.dir.up{color:var(--burgundy);}
+
+  .rail-teaser-text{font-size:12px; color:var(--muted); line-height:1.6; margin:0 0 10px;}
+  .rail-link{font-size:10.5px; color:var(--burgundy); text-decoration:none;}
+  .rail-link:hover{text-decoration:underline;}
+
+  .rail-block-featured{background:#faf1f4; border-radius:8px; padding:16px 18px 18px; border-bottom:none;}
+  .rail-block-featured .eb{margin-top:0; margin-bottom:8px;}
+  .rail-link-btn{display:inline-block; font-size:10px; letter-spacing:0.05em; color:var(--burgundy); border:0.5px solid var(--burgundy); border-radius:2px; padding:7px 12px; text-decoration:none;}
+  .rail-link-btn:hover{background:var(--burgundy); color:var(--cream);}
+
+  .rail-term{font-family:'Newsreader',serif; font-size:14px; font-weight:600; margin:0 0 5px;}
+  .rail-def{font-size:11.5px; color:var(--muted); line-height:1.6; margin:0;}
+
+  .term-grid{display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:10px 0 14px;}
+  .term-box{background:#fff; border:0.5px solid var(--line); border-radius:6px; padding:10px 12px;}
+  .term-box span{font-family:'Newsreader',serif; font-size:11.5px; font-weight:400; color:var(--ink);}
+
+  .site-footer{border-top:0.5px solid var(--line); padding:44px 0 30px;}
+  .footer-top{display:flex; justify-content:space-between; align-items:center; margin-bottom:22px; flex-wrap:wrap; gap:16px;}
+  .footer-brand{display:flex; align-items:center; gap:8px; text-decoration:none; color:var(--ink); font-weight:600; font-family:'Newsreader',serif; font-size:14px;}
+  .footer-brand img{height:24px; width:24px; border-radius:50%;}
+  .footer-links{list-style:none; display:flex; gap:18px; margin:0; padding:0; flex-wrap:wrap;}
+  .footer-links a{color:var(--muted); text-decoration:none; font-size:12px;}
+  .footer-bottom{display:flex; justify-content:space-between; font-size:11px; color:var(--hint); border-top:0.5px solid var(--line); padding-top:16px; flex-wrap:wrap; gap:8px;}
+
+  a:focus-visible, .nav-cta:focus-visible{outline:2px solid var(--burgundy); outline-offset:2px;}
+
+  @media (max-width:600px){
+    .signal-noise{grid-template-columns:1fr;}
+    .signal-noise > div:first-child{padding-right:0;}
+    .signal-noise > div:last-child{padding-left:0; border-left:none; margin-top:20px;}
+  }
+
+  @media (max-width:860px){
+    .issue-layout{grid-template-columns:1fr;}
+    .issue-rail{border-left:none; padding-left:0; border-top:0.5px solid var(--line); padding-top:28px; margin-top:8px;}
+    .nav-links{display:none;}
+  }
+</style>
+</head>
+<body>
+
+<div class="folio-line">
+  <div class="wrap">
+    <span><b>Wall Street for the Girls</b> &middot; A weekly market brief</span>
+    <span>Issue No. 6 &middot; June 21, 2026</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="nav-brand" href="index.html">
+      <img src="logo.png" alt="WSG logo">
+      <span>Wall Street <em>for the girls</em></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="archive.html" class="active">Archive</a></li>
+      <li><a href="financial-syllabus.html">Financial Syllabus</a></li>
+      <li><a href="glossary.html">Glossary</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a class="nav-cta" href="https://wallstreetforthegirls.substack.com" target="_blank" rel="noopener">Subscribe</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+<section class="issue-page">
+  <div class="wrap issue-layout">
+
+    <article class="issue-main">
+      <p class="issue-dateline">&mdash; June 21, 2026 &middot; Issue No. 6</p>
+      <h1>Japan tried retail therapy on the yen, and it didn&rsquo;t help.</h1>
+
+      <div class="issue-copy">
+      <p style="font-style:italic; font-size:16px; color:#3a3733; margin-bottom:10px;">Here's what you need to know this week, and why it matters.</p>
+
+      <p>Let&rsquo;s be honest, we have all had the kind of weeks that ends with a basket full of things we did not need. Whether it is a bad day or a problem that simply will not go away, somehow the solution is to buy a new pair of shoes or order a bunch of stuff off of Sephora or Amazon.</p>
+
+      <p>And it works.</p>
+
+      <p>Well, at least for about an hour or two. Then the feeling fades and the receipt sits on the counter or in your email, and the thing that was actually bothering us is sitting exactly where we left it.</p>
+
+      <p>That is retail therapy. It soothes the feeling and sparks a moment of excitement, but it never actually solves the core issue.</p>
+
+      <p>This week, Japan basically tried retail therapy on the yen.</p>
+
+      <p>Here is the situation. Japan&rsquo;s currency, the yen (JPY), has been under pressure for a while now, trading around 160 to the US dollar. A weaker yen means everything Japan buys from abroad gets more expensive. And for a country that relies heavily on imports, those costs add up fast. This is why Japanese authorities decided to step in and push the yen&rsquo;s value back up.</p>
+
+      <p>From April to May it spent around 11.7 trillion yen, which is approximately 73 billion USD, buying up its own currency to push the value back up. On top of that Japan&rsquo;s central bank, also known as the Bank of Japan (BoJ), raised interest rates to their highest level in more than three decades.</p>
+
+      <p>And just like retail therapy, it worked for a moment.</p>
+
+      <p>At the end of April, the yen reached around 156 from 160, then briefly touched 155. But this slight relief was only temporary because within days the currency went straight back toward 160, which is exactly where it started.</p>
+
+      <p>So why did the most expensive shopping spree of the year basically change nothing? Well just like our experiences with retail therapy, the core problem was something money could not fix.</p>
+
+      <p>Masahiko Loo, senior fixed income strategist at State Street Investment Management, put it bluntly when he called the rate hike a &ldquo;Band-Aid on a bullet wound&rdquo;. Because the root of the issue is the gap between what American money earns and what the Japanese money earns.</p>
+
+      <p>A ten-year US government bond currently pays about 4.45%, while the Japanese equivalent pays about 2.64%. And money is not sentimental, so it flows toward wherever it is paid more.</p>
+
+      <p>So investors are borrowing cheap yen and moving that money into higher paying US assets. This is known as the <a class="term-link" href="glossary.html#carry-trade">carry trade</a>, which is when you borrow a low interest currency and move the money somewhere it earns more and pocket the difference.</p>
+
+      <p>Now, you may be thinking that this sounds a lot like arbitrage, which is when you exploit a price difference between two markets to lock in a guaranteed profit. But the carry trade is different. With a carry trade, you are essentially making a bet that the gap stays wide long enough for you to profit, and this comes with some risk. The yen could suddenly become stronger, eliminating your gains, or markets could panic and everyone rushes for the exit at once. Every time someone makes this trade, they sell yen to buy dollars, and the yen weakens a little further. As long as that gap stays wide, the pressure never disappears.</p>
+
+      <p>The carry trade is not the only thing weighing on the yen. Two more forces are pushing in the same direction.</p>
+
+      <p>The first is politics. Japan&rsquo;s Prime Minister, Sanae Takaichi, favors what is called a reflationary stance. This is a preference for low interest rates and government spending to push growth higher, even at the cost of a weaker currency. And when a government signals it is comfortable with a weaker currency, it only adds to the downward pressure on the yen.</p>
+
+      <p>The second is energy, and this is where our earlier issues come back in. In Issue 1, we explained how the Iran war pushed energy prices up across the world. Japan imports almost all of its energy and pays for it in dollars. That means every time oil prices rise, Japan&rsquo;s energy bill goes up, and the country has to sell more yen to buy the dollars it needs to pay that bill. The more expensive energy stays, the more yen gets sold, and the more pressure builds on the currency.</p>
+
+      <p>The carry trade we just described is one of the most crowded bets in global markets right now. This means many investors are quietly positioned the same way, all expecting the yen to keep falling. When everyone is on the same side of a trade, it works smoothly, until something spooks the market. At that point everyone tries to exit at once, and because the trade involves borrowed money, the unwind can be fast and violent. The yen surges higher and those with borrowed positions lose money quickly. Investors scramble to sell other assets, including stocks and funds, to cover their losses. That is how a currency move in Tokyo ends up hitting portfolios in London, New York, and everywhere in between.</p>
+
+      <p>The rest of this issue breaks down what is really going on, why intervention keeps failing, and what you should be watching.</p>
+
+      <div class="signal-noise">
+        <div>
+          <p class="eb">&#10022; The signal</p>
+          <p>First, it is everything money cannot buy. The yen is weak because of the wide gap between US and Japanese interest rates, the crowded carry trade that gap feeds, a government that prefers a weaker currency, and an energy bill that keeps Japan buying dollars.</p>
+          <p>The Bank of Japan just raised rates, but board member Toichiro Asada was the only vote against the hike, and incoming member Ayano Sato, who joins at the end of June, shares the same view. The appetite for further rate rises may be smaller than the headline suggests.</p>
+          <p>Third, the positioning. The number of investors betting the yen will keep falling has climbed to fresh highs, beyond where it sat before Japan&rsquo;s earlier interventions. That is a position that could unwind fast.</p>
+        </div>
+        <div>
+          <p class="eb">&#10022; The noise</p>
+          <p>&lsquo;Japan intervened again&rsquo; is noise. &lsquo;Intervention keeps failing&rsquo; is the signal. Japan stepped in at the end of April, and again in early May. Each of these moments made a headline, but the pattern underneath is what matters, a brief strengthening, followed by a return to 160.</p>
+          <p>The day-to-day moves are noise too. The yen ticking up or down a fraction of a percent on any given morning tells us almost nothing. The level that matters is where it keeps settling, which is near 160, and the gap that keeps pulling it there.</p>
+        </div>
+      </div>
+
+      <h2 class="section-label">What&rsquo;s moving in markets</h2>
+      <p>The <b>yen</b> is the entire story this week. It sits near 160 to the dollar, and the only thing that briefly moved it was Japan spending billions in efforts to push it higher. The carry trade, the soft currency politics and the energy import bill are all pushing the same way. So the intervention buys a pause rather than a turnaround.</p>
+      <p><b>US and Japanese government bonds</b> are where the pressure actually originates. A US 10Y government bond yields about 4.45%, while the Japanese equivalent yields about 2.64%, a gap of roughly 1.8 percentage points. US rates have stayed higher for longer under the Federal Reserve and its new chair Kevin Warsh, who we discussed in Issue 5. So as long as that gap stays wide, money will keep flowing out of the yen and into the dollar.</p>
+      <p><b>Japanese shares</b> are worth watching, though the shift will take time. Masahiko Loo, senior fixed income strategist at State Street Investment Management, points out that money could eventually flow back into Japan through investment in artificial intelligence, renewed foreign interest in Japanese companies, and a technology-led rally in the Nikkei, Japan&rsquo;s main stock index. That would support both the market and the currency.</p>
+      <p>The <b>US dollar</b> is on the stronger side of all this. Since a weak yen is really just a strong dollar viewed from Tokyo. The same wide US interest rates that pull money out of the yen also make dollar assets attractive across the board, a pattern we have seen in every issue since the first.</p>
+      <p style="font-style:italic; color:var(--muted);"><b>Note:</b> this week&rsquo;s article does not cover emerging market currencies. The line below is informed context, not sourced from the article.</p>
+      <p><b>Emerging market currencies</b> are not the main story this week, but they are worth keeping in mind. In a calm environment where investors are chasing higher returns, riskier currencies can hold up reasonably well. The danger comes from the other side. If the crowded yen bet ever unwinds in a rush, the nervousness tends to spread quickly, and higher-risk currencies are usually the first to feel it.</p>
+
+      <h2 class="section-label">Currency &amp; interest rate</h2>
+      <div class="signal-noise">
+        <div>
+          <p class="eb">Where currencies stand</p>
+          <p><b>USD/JPY:</b> Weak, near 160. The rate gap, the carry trade, reflationary politics and the energy bill are all pushing the same way, and intervention has produced only brief relief before the currency drifts back.</p>
+          <p><b>EUR/USD:</b> Informed context, not covered directly by the article. The euro is likely under mild pressure against a firm dollar.</p>
+          <p><b>Key FX level:</b> The number to watch is 160, the level Japanese authorities have been working to hold.</p>
+        </div>
+        <div>
+          <p class="eb">The yield picture</p>
+          <p><b>US 10Y:</b> Elevated near 4.45%, and the core of the whole story. It is held up by a Fed that has kept rates higher for longer.</p>
+          <p><b>BoJ:</b> Just raised rates to a three-decade high, but the board has a dovish tilt. With members who prefer cheaper money and a government that shares that view, there is a ceiling on how far rates can go.</p>
+          <p><b>Key rates level:</b> The gap between US and Japanese 10Y yields, about 1.8 percentage points. As long as it stays this wide, the carry trade keeps the yen under pressure.</p>
+        </div>
+      </div>
+
+      <h2 class="section-label">How it all connects</h2>
+      <p class="connects-chain">High US yields &rarr; money flows out of the yen into the dollar &rarr; the carry trade keeps selling yen &rarr; the yen sits near 160 &rarr; intervention brings brief relief &rarr; but the underlying pressures take over again causing the yen to drift back</p>
+      <p>What makes this so hard to fix is that the tools and the problem do not match. Intervention and a rate hike are built to change the cost of money for a moment, but the yen&rsquo;s weakness comes from a structural gap those tools are not designed to close. There is also a structural problem with how the intervention was handled. Japanese officials signalled repeatedly that they were prepared to act, and signalling their plans ahead of time reduced the element of surprise that intervention depends on to be effective. When markets can see it coming, they position around it, and the impact fades faster.</p>
+      <p>The short term and the long term are also pointing in opposite directions. Right now the gap is wide, the bet is crowded, and more intervention is likely, which keeps the yen under pressure. Over a longer horizon, if the Iran war winds down and Japan&rsquo;s energy bill falls, and if investment and a rising Nikkei start pulling money back in, the pressure on the yen could ease. That shift has not happened yet.</p>
+
+      <h2 class="section-label">Why this matters to you</h2>
+      <p style="font-style:italic;"><b>The broader market picture</b></p>
+      <p>Markets are in a mildly risk-on mood this week, meaning investors are calm and comfortable reaching for higher returns. The carry trade tends to thrive in exactly this kind of environment. That said, calm markets can shift quickly, and a crowded trade can reverse fast when sentiment turns. This is not a crisis, but it is a story worth understanding before anything changes.</p>
+      <p style="font-style:italic;"><b>For your business or portfolio</b></p>
+      <ul style="font-size:14px; line-height:1.75; color:var(--body); padding-left:20px; margin:0 0 16px;">
+        <li style="margin-bottom:12px;">If you are an <b>importer</b>: If you buy in yen, the weak currency is a quiet tailwind worth thinking about locking in; if you pay in dollars, the firm dollar is raising your costs.</li>
+        <li style="margin-bottom:12px;">If you are an <b>exporter</b>: Holding dollar receivables means the firm dollar is working in your favour.</li>
+        <li style="margin-bottom:12px;">If you are a <b>borrower</b>: US rates are staying higher for longer, keeping borrowing costs elevated. If you hold any yen-denominated debt, be aware it carries currency risk that can move fast.</li>
+        <li>If you are an <b>investor</b>: You may be part of the carry trade without realising it. The question worth asking is whether your exposure is protected against a sudden yen rally.</li>
+      </ul>
+
+      <div class="key-question">
+        <p class="key-question-text">&ldquo;If the yen suddenly surged tomorrow, would you know whether your money was on the other side of that bet?&rdquo;</p>
+        <p>The carry trade is one of the most crowded positions in the world right now, and crowded trades stay calm until the day they are not. Knowing whether you are quietly exposed is the difference between watching the move from a distance and being caught inside it.</p>
+      </div>
+      </div>
+    </article>
+
+    <aside class="issue-rail">
+
+      <div class="rail-block">
+        <p class="eb rail-title" style="margin-top:0;">Today&rsquo;s session &middot; London/New York</p>
+        <div class="rail-stat">
+          <span class="rail-label">Risk mood</span>
+          <span class="rail-value">Risk-on (mild)</span>
+        </div>
+        <div class="rail-stat">
+          <span class="rail-label">Focus</span>
+          <span class="rail-value">FX &amp; rates</span>
+        </div>
+        <div class="rail-stat">
+          <span class="rail-label">Theme</span>
+          <span class="rail-value">Japan&rsquo;s yen intervention &amp; the US-Japan rate gap</span>
+        </div>
+      </div>
+
+      <div class="rail-block">
+        <p class="eb" style="margin-top:0;">Asset direction</p>
+        <table class="rail-table">
+          <tr><td>USD/JPY</td><td class="dir down">&darr;</td></tr>
+          <tr><td>US 10Y Treasury</td><td class="dir up">&uarr;</td></tr>
+          <tr><td>Japan 10Y (JGB)</td><td class="dir up">&uarr;</td></tr>
+          <tr><td>USD</td><td class="dir up">&uarr;</td></tr>
+          <tr><td>EM currencies</td><td class="dir">&harr;</td></tr>
+        </table>
+      </div>
+
+      <div class="rail-block rail-block-featured">
+        <p class="eb" style="margin-top:0;">This issue&rsquo;s foundation</p>
+        <p class="rail-teaser-text">If you take only one concept from this issue, make it this one.</p>
+        <a class="rail-link-btn" href="foundation-6.html">Read &rarr;</a>
+      </div>
+
+      <div class="rail-block">
+        <p class="eb" style="margin-top:0;">Key term</p>
+        <p class="rail-term" id="carry-trade">Carry trade</p>
+        <p class="rail-def">Borrowing in a low-interest currency, such as the yen, and investing the money where it earns more, then keeping the difference.</p>
+      </div>
+
+       <p class="eb" style="margin-top:22px;">Terms in this issue</p>
+        <div class="term-grid">
+          <div class="term-box"><span>Currency intervention</span></div>
+          <div class="term-box"><span>Interest rate differential (the rate gap)</span></div>
+          <div class="term-box"><span>Carry trade</span></div>
+          <div class="term-box"><span>Yield differential</span></div>
+          <div class="term-box"><span>Reflationary stance</span></div>
+          <div class="term-box"><span>Surged</span></div>
+          <div class="term-box"><span>Dovish</span></div>
+          <div class="term-box"><span>Hawkish</span></div>
+          <div class="term-box"><span>Tailwind</span></div>
+        </div>
+        <a class="rail-link" href="glossary.html">See full glossary &rarr;</a>
+
+    </aside>
+
+    <div class="references-section">
+      <h2 class="section-label">Additional references</h2>
+      <ul class="references-list">
+        <li>Lim, H. J. (2026, June 18). Why Japan&rsquo;s $70 billion-plus intervention and a rate hike didn&rsquo;t prop up the yen more. <em>CNBC.</em> <a href="https://www.cnbc.com/2026/06/19/japan-yen-intervention-boj-rate-hike.html" target="_blank" rel="noopener">https://www.cnbc.com/2026/06/19/japan-yen-intervention-boj-rate-hike.html</a></li>
+        <li>Investopedia. (n.d.). Arbitrage. <a href="https://www.investopedia.com/terms/a/arbitrage.asp" target="_blank" rel="noopener">https://www.investopedia.com/terms/a/arbitrage.asp</a></li>
+        <li>Reuters. (2026, March 19). Japan lower house approves Takaichi&rsquo;s dovish nominees to fill BOJ board. <em>Reuters.</em> <a href="https://www.reuters.com/world/asia-pacific/japan-lower-house-approves-takaichis-dovish-nominees-fill-boj-board-2026-03-19/" target="_blank" rel="noopener">https://www.reuters.com/world/asia-pacific/japan-lower-house-approves-takaichis-dovish-nominees-fill-boj-board-2026-03-19/</a></li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <a class="footer-brand" href="index.html">
+        <img src="logo.png" alt="WSG logo">
+        <span>Wall Street for the Girls</span>
+      </a>
+      <ul class="footer-links">
+        <li><a href="archive.html">Archive</a></li>
+        <li><a href="financial-syllabus.html">Financial Syllabus</a></li>
+        <li><a href="glossary.html">Glossary</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="https://wallstreetforthegirls.substack.com" target="_blank" rel="noopener">Substack</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Wall Street for the Girls</span>
+      <em>Educational purposes only: reflects personal analysis, not financial advice.</em>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

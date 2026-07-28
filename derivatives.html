@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Derivatives — The Financial Syllabus — Wall Street for the Girls</title>
+<meta name="description" content="Contracts whose value is derived from something else — options, futures, swaps, and volatility instruments. Every Financial Syllabus deep dive filed under Derivatives.">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500;1,6..72,600&family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .page-hero{padding-bottom:56px; border-bottom:none;}
+  .lesson-list{display:flex; flex-direction:column; gap:16px; margin-top:8px; margin-bottom:8px;}
+  .lesson-card{position:relative; background:#fff; border:1px solid var(--line); padding:26px 28px; text-decoration:none; display:block; transition:border-color .2s;}
+  .lesson-card::before,.lesson-card::after{content:""; position:absolute; width:14px; height:14px; border-color:var(--brand); border-style:solid;}
+  .lesson-card::before{top:10px; left:10px; border-width:1.5px 0 0 1.5px;}
+  .lesson-card::after{bottom:10px; right:10px; border-width:0 1.5px 1.5px 0;}
+  .lesson-date{font-size:10.5px; letter-spacing:.05em; text-transform:uppercase; color:var(--gray); margin-bottom:10px;}
+  .lesson-card h3{font-family:var(--serif); font-weight:600; font-size:18px; color:var(--ink); margin-bottom:8px;}
+  .lesson-card:hover h3{color:var(--brand);}
+  .lesson-card p{font-size:14px; color:var(--gray); margin-bottom:16px;}
+  .lesson-card .read{font-size:10.5px; letter-spacing:.2em; text-transform:uppercase; font-weight:600; color:var(--brand);}
+  .lesson-card .read::after{content:" →";}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="nav-brand mark" href="index.html">
+      <span>WSG</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="archive.html">Archive</a></li>
+      <li class="nav-dropdown">
+        <a href="financial-syllabus.html" class="active">Learn</a>
+        <ul class="dropdown-menu">
+          <li><a href="foundation.html">The Foundation</a></li>
+          <li><a href="financial-syllabus.html" class="active">Financial Syllabus</a></li>
+          <li><a href="glossary.html">Glossary</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a class="nav-cta" href="https://wallstreetforthegirls.substack.com" target="_blank" rel="noopener">Subscribe</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+<section class="page-hero">
+  <div class="wrap">
+    <a class="breadcrumb" href="financial-syllabus.html">&larr; All pillars</a>
+    <p class="eyebrow">Pillar &middot; 1 lesson &middot; newest first</p>
+    <h1>Derivatives.</h1>
+    <p class="lede">Contracts whose value is derived from something else — options, futures, swaps, and volatility instruments. Everything published under this pillar so far, using that week's real story as the walkthrough.</p>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="lesson-list">
+
+      <!-- EXAMPLE CARD — duplicate this block for each new lesson under this pillar,
+           newest issue first. Update the date, title, summary, and href. -->
+      <a class="lesson-card reveal" href="issue-XX.html#syllabus">
+        <p class="lesson-date">From Issue No. XX &middot; Month Day, Year</p>
+        <h3>Example lesson title goes here</h3>
+        <p>One or two sentences summarizing what this week's deep dive actually taught — written the same way as the article itself.</p>
+        <span class="read">Read this lesson</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <a class="footer-brand" href="index.html">
+        <img src="logo.png" alt="WSG logo">
+        <span>Wall Street for the Girls</span>
+      </a>
+      <ul class="footer-links">
+        <li><a href="start-here.html">Start Here</a></li>
+        <li><a href="archive.html">Archive</a></li>
+        <li><a href="foundation.html">Foundation</a></li>
+        <li><a href="financial-syllabus.html">Financial Syllabus</a></li>
+        <li><a href="glossary.html">Glossary</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="https://wallstreetforthegirls.substack.com" target="_blank" rel="noopener">Substack</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Wall Street for the Girls</span>
+      <em>Educational purposes only: reflects personal analysis, not financial advice.</em>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

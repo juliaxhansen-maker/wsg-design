@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Financial Syllabus — Wall Street for the Girls</title>
+<meta name="description" content="The recurring deep-dive section that started in Issue No. 07 — one market pillar, properly explained, every issue.">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500;1,6..72,600&family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .page-hero{border-bottom:none; padding-bottom:0;}
+  .fs-plain-eyebrow::before{content:none;}
+  .pillar-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:24px; margin-top:8px;}
+  .pillar-card{position:relative; background:#fff; border:1px solid var(--line); padding:28px 26px; text-decoration:none; display:block; transition:border-color .2s;}
+  .pillar-card::before,.pillar-card::after{content:""; position:absolute; width:14px; height:14px; border-color:var(--brand); border-style:solid;}
+  .pillar-card::before{top:10px; left:10px; border-width:1.5px 0 0 1.5px;}
+  .pillar-card::after{bottom:10px; right:10px; border-width:0 1.5px 1.5px 0;}
+  .pillar-card h3{font-family:var(--serif); font-weight:600; font-size:19px; color:var(--ink); margin-bottom:12px;}
+  .pillar-card:hover h3{color:var(--brand);}
+  .pillar-card p{font-size:14.5px; color:var(--gray); margin-bottom:22px;}
+  .pillar-card .read{font-size:10.5px; letter-spacing:.2em; text-transform:uppercase; font-weight:600; color:var(--brand);}
+  .pillar-card .read::after{content:" →";}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="nav-brand mark" href="index.html">
+      <span>WSG</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="archive.html">Archive</a></li>
+      <li class="nav-dropdown">
+        <a href="financial-syllabus.html" class="active">Learn</a>
+        <ul class="dropdown-menu">
+          <li><a href="foundation.html">The Foundation</a></li>
+          <li><a href="financial-syllabus.html" class="active">Financial Syllabus</a></li>
+          <li><a href="glossary.html">Glossary</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a class="nav-cta" href="https://wallstreetforthegirls.substack.com" target="_blank" rel="noopener">Subscribe</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Website exclusive · started in Issue No. 07</p>
+    <h1>The Financial Syllabus.</h1>
+  </div>
+</section>
+
+<section style="padding-top:40px;">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow fs-plain-eyebrow">The five pillars</p>
+      <p>Each issue's deep dive is tagged to one of these. Click a pillar to see everything published under it so far starting from the newest one.</p>
+    </div>
+    <div class="pillar-grid">
+      <a class="pillar-card reveal" href="fixed-income.html">
+        <h3>Fixed Income</h3>
+        <p>Government and corporate bonds, credit spreads, and the yield curves that track central bank policy.</p>
+        <span class="read">Explore this pillar</span>
+      </a>
+      <a class="pillar-card reveal" href="equities.html">
+        <h3>Equities</h3>
+        <p>Ownership shares in public companies — individual stocks, indexes, earnings, and IPOs.</p>
+        <span class="read">Explore this pillar</span>
+      </a>
+      <a class="pillar-card reveal" href="foreign-exchange.html">
+        <h3>Foreign Exchange</h3>
+        <p>The global marketplace where currencies trade against one another, and the rate gaps that move capital between them.</p>
+        <span class="read">Explore this pillar</span>
+      </a>
+      <a class="pillar-card reveal" href="derivatives.html">
+        <h3>Derivatives</h3>
+        <p>Contracts whose value is derived from something else — options, futures, swaps, and volatility instruments.</p>
+        <span class="read">Explore this pillar</span>
+      </a>
+      <a class="pillar-card reveal" href="commodities-alternatives.html">
+        <h3>Commodities &amp; Alternatives</h3>
+        <p>Physical raw materials plus everything off the public exchange — crypto, private equity, real estate, venture capital.</p>
+        <span class="read">Explore this pillar</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <a class="footer-brand" href="index.html">
+        <img src="logo.png" alt="WSG logo">
+        <span>Wall Street for the Girls</span>
+      </a>
+      <ul class="footer-links">
+        <li><a href="start-here.html">Start Here</a></li>
+        <li><a href="archive.html">Archive</a></li>
+        <li><a href="foundation.html">Foundation</a></li>
+        <li><a href="financial-syllabus.html">Financial Syllabus</a></li>
+        <li><a href="glossary.html">Glossary</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="https://wallstreetforthegirls.substack.com" target="_blank" rel="noopener">Substack</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Wall Street for the Girls</span>
+      <em>Educational purposes only: reflects personal analysis, not financial advice.</em>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

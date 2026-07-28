@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Issue No. 3: OpenAI, Anthropic, and SpaceX: Three Hot New Bombshells Have Entered the Wall Street Villa — Wall Street for the Girls</title>
+<meta name="description" content="OpenAI, Anthropic, and SpaceX have all filed for IPOs within weeks of each other, worth a combined $3.4 trillion and none of them profitable. What price discovery actually means, why investors are betting on potential over profit, and what it means for your money.">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500;1,6..72,600&family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#faf7f1; --ink:#22201d; --burgundy:#7d1f42; --muted:#5c574e;
+    --hint:#a39c8c; --line:#ddd7cb; --line-soft:#ece7dc; --body:#3a3733;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--cream); color:var(--ink); font-family:'Inter',sans-serif;}
+  a{color:inherit;}
+  .wrap{max-width:1200px; margin:0 auto; padding:0 24px;}
+
+  .folio-line{border-bottom:0.5px solid var(--line); font-size:11px; letter-spacing:0.03em; color:var(--hint);}
+  .folio-line .wrap{display:flex; justify-content:space-between; padding:10px 24px;}
+
+  .site-header{border-bottom:0.5px solid var(--line);}
+  .nav{display:flex; justify-content:space-between; align-items:center; padding:16px 24px;}
+  .nav-brand{display:flex; align-items:center; gap:8px; text-decoration:none; color:var(--ink); font-family:'Newsreader',serif; font-weight:600; font-size:16px;}
+  .nav-brand img{height:28px; width:28px; border-radius:50%;}
+  .nav-brand em{font-style:italic; color:var(--burgundy);}
+  .nav-links{list-style:none; display:flex; gap:24px; margin:0; padding:0; align-items:center;}
+  .nav-links a{text-decoration:none; color:var(--muted); font-size:12px; letter-spacing:0.04em;}
+  .nav-links a.active{color:var(--burgundy); border-bottom:1.5px solid var(--burgundy); padding-bottom:2px;}
+  .nav-links a.nav-cta{background:var(--ink); color:var(--cream); padding:9px 18px; border-radius:2px;}
+
+  .issue-page{padding:48px 0 80px;}
+  .issue-layout{display:grid; grid-template-columns:minmax(0,640px) minmax(0,320px); gap:32px; align-items:start; justify-content:center;}
+
+  .issue-dateline{font-size:11.5px; letter-spacing:0.03em; color:var(--burgundy); margin:0 0 10px;}
+  .issue-main h1{font-family:'Newsreader',serif; font-weight:600; font-size:30px; line-height:1.3; margin:0 0 20px; max-width:620px;}
+  .issue-main p{font-size:14px; line-height:1.75; color:var(--body); margin:0 0 16px; text-align:justify; hyphens:auto;}
+
+  .eb{font-size:10.5px; letter-spacing:0.08em; color:var(--burgundy); text-transform:uppercase; margin:28px 0 8px;}
+  .rail-title{font-weight:700; font-size:12px;}
+  .section-label{font-family:'Newsreader',serif; font-size:17px; font-weight:600; margin:30px 0 12px; color:var(--burgundy);}
+  .term-link{color:var(--burgundy); text-decoration:none; border-bottom:1.5px dotted var(--burgundy);}
+
+  .issue-copy{max-width:620px;}
+  .signal-noise{display:grid; grid-template-columns:1fr 1fr; gap:0; margin:28px 0 16px; padding-top:24px; border-top:0.5px solid var(--line);}
+  .signal-noise .eb{margin-top:0;}
+  .signal-noise p:last-child{margin-bottom:0;}
+  .signal-noise > div:first-child{padding-right:28px;}
+  .signal-noise > div:last-child{padding-left:28px; border-left:0.5px solid var(--line);}
+
+  .key-question{margin:32px 0 0; padding-top:18px; border-top:1px solid var(--ink);}
+  .key-question .key-question-text{font-family:'Newsreader',serif; font-style:italic; font-weight:700; font-size:20px; color:#7d1f42; line-height:1.6; margin:0 0 14px; text-align:center;}
+
+  p.connects-chain{margin:26px 0; padding:20px 24px; border-top:1px solid var(--ink); border-bottom:1px solid var(--ink); font-family:'Newsreader',serif; font-style:italic; font-size:15px; line-height:1.85; color:var(--body); text-align:center;}
+
+  .references-section{grid-column:1 / -1; border-top:0.5px solid var(--line); padding:36px 0 4px;}
+  .references-section .section-label{margin:0 0 14px;}
+  .references-list{list-style:none; margin:0; padding:0; max-width:900px;}
+  .references-list li{font-size:11.5px; line-height:1.7; color:var(--muted); margin-bottom:14px; text-align:justify; hyphens:auto;}
+  .references-list li a{color:var(--burgundy); text-decoration:none; word-break:break-all;}
+  .references-list li a:hover{text-decoration:underline;}
+
+  .issue-rail{border-left:0.5px solid var(--line); padding-left:28px; align-self:start;}
+  .rail-block{border-bottom:0.5px solid var(--line-soft); padding-bottom:20px; margin-bottom:20px;}
+  .rail-block:last-child{border-bottom:none; margin-bottom:0;}
+
+  .rail-stat{margin-bottom:22px;}
+  .rail-stat:last-child{margin-bottom:0;}
+  .rail-label{display:block; font-size:9.5px; letter-spacing:0.08em; color:var(--hint); margin-bottom:5px;}
+  .rail-value{display:block; font-family:'Newsreader',serif; font-style:italic; font-weight:500; font-size:14.5px; color:var(--ink); line-height:1.4;}
+
+  .rail-table{width:100%; border-collapse:collapse; font-size:12px;}
+  .rail-table td{padding:7px 0; border-bottom:0.5px solid var(--line-soft); color:var(--body);}
+  .rail-table tr:last-child td{border-bottom:none;}
+  .rail-table td.dir{text-align:right; color:var(--muted); white-space:nowrap;}
+  .rail-table td.dir.down, .rail-table td.dir.up{color:var(--burgundy);}
+
+  .rail-teaser-text{font-size:12px; color:var(--muted); line-height:1.6; margin:0 0 10px;}
+  .rail-link{font-size:10.5px; color:var(--burgundy); text-decoration:none;}
+  .rail-link:hover{text-decoration:underline;}
+
+  .rail-block-featured{background:#faf1f4; border-radius:8px; padding:16px 18px 18px; border-bottom:none;}
+  .rail-block-featured .eb{margin-top:0; margin-bottom:8px;}
+  .rail-link-btn{display:inline-block; font-size:10px; letter-spacing:0.05em; color:var(--burgundy); border:0.5px solid var(--burgundy); border-radius:2px; padding:7px 12px; text-decoration:none;}
+  .rail-link-btn:hover{background:var(--burgundy); color:var(--cream);}
+
+  .rail-term{font-family:'Newsreader',serif; font-size:14px; font-weight:600; margin:0 0 5px;}
+  .rail-def{font-size:11.5px; color:var(--muted); line-height:1.6; margin:0;}
+
+  .term-grid{display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:10px 0 14px;}
+  .term-box{background:#fff; border:0.5px solid var(--line); border-radius:6px; padding:10px 12px;}
+  .term-box span{font-family:'Newsreader',serif; font-size:11.5px; font-weight:400; color:var(--ink);}
+
+  .site-footer{border-top:0.5px solid var(--line); padding:44px 0 30px;}
+  .footer-top{display:flex; justify-content:space-between; align-items:center; margin-bottom:22px; flex-wrap:wrap; gap:16px;}
+  .footer-brand{display:flex; align-items:center; gap:8px; text-decoration:none; color:var(--ink); font-weight:600; font-family:'Newsreader',serif; font-size:14px;}
+  .footer-brand img{height:24px; width:24px; border-radius:50%;}
+  .footer-links{list-style:none; display:flex; gap:18px; margin:0; padding:0; flex-wrap:wrap;}
+  .footer-links a{color:var(--muted); text-decoration:none; font-size:12px;}
+  .footer-bottom{display:flex; justify-content:space-between; font-size:11px; color:var(--hint); border-top:0.5px solid var(--line); padding-top:16px; flex-wrap:wrap; gap:8px;}
+
+  a:focus-visible, .nav-cta:focus-visible{outline:2px solid var(--burgundy); outline-offset:2px;}
+
+  @media (max-width:600px){
+    .signal-noise{grid-template-columns:1fr;}
+    .signal-noise > div:first-child{padding-right:0;}
+    .signal-noise > div:last-child{padding-left:0; border-left:none; margin-top:20px;}
+  }
+
+  @media (max-width:860px){
+    .issue-layout{grid-template-columns:1fr;}
+    .issue-rail{border-left:none; padding-left:0; border-top:0.5px solid var(--line); padding-top:28px; margin-top:8px;}
+    .nav-links{display:none;}
+  }
+</style>
+</head>
+<body>
+
+<div class="folio-line">
+  <div class="wrap">
+    <span><b>Wall Street for the Girls</b> &middot; A weekly market brief</span>
+    <span>Issue No. 3 &middot; June 10, 2026</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="nav-brand" href="index.html">
+      <img src="logo.png" alt="WSG logo">
+      <span>Wall Street <em>for the girls</em></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="archive.html" class="active">Archive</a></li>
+      <li><a href="financial-syllabus.html">Financial Syllabus</a></li>
+      <li><a href="glossary.html">Glossary</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a class="nav-cta" href="https://wallstreetforthegirls.substack.com" target="_blank" rel="noopener">Subscribe</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+<section class="issue-page">
+  <div class="wrap issue-layout">
+
+    <article class="issue-main">
+      <p class="issue-dateline">&mdash; June 10, 2026 &middot; Issue No. 3</p>
+      <h1>OpenAI, Anthropic, and SpaceX: three hot new bombshells have entered the Wall Street villa.</h1>
+
+      <div class="issue-copy">
+      <p style="font-style:italic; font-size:16px; color:#3a3733; margin-bottom:10px;">Here's what you need to know this week, and why it matters.</p>
+
+      <p>You know that moment on Love Island when the doors open and three bombshells walk in at once and the whole villa loses its mind? Well, that is Wall Street right now.</p>
+
+      <p>OpenAI, Anthropic, and SpaceX have all filed for IPOs within weeks of each other and these companies combined are valued at roughly $3.4 trillion in private markets. To put that in context, that is more than the entire GDP of France in 2024.</p>
+
+      <p>And not one of them is profitable. At least not yet.</p>
+
+      <p>That combination, huge valuations, almost no profit, and a race to go public all at the same time, is different from anything the markets have seen before. So let&rsquo;s talk about it.</p>
+
+      <p>If you have never heard of the term <a class="term-link" href="glossary.html#ipo">IPO</a> before, let me first explain what it means. IPO stands for an initial public offering and it is when a private company sells shares of itself to the public for the first time. Before an IPO, only a small group of people can own parts of the company. These people tend to be the company&rsquo;s founders, early employees and private investors who got in before anyone else. After an IPO, anyone with a brokerage account can buy shares.</p>
+
+      <p>Think of it as the company finally letting the public into a party that has been invite only for years. Three companies are about to open their doors, one after the other. Let&rsquo;s start with the one you probably already know.</p>
+
+      <p>There is before ChatGPT and there is after ChatGPT. OpenAI is the company that drew that line. Since the introduction of ChatGPT in late 2022, the company has grown from 300 to more than 5,000 employees, and more than 900 million monthly users. Last year, OpenAI generated over $13 billion in revenue, which sounds impressive. But here is the catch.</p>
+
+      <p>OpenAI is not profitable. Neither is Anthropic. SpaceX brought in $18.7 billion in revenue last year and is not profitable either. To understand why, you have to look at what it actually costs to build artificial intelligence at this scale.</p>
+
+      <p>OpenAI alone expects to spend $115 billion over the next four years. That is the price of building and running the data centers that power artificial intelligence at this scale. The servers, the chips, the electricity, the people. It all adds up, and it adds up fast. OpenAI has raised more than $180 billion since 2015 and is spending it like someone just handed it an unlimited credit card.</p>
+
+      <p>With a price and profit gap like this, investors are paying roughly 56 times OpenAI&rsquo;s annual revenue, based on the $730 billion private valuation and $13 billion in reported revenue, for a company that has never been profitable. It is worth noting that the $730 billion figure does not even include OpenAI&rsquo;s latest funding round. This means that the true valuation, and the multiple, could be even higher.</p>
+
+      <p>To really understand why that number is extraordinary, Facebook went public in 2012 valued at around $104 billion and was already turning a profit. It was making more money than it was spending. When Alibaba listed in 2014, which was the largest IPO in history at the time, it raised $25 billion and was profitable too.</p>
+
+      <p>What is being asked of public investors here is a significantly larger leap of faith than anything that has come before it. Betting on potential over profit is not new. Doing it at $730 billion is.</p>
+
+      <p>Still, investors are lining up. But why?</p>
+
+      <p>Because the bet is not on what these companies are earning now. It is on what they will earn eventually, and on the argument of who will win the AI race. And whoever wins that race will control the infrastructure as foundational as electricity or the internet, and the revenues that follow could be huge.</p>
+
+      <p>Winning a race like this costs money, and a lot of it. Going public raises the capital needed to build more data centers, hire more researchers, and secure more computing power faster than the competition.</p>
+
+      <p>All three companies filing within weeks of each other is not a coincidence. It is a race to the same pool of public money, and the winner gets to outspend everyone else. The IPO is the moment the invite-only party becomes Project X. The bigger the crowd, the bigger the budget.</p>
+
+      <p>What also makes this moment one for the history books is the scale. If SpaceX went public at a valuation of around $1.77 trillion, it would rank among the largest IPOs in history and would be one of the largest companies to list on a public exchange.</p>
+
+      <p>Add the valuations of all three together and you get a number that makes every previous IPO wave in modern market history look small. And this is the kind of moment that changes what your portfolio looks like whether you want to or not.</p>
+
+      <p>When companies of this size list on a major exchange, they eventually qualify for inclusion in major indices like the S&amp;P 500. Every person who holds a passive index fund or a retirement account tracking the market will automatically own a small piece of them, whether they made a conscious choice or not. Understanding what you are buying before it arrives in your portfolio is not optional. It is just being an informed investor.</p>
+
+      <p>Now you know the names, the valuations, and the race they are all running. It is time to welcome OpenAI, Anthropic, and SpaceX to the Wall Street villa 2026.</p>
+
+      <div class="signal-noise">
+        <div>
+          <p class="eb">&#10022; The signal</p>
+          <p>The gap between private market valuation and profitability is real and has never been tested by public investors before.</p>
+          <p>OpenAI is worth $730 billion in private markets, growing fast, and losing money. Anthropic is worth $900 billion. When these companies list, public markets will decide for themselves whether those numbers hold. That process of price discovery is the most important financial event in the AI sector in years.</p>
+          <p>The second genuine signal is Anthropic&rsquo;s revenue trajectory. The company originally planned to grow revenues ten times this year. Revenue could now grow 80 times this year, driven primarily by Claude Code. If accurate, the profitability timeline changes significantly. That is new information and markets will price it.</p>
+        </div>
+        <div>
+          <p class="eb">&#10022; The noise</p>
+          <p>The exact timing of each IPO is largely noise. SpaceX could list as early as this Friday, but OpenAI and Anthropic have both said they have not yet decided when they will go public. OpenAI specifically noted it &lsquo;may be a while.&rsquo;</p>
+          <p>Headlines about Elon Musk potentially becoming the world&rsquo;s first trillionaire is interesting but secondary.</p>
+          <p>What matters is whether public investors agree with the valuations private investors have assigned. That question will only be answered on day one of trading.</p>
+        </div>
+      </div>
+
+      <h2 class="section-label">What&rsquo;s moving in markets</h2>
+      <p><b>AI and tech equities</b> are the primary beneficiary this week. A wave of high-profile IPO filings lifts the broader sector as investor enthusiasm rises. Microsoft, a major OpenAI investor, and Google, a fierce Anthropic rival with its own competing AI products, are both worth watching this week as the IPO news changes how investors think about them.</p>
+      <p>The <b>IPO market</b> more broadly is picking up momentum. A successful wave of AI listings could unlock the broader IPO pipeline that has been largely frozen since 2022, when rising interest rates made investors far more cautious about high growth companies with little to no profit. If these three listings go well, the door opens for others behind them.</p>
+      <p><b>Private market valuations</b> are coming under indirect scrutiny. Moving from private to public pricing introduces real accountability. If any of these companies list and trade below their private valuation, that sends a signal across the entire venture capital ecosystem about where AI company prices should sit.</p>
+      <p>The <b>US dollar</b> receives mild support from technology driven capital flows. Foreign investors participating in these offerings bring demand for dollar denominated assets, adding a quiet tailwind to the currency.</p>
+
+      <h2 class="section-label">Currency &amp; interest rate</h2>
+      <div class="signal-noise">
+        <div>
+          <p class="eb">Where currencies stand</p>
+          <p><b>USD:</b> Mild upward pressure. Large US tech IPOs attract global capital into dollar-denominated assets. Not dramatic, but the direction is consistent.</p>
+          <p><b>EUR/USD and EM FX:</b> No direct signal this week from the article.</p>
+        </div>
+        <div>
+          <p class="eb">The yield picture</p>
+          <p>Not directly covered in the article. The IPO wave does not alter inflation expectations or rate cut timing.</p>
+        </div>
+      </div>
+
+      <h2 class="section-label">How it all connects</h2>
+      <p class="connects-chain">AI companies file for IPO &rarr; public capital raised &rarr; competition intensifies &rarr; data centre buildout accelerates &rarr; energy and chip costs remain elevated &rarr; profitability stays distant &rarr; public investors decide if the future justifies the price &rarr; price discovery begins</p>
+      <p>What makes this moment genuinely unusual is the scale of the mismatch between price and profit. Private markets have been valuing these companies on potential, not performance. Public market investors have historically been more demanding, particularly in a higher rate environment where capital has a real cost. The question is whether the price is right, and that is a question only public markets can answer.</p>
+      <p>The index angle compounds everything. The S&amp;P 500 typically requires profitability before inclusion. But Anthropic&rsquo;s 80 times revenue growth claim, if accurate, makes profitability within a year or two of listing plausible. At that point, the choice is already made for you.</p>
+
+      <h2 class="section-label">Why this matters to you</h2>
+      <p style="font-style:italic;"><b>The broader market picture</b></p>
+      <p>The markets may be risk-on this week with the AI IPO wave generating excitement across the technology sector. But the fundamental backdrop has not changed. Rates remain elevated, profitability remains distant for all three companies, and the valuations have not been tested yet.</p>
+      <p style="font-style:italic;"><b>For your business or portfolio</b></p>
+      <ul style="font-size:14px; line-height:1.75; color:var(--body); padding-left:20px; margin:0 0 16px;">
+        <li style="margin-bottom:12px;">If you are an <b>importer</b>: No direct FX impact from this story. Monitor USD for broader strength if IPO enthusiasm builds as listing dates approach.</li>
+        <li style="margin-bottom:12px;">If you are an <b>exporter</b>: Mild USD strength could work in your favour if you hold USD receivables. Worth watching as listings approach.</li>
+        <li style="margin-bottom:12px;">If you are a <b>borrower</b>: No direct rate impact. IPO market activity does not change the Fed&rsquo;s hold position.</li>
+        <li>If you are an <b>investor</b>: These companies will likely enter the indices you already own. Understand the valuation logic before they arrive in your portfolio automatically.</li>
+      </ul>
+
+      <div class="key-question">
+        <p class="key-question-text">&ldquo;If these companies end up in your portfolio tomorrow, would you know they were there?&rdquo;</p>
+        <p>Passive investing works, but it makes the decisions on your behalf. And right now, it is about to make a very big decision for you.</p>
+      </div>
+      </div>
+    </article>
+
+    <aside class="issue-rail">
+
+      <div class="rail-block">
+        <p class="eb rail-title" style="margin-top:0;">Today&rsquo;s session &middot; US markets</p>
+        <div class="rail-stat">
+          <span class="rail-label">Risk mood</span>
+          <span class="rail-value">Risk-on</span>
+        </div>
+        <div class="rail-stat">
+          <span class="rail-label">Focus</span>
+          <span class="rail-value">Equities</span>
+        </div>
+        <div class="rail-stat">
+          <span class="rail-label">Theme</span>
+          <span class="rail-value">AI IPO wave &amp; trillion dollar valuations</span>
+        </div>
+      </div>
+
+      <div class="rail-block">
+        <p class="eb" style="margin-top:0;">Asset direction</p>
+        <table class="rail-table">
+          <tr><td>AI &amp; tech equities</td><td class="dir up">&uarr; Up</td></tr>
+          <tr><td>IPO market</td><td class="dir up">&uarr; Reopening</td></tr>
+          <tr><td>USD</td><td class="dir up">&uarr; Mild support</td></tr>
+          <tr><td>Private market valuations</td><td class="dir">! Under scrutiny !</td></tr>
+        </table>
+      </div>
+
+      <div class="rail-block">
+        <p class="eb" style="margin-top:0;">Key term</p>
+        <p class="rail-term" id="ipo">IPO (Initial Public Offering)</p>
+        <p class="rail-def">When a private company sells shares to the public for the first time.</p>
+      </div>
+
+       <p class="eb" style="margin-top:22px;">Terms in this issue</p>
+        <div class="term-grid">
+          <div class="term-box"><span>IPO</span></div>
+          <div class="term-box"><span>Confidential filing</span></div>
+          <div class="term-box"><span>Valuation</span></div>
+          <div class="term-box"><span>Revenue vs profit</span></div>
+          <div class="term-box"><span>Tender offer</span></div>
+          <div class="term-box"><span>Index inclusion</span></div>
+          <div class="term-box"><span>Price discovery</span></div>
+          <div class="term-box"><span>Discount rate</span></div>
+          <div class="term-box"><span>Revenue multiple</span></div>
+        </div>
+        <a class="rail-link" href="glossary.html">See full glossary &rarr;</a>
+
+    </aside>
+
+    <div class="references-section">
+      <h2 class="section-label">Additional references</h2>
+      <ul class="references-list">
+        <li>Nasdaq. (2012, May 17). Facebook prices at $38, high end of revised range; third-largest US IPO ever. <a href="https://www.nasdaq.com/articles/facebook-prices-38-high-end-revised-range-third-largest-us-ipo-ever-2012-05-17" target="_blank" rel="noopener">https://www.nasdaq.com/articles/facebook-prices-38-high-end-revised-range-third-largest-us-ipo-ever-2012-05-17</a></li>
+        <li>Fortune. (2014, September 22). Alibaba is officially the biggest IPO ever after &lsquo;Green Shoe&rsquo; released. <a href="https://fortune.com/2014/09/22/alibaba-is-officially-the-biggest-ipo-ever-after-green-shoe-released" target="_blank" rel="noopener">https://fortune.com/2014/09/22/alibaba-is-officially-the-biggest-ipo-ever-after-green-shoe-released</a></li>
+        <li>Time. (2014, September 18). Alibaba IPO: Everything you need to know. <a href="https://time.com/3398957/alibaba-ipo-china/" target="_blank" rel="noopener">https://time.com/3398957/alibaba-ipo-china/</a></li>
+        <li>Trading Economics. (2024). France GDP. <em>World Bank.</em> <a href="https://tradingeconomics.com/france/gdp" target="_blank" rel="noopener">https://tradingeconomics.com/france/gdp</a></li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <a class="footer-brand" href="index.html">
+        <img src="logo.png" alt="WSG logo">
+        <span>Wall Street for the Girls</span>
+      </a>
+      <ul class="footer-links">
+        <li><a href="archive.html">Archive</a></li>
+        <li><a href="financial-syllabus.html">Financial Syllabus</a></li>
+        <li><a href="glossary.html">Glossary</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="https://wallstreetforthegirls.substack.com" target="_blank" rel="noopener">Substack</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Wall Street for the Girls</span>
+      <em>Educational purposes only: reflects personal analysis, not financial advice.</em>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
